@@ -6,11 +6,11 @@ Ankilope supplied the style; Bluma has her own cow silhouette, cream muzzle,
 lavender forelock, ivory horns, indigo scarf and brown flashcard satchel.
 
 Eight earlier master names and two superseded desktop exports are kept
-byte for byte. The active core masters use static/cow/; active exports use
+byte for byte. The active core masters use cow/; active exports use
 bluma_asleep and bluma_happy. Archived exports are outside the app package.
 The old tinted Ankilope images are unchanged.
 
-[Prompts and cleanup](../../../docs/branding/bluma-core-2026-11/README.md).
+[Prompts and cleanup](../../docs/bluma-core-2026-11/README.md).
 [Aldana approved these archives](https://github.com/AnkiQuest/AnkiQuest-Desktop/issues/88#issuecomment-6918911105).
 [hill approved the appearance](https://github.com/AnkiQuest/AnkiQuest-Desktop/pull/322#pullrequestreview-5919330018).
 

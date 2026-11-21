@@ -5,7 +5,7 @@ These files are retained byte for byte; active masters use the core pose names
 in the parent directory. The archived export is outside the add-on package.
 
 Anki-tan by Shigeyuki (https://www.patreon.com/Shigeyuki).
-These derivatives remain CC BY-SA 4.0 under [LICENSE](../LICENSE).
+These derivatives remain CC BY-SA 4.0 under [LICENSE](LICENSE).
 Generated with OpenAI image_gen; its model identifier was not exposed.
 
 | File | Original path | SHA-256 |
@@ -23,4 +23,4 @@ revision has one unlit star, requested by hill and approved by Aldana.
 
 [Aldana Belen Rodriguez approved this archive](https://github.com/AnkiQuest/AnkiQuest-Desktop/issues/88#issuecomment-6918911105).
 Generation and cleanup records are in
-[the pose documentation](../../../docs/branding/ankitan-full-2026-11/README.md).
+[the pose documentation](../../docs/ankitan-full-2026-11/README.md).
