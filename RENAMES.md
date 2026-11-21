@@ -18,35 +18,46 @@ edited: each one has the same bytes as before.
 | `static/anki-tan/emoji/Ankitan_00_smile.png` | `anki-tan/icon_mono.png` |
 | `static/anki-tan/emoji/Ankitan_02_cry.png` | `anki-tan/chibi/sad.png` |
 | `static/anki-tan/emoji/Ankitan_06_pleading.png` | `anki-tan/chibi/hopeful.png` |
-| `static/anki-tan/emoji/Ankitan_09_fire_eyes.png` | `anki-tan/streak.png` |
+| `static/anki-tan/emoji/Ankitan_09_fire_eyes.png` | `anki-tan/chibi/streak.png` |
 | `static/anki-tan/emoji/Ankitan_10_party.png` | `anki-tan/chibi/happy.png` |
 | `static/anki-tan/emoji/Ankitan_21_saluting.png` | `anki-tan/chibi/welcome.png` |
-| `static/anki-tan/emoji/Ankitan_28_spiral_eyes.png` | `anki-tan/hurt.png` |
+| `static/anki-tan/emoji/Ankitan_28_spiral_eyes.png` | `anki-tan/chibi/hurt.png` |
 | `static/anki-tan/emoji/Ankitan_35_sleeping.png` | `anki-tan/chibi/asleep.png` |
-| `static/anki-tan/emoji/Ankitan_39_crossed_out_eyes.png` | `anki-tan/dead.png` |
-| `static/anki-tan/emoji/Ankitan_43_crown.png` | `anki-tan/streak_legend.png` |
-| `static/anki-tan/emoji/Ankitan_48_perfect_streaks.png` | `anki-tan/streak_milestone.png` |
+| `static/anki-tan/emoji/Ankitan_39_crossed_out_eyes.png` | `anki-tan/chibi/dead.png` |
+| `static/anki-tan/emoji/Ankitan_43_crown.png` | `anki-tan/chibi/streak_legend.png` |
+| `static/anki-tan/emoji/Ankitan_48_perfect_streaks.png` | `anki-tan/chibi/streak_milestone.png` |
 | `static/anki-tan/emoji/Ankitan_49_lost_streaks.png` | `anki-tan/chibi/neglected.png` |
 | `static/anki-tan/sprite/idle/anki-tan_idle_0001.png` | `anki-tan/chibi/face.png` |
-| `static/anki-tan/sticker/anki_tan_good.png` | `anki-tan/happy.png` |
-| `static/anki-tan/sticker/anki_tan_hello.png` | `anki-tan/welcome.png` |
+| `static/anki-tan/sticker/anki_tan_good.png` | `anki-tan/icon_happy.png` |
+| `static/anki-tan/sticker/anki_tan_hello.png` | `anki-tan/icon_hello.png` |
 | `static/anki-tan/sticker/ankitan_lets_study.png` | `anki-tan/hopeful.png` |
-| `static/anki-tan/sticker/press_spacebar.png` | `anki-tan/review.png` |
+| `static/anki-tan/sticker/press_spacebar.png` | `anki-tan/icon_review.png` |
 | `static/ankilope/celebrate.png` | `ankilope/happy.png` |
 
-Anki-tan chibi uses the same pack file as Anki-tan for these poses, so
-`anki-tan/chibi/` has a byte-identical copy of each: `streak`, `review`,
-`streak_legend`, `streak_milestone`, `hurt` and `dead`. An exporter that
-read one of those pack files for the chibi reads `anki-tan/chibi/<pose>.png`.
+Anki-tan and Anki-tan chibi share no full-size pose (hill, 2026-11-21):
+the pack's emoji are the chibi head design, so `streak`, `streak_legend`,
+`streak_milestone`, `hurt` and `dead` are chibi poses. Head-only icons
+may repeat them. Regular Anki-tan's full-size poses are `asleep`, `sad`,
+`frozen`, `neglected` and `hopeful`; the other pictures she had are icons:
 
-The pack files AnkiQuest-Server's Anki-tan launcher icons read map like
-the rest, and each mood icon also has its own master (`anki-tan/icon_happy.png`,
-`icon_worried.png`, `icon_sleepy.png`, byte copies of the pose pictures named
-below): `emoji/Ankitan_09_fire_eyes.png` (icon_happy) is
-`anki-tan/streak.png`, `emoji/Ankitan_02_cry.png` (icon_worried) is
-`anki-tan/chibi/sad.png`, `emoji/Ankitan_35_sleeping.png` (icon_sleepy)
-is `anki-tan/chibi/asleep.png`, `emoji/Ankitan_00_smile.png` (icon_mono)
+| Was | Is |
+|---|---|
+| `anki-tan/streak.png` | `anki-tan/icon_fire.png` |
+| `anki-tan/happy.png` | `anki-tan/icon_happy.png` |
+| `anki-tan/welcome.png` | `anki-tan/icon_hello.png` |
+| `anki-tan/review.png` | `anki-tan/icon_review.png` |
+| `anki-tan/dead.png` | `anki-tan/icon_dead.png` |
+| `anki-tan/hurt.png` | `anki-tan/icon_hurt.png` |
+
+The old `anki-tan/icon_happy.png` (`emoji/Ankitan_09_fire_eyes.png`) is
+`anki-tan/icon_fire.png`. `emoji/Ankitan_02_cry.png` (icon_worried) is
+`anki-tan/icon_worried.png` and `anki-tan/chibi/sad.png`,
+`emoji/Ankitan_35_sleeping.png` (icon_sleepy) is `anki-tan/icon_sleepy.png`
+and `anki-tan/chibi/asleep.png`, `emoji/Ankitan_00_smile.png` (icon_mono)
 is `anki-tan/icon_mono.png`.
+
+Her `face`, `happy` and `streak` need drawing (AnkiQuest-Server#57), and
+her extensions fall back until drawn. Chibi has no `review`.
 
 Anki-tan has no `face` master: `sprite/idle/anki-tan_idle_0001.png`, her
 face in AnkiQuest-Server, is the chibi design and is Anki-tan chibi's
