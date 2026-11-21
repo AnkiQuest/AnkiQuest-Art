@@ -3,6 +3,8 @@
 Pictures that are no longer masters and are not a copy of one. Nothing
 here is exported to a client.
 
+- `aki/`, `ankilope/`: earlier versions of Aki's and Ankilope's masters,
+  replaced in AnkiQuest-Server before the split; see their READMEs.
 - `anki-tan/`: Anki-tan's neglected pose before one headband star was
   unlit; see its README. CC BY-SA 4.0 under its LICENSE.
 - `anki-tan-pack/`: the rest of Shigeyuki's Anki-tan asset pack; see its
