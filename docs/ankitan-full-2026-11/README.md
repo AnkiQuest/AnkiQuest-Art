@@ -7,7 +7,7 @@ other agent owns pose selection and unlock activation.
 
 | Original reference | Existing frozen | Asleep | Sad | Neglected |
 |---|---|---|---|---|
-| ![Original](../../../static/anki-tan/illust/anki_tan_main.png) | ![Frozen](../../../static/anki-tan/frozen.png) | ![Asleep](../../../static/anki-tan/asleep.png) | ![Sad](../../../static/anki-tan/sad.png) | ![Neglected](../../../static/anki-tan/neglected.png) |
+| ![Original](../../archive/anki-tan-pack/illust/anki_tan_main.png) | ![Frozen](../../anki-tan/frozen.png) | ![Asleep](../../anki-tan/asleep.png) | ![Sad](../../anki-tan/sad.png) | ![Neglected](../../anki-tan/neglected.png) |
 
 Aldana approved these three images on 2026-11-16. Three candidates
 were generated per pose using OpenAI's `image_gen` tool; its model
@@ -24,7 +24,7 @@ and 128 px previews. Original art is preserved.
 
 Anki-tan by Shigeyuki (https://www.patreon.com/Shigeyuki).
 These derivatives and their exports are licensed CC BY-SA 4.0 under
-[her LICENSE](../../../static/anki-tan/LICENSE).
+[her LICENSE](../../anki-tan/LICENSE).
 
 Canonical exports use `export-addon-art` and `export-android-art` on
 Linux. [Run 43789530883](https://github.com/AnkiQuest/AnkiQuest-Desktop/actions/runs/43789530883)

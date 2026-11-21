@@ -7,15 +7,15 @@ the other contributor owns pose selection and unlock activation.
 
 | Aki reference | Ankilope reference | Bluma face | Bluma happy |
 |---|---|---|---|
-| ![Aki](../../../static/aki/face.png) | ![Ankilope](../../../static/ankilope/face.png) | ![Face](../../../static/cow/face.png) | ![Happy](../../../static/cow/happy.png) |
+| ![Aki](../../aki/face.png) | ![Ankilope](../../ankilope/face.png) | ![Face](../../cow/face.png) | ![Happy](../../cow/happy.png) |
 
 | Asleep | Streak | Sad |
 |---|---|---|
-| ![Asleep](../../../static/cow/asleep.png) | ![Streak](../../../static/cow/streak.png) | ![Sad](../../../static/cow/sad.png) |
+| ![Asleep](../../cow/asleep.png) | ![Streak](../../cow/streak.png) | ![Sad](../../cow/sad.png) |
 
 | Hopeful | Frozen | Neglected |
 |---|---|---|
-| ![Hopeful](../../../static/cow/hopeful.png) | ![Frozen](../../../static/cow/frozen.png) | ![Neglected](../../../static/cow/neglected.png) |
+| ![Hopeful](../../cow/hopeful.png) | ![Frozen](../../cow/frozen.png) | ![Neglected](../../cow/neglected.png) |
 
 OpenAI `image_gen` generated three candidates per pose on 2026-11-16;
 its model identifier was not exposed. [Generation records](generation.json)

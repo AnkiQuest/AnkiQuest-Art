@@ -25,7 +25,7 @@ the desktop add-on ships 256 px palette PNGs of the poses it shows in `addon/art
 
 the duo also leads the README banner (`docs/graphics/banner_readme.png`) and the repository's social preview (`docs/graphics/social_preview.png`). `npm run screenshots` renders the website pages into `docs/screenshots/web/` and draws the banner (`cargo run -p ankiquest-xtask -- banner`) from the duo and those screenshots and the preview (`banner --social`); the CI `screenshots` job fails while any of them is stale. Android's README banner shows the duo too, and its social preview comes from `banner --social --out <android-checkout>/docs/graphics/logos/social_preview.png`.
 
-[A single source for companion art](mascot-source.md) describes how every
+[A single source for companion art](https://github.com/AnkiQuest/AnkiQuest-Server/blob/master/docs/branding/mascot-source.md) describes how every
 copy is made from the masters and checked.
 
 ## pose and voice rules
@@ -34,12 +34,12 @@ copy is made from the masters and checked.
 | --- | --- |
 | `welcome.png` | Onboarding, sign-in and empty states |
 | `review.png` | A small next step, loading and studying |
-| `celebrate.png` | Confirmed completed daily quests and conquered cards |
+| `happy.png` | Confirmed completed daily quests and conquered cards |
 | `streak.png` | Studying today and general progress |
 | `freeze.png` | Confirmed protection; contextual settings illustration |
 | `winner.png` | Records, trophies, winners and tamed leeches |
 | `face.png` | Compact branding and installed app icon |
-| `face-192` and `face-32` | `face.png` scaled down by `build.rs` for the website's brand mark, touch icon and favicon (also `ankilope/face-192`); the committed `face-192.png` and `face-32.png` are retired copies nothing reads |
+| `face-192` and `face-32` | `face.png` scaled down by `build.rs` for the website's brand mark, touch icon and favicon (also `ankilope/face-192`); not committed |
 
 ### moment art (#88)
 
@@ -65,7 +65,7 @@ yet: they are not embedded in the server binary and are not public paths.
 | `achievement.png` | `aki_achievement` | An achievement unlocked |
 | `level_up.png` | `aki_level_up` | A level reached |
 | `deck_conquered.png` | `aki_deck_conquered` | A deck conquered |
-| `leech.png` | `aki_leech` | A leech tamed |
+| `leech_defeated.png` | `aki_leech` | A leech tamed |
 | `at_risk.png` | `aki_at_risk` | Still time to secure the streak |
 | `sad.png` | `aki_sad` | Streak mood: a streak and no study yet today |
 | `hopeful.png` | `aki_hopeful` | Streak mood: half of today's minimum studied; also the `almost` mood (three quarters) |
@@ -83,14 +83,14 @@ yet: they are not embedded in the server binary and are not public paths.
 | `../duo/friends.png` | `duo_friends` | Aki and Ankilope together: sharing, challenges, nudges |
 
 The four social poses (`nudge`, `challenge`, `challenge_won`, `challenge_lost`)
-also have matching PNGs in `static/ankilope/`, exported under the same names
+also have matching PNGs in `ankilope/`, exported under the same names
 with the `ankilope_` prefix. Both mascots stay encouraging after a loss.
 The [review sheet](social-poses-review.png) shows each at 128 and 64 pixels
 on light and dark backgrounds. All eight transparent masters were also
 reviewed at native resolution. They were generated with the built-in
 `image_gen` tool; the prompt record includes the nudge cutout refinement.
 
-The backlog pose also has a matching `static/ankilope/backlog.png`, exported
+The backlog pose also has a matching `ankilope/backlog.png`, exported
 as `ankilope_backlog`. Both show a calm companion sorting blank flashcards.
 The [backlog review sheet](backlog-review.png) shows each at 128 and 64 pixels
 on light and dark backgrounds. Both transparent masters were also reviewed
@@ -98,7 +98,7 @@ at native resolution on both backgrounds. Prompts and references are recorded
 in `aki-prompts.json`. These assets are ready for backlog-specific surfaces;
 adding them does not change study goals or the current general study artwork.
 
-The three podium poses have matching `static/ankilope/place_1..3.png` masters
+The three podium poses have matching `ankilope/place_1..3.png` masters
 and `ankilope_place_1..3` Android exports. Gold, silver and bronze medals use
 distinct positive poses. The [podium review sheet](podium-review.png) shows
 all six at 128 and 64 pixels on light and dark backgrounds. Each 1254px
