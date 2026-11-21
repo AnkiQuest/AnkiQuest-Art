@@ -1,5 +1,5 @@
 {
-  "_about": "Every master in this repository: one file per companion and pose. kind is core or extension for poses in AnkiQuest-Server tests/fixtures/companion_poses.json, picture for other per-companion art (moment, notification and icon pictures). origin is shigeyuki for a file of Shigeyuki's Anki-tan asset pack v1.0, unchanged (pack is its path in the pack), derivative for art AnkiQuest made from his Anki-tan, ankiquest for AnkiQuest's own companions; author is who to credit. shared lists pictures of more than one companion. missing lists the core poses a companion has no master for yet, tracked in AnkiQuest-Server#57; extensions without a master show their fallback and are not listed. archive lists what archive/ holds, which is never exported: retired pictures one by one, with the master that replaced them, and the rest of Shigeyuki's pack by folder.",
+  "_about": "Every master in this repository: one file per companion and pose. kind is core or extension for poses in AnkiQuest-Server tests/fixtures/companion_poses.json, picture for other per-companion art (moment, notification and icon pictures). origin is shigeyuki for a file of Shigeyuki's Anki-tan asset pack v1.0, unchanged (pack is its path in the pack), derivative for art AnkiQuest made from his Anki-tan, ankiquest for AnkiQuest's own companions; author is who to credit. shared lists pictures of more than one companion. missing lists the core poses a companion has no master for yet, tracked in AnkiQuest-Server#57; extensions without a master show their fallback and are not listed. archive lists what archive/ holds, which is never exported: retired pictures one by one, with the master that replaced them and, where known, the source commit and path they came from, and the rest of Shigeyuki's pack by folder.",
   "masters": [
     {
       "companion": "aki",
@@ -881,6 +881,70 @@
         "origin": "derivative",
         "author": "AnkiQuest, after Shigeyuki",
         "licence": "CC-BY-SA-4.0"
+      },
+      {
+        "companion": "aki",
+        "pose": "welcome",
+        "file": "archive/aki/welcome-shadow.png",
+        "replaced_by": "aki/welcome.png",
+        "note": "First welcome pose, with a ground shadow; the shadow was removed.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Server",
+          "commit": "9bc339ddde0797f60c47cba5b219e44ce3e75066",
+          "path": "static/aki/welcome.png",
+          "replaced_in": "43629f6867543ec5270f8c95068f3cb35e899ddb"
+        }
+      },
+      {
+        "companion": "aki",
+        "pose": "review",
+        "file": "archive/aki/review-before-pose-fix.png",
+        "replaced_by": "aki/review.png",
+        "note": "First review pose, before the study pose was corrected.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Server",
+          "commit": "9bc339ddde0797f60c47cba5b219e44ce3e75066",
+          "path": "static/aki/review.png",
+          "replaced_in": "43629f6867543ec5270f8c95068f3cb35e899ddb"
+        }
+      },
+      {
+        "companion": "aki",
+        "pose": "at_risk",
+        "file": "archive/aki/at_risk-small-hourglass.png",
+        "replaced_by": "aki/at_risk.png",
+        "note": "First at-risk pose, with a small hourglass that was not visible at widget size.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Server",
+          "commit": "43629f6867543ec5270f8c95068f3cb35e899ddb",
+          "path": "static/aki/at_risk.png",
+          "replaced_in": "8fe3d77790db90b69675d4266cfd8eeb9240a02a"
+        }
+      },
+      {
+        "companion": "ankilope",
+        "pose": "happy",
+        "file": "archive/ankilope/happy-tight-framing.png",
+        "replaced_by": "ankilope/happy.png",
+        "note": "First celebrate pose, with the ears and feet at the edge; the input of the generated reframing.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Server",
+          "commit": "9ebe1ebd72714dacabcb3c5ecbca91b8d88789d4",
+          "path": "static/ankilope/celebrate.png",
+          "replaced_in": "10f8c020519ca6a1aba52742f9d205d34ac18590"
+        }
       }
     ],
     "pack": {
