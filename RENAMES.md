@@ -50,32 +50,45 @@ is `anki-tan/chibi/face.png`.
 
 | Old path | New path |
 |---|---|
-| `assets/cards/aki-celebrate.png` | `archive/aki/cards/aki-celebrate.png` |
-| `assets/cards/aki-freeze.png` | `archive/aki/cards/aki-freeze.png` |
-| `assets/cards/aki-streak.png` | `archive/aki/cards/aki-streak.png` |
-| `assets/cards/aki-winner.png` | `archive/aki/cards/aki-winner.png` |
-| `assets/cards/ankilope-celebrate.png` | `archive/ankilope/cards/ankilope-celebrate.png` |
 | `static/anki-tan/archive/README.md` | `archive/anki-tan/README.md` |
-| `static/anki-tan/archive/addon/anki_tan_neglected-three-blue-stars.png` | `archive/anki-tan/addon/anki_tan_neglected-three-blue-stars.png` |
-| `static/anki-tan/archive/addon/anki_tan_sleeping.png` | `archive/anki-tan/addon/anki_tan_sleeping.png` |
-| `static/anki-tan/archive/asleep-full.png` | `archive/anki-tan/asleep-full.png` |
-| `static/anki-tan/archive/neglected-full.png` | `archive/anki-tan/neglected-full.png` |
-| `static/anki-tan/archive/sad-full.png` | `archive/anki-tan/sad-full.png` |
-| `static/anki-tan/generated/README.md` | `archive/anki-tan/generated/README.md` |
-| `static/anki-tan/generated/frozen-chibi.png` | `archive/anki-tan/generated/frozen-chibi.png` |
-| `static/anki-tan/generated/frozen-full.png` | `archive/anki-tan/generated/frozen-full.png` |
-| `static/cow/archive/README.md` | `archive/cow/README.md` |
-| `static/cow/archive/addon/bluma_celebrate.png` | `archive/cow/addon/bluma_celebrate.png` |
-| `static/cow/archive/addon/bluma_sleeping.png` | `archive/cow/addon/bluma_sleeping.png` |
-| `static/cow/archive/celebrate.png` | `archive/cow/celebrate.png` |
-| `static/cow/archive/face.png` | `archive/cow/face.png` |
-| `static/cow/archive/frozen.png` | `archive/cow/frozen.png` |
-| `static/cow/archive/hopeful.png` | `archive/cow/hopeful.png` |
-| `static/cow/archive/neglected.png` | `archive/cow/neglected.png` |
-| `static/cow/archive/sad.png` | `archive/cow/sad.png` |
-| `static/cow/archive/sleeping.png` | `archive/cow/sleeping.png` |
-| `static/cow/archive/streak.png` | `archive/cow/streak.png` |
+| `static/anki-tan/archive/neglected-full.png` | `archive/anki-tan/neglected-three-blue-stars.png` |
 | `static/anki-tan/{emoji,illust,sprite,sticker}/*` (the rest) | `archive/anki-tan-pack/{emoji,illust,sprite,sticker}/*` |
+
+## Duplicates, now the file they copied
+
+These were in the archive and were removed as the same picture as
+another file: the same bytes, or a smaller export of it
+([archive README](archive/README.md#removed-duplicates)). Code that read
+one reads the kept file.
+
+| Old path | Kept file |
+|---|---|
+| `assets/cards/aki-celebrate.png` | `aki/happy.png` |
+| `assets/cards/aki-freeze.png` | `aki/freeze.png` |
+| `assets/cards/aki-streak.png` | `aki/streak.png` |
+| `assets/cards/aki-winner.png` | `aki/winner.png` |
+| `assets/cards/ankilope-celebrate.png` | `ankilope/happy.png` |
+| `static/anki-tan/archive/addon/anki_tan_neglected-three-blue-stars.png` | `archive/anki-tan/neglected-three-blue-stars.png` |
+| `static/anki-tan/archive/addon/anki_tan_sleeping.png` | `anki-tan/asleep.png` |
+| `static/anki-tan/archive/asleep-full.png` | `anki-tan/asleep.png` |
+| `static/anki-tan/archive/sad-full.png` | `anki-tan/sad.png` |
+| `static/anki-tan/generated/frozen-chibi.png` | `anki-tan/chibi/frozen.png` |
+| `static/anki-tan/generated/frozen-full.png` | `anki-tan/frozen.png` |
+| `static/cow/archive/addon/bluma_celebrate.png` | `cow/happy.png` |
+| `static/cow/archive/addon/bluma_sleeping.png` | `cow/asleep.png` |
+| `static/cow/archive/celebrate.png` | `cow/happy.png` |
+| `static/cow/archive/face.png` | `cow/face.png` |
+| `static/cow/archive/frozen.png` | `cow/frozen.png` |
+| `static/cow/archive/hopeful.png` | `cow/hopeful.png` |
+| `static/cow/archive/neglected.png` | `cow/neglected.png` |
+| `static/cow/archive/sad.png` | `cow/sad.png` |
+| `static/cow/archive/sleeping.png` | `cow/asleep.png` |
+| `static/cow/archive/streak.png` | `cow/streak.png` |
+
+`static/anki-tan/generated/README.md` and `static/cow/archive/README.md`
+described only those copies; their records are in the
+[archive README](archive/README.md), [cow/README.md](cow/README.md) and
+[anki-tan/README.md](anki-tan/README.md).
 
 ## Deleted
 

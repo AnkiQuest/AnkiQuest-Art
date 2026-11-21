@@ -40,6 +40,8 @@ masters and the `celebrate`/`sleeping` exports remain byte-identical in
 `static/cow/archive/`, outside the app package. The exports' archived paths
 are marked retired in the export manifest. The canonical
 paths contain exact copies of the same generated art, without processing.
+AnkiQuest-Art later removed those archived copies as duplicates of the
+masters ([archive README](../../archive/README.md#removed-duplicates)).
 
 The existing Rust exporters produced canonical 256 px add-on PNGs and
 1024 px Android WebPs on Linux in
