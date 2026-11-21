@@ -1,16 +1,24 @@
 # Archive
 
-Pictures that are no longer masters and are not a copy of one. Nothing
-here is exported to a client.
+Pictures that are no longer masters and are not a copy of one, and
+pictures nothing uses (hill, 2026-11-21: outside the archive only what
+is used). Nothing here is exported to a client.
 
 - `aki/`, `ankilope/`: earlier versions of Aki's and Ankilope's masters,
   replaced in AnkiQuest-Server before the split; see their READMEs.
 - `anki-tan/`: Anki-tan's neglected pose before one headband star was
-  unlit; see its README. CC BY-SA 4.0 under its LICENSE.
+  unlit, and the generated chibi frozen bust; see its README. CC BY-SA 4.0 under its LICENSE.
 - `anki-tan-pack/`: the rest of Shigeyuki's Anki-tan asset pack; see its
   README. CC BY-SA 4.0 under its LICENSE.
 
 ## Removed duplicates
+
+On 2026-11-21 five chibi masters that had the same bytes as an Anki-tan
+launcher icon or pack file went: `anki-tan/chibi/sad.png`
+(`anki-tan/icon_worried.png`), `chibi/asleep.png` (`icon_sleepy.png`),
+`chibi/streak.png` (`icon_happy.png`, was `icon_fire.png`),
+`chibi/hurt.png` and `chibi/dead.png` (pack `emoji/Ankitan_28_spiral_eyes.png`
+and `emoji/Ankitan_39_crossed_out_eyes.png`, here).
 
 Each file below was the same picture as the file it maps to: the same
 bytes, or the same picture at a smaller size (an export). The kept file

@@ -18,3 +18,13 @@ Generation and cleanup records are in
 [the pose documentation](../../docs/ankitan-full-2026-11/README.md).
 The copies that were here before are listed in
 [../README.md](../README.md#removed-duplicates).
+
+## Chibi frozen bust
+
+`chibi/frozen-bust.png` was `anki-tan/chibi/frozen.png` (AnkiQuest-Server
+`static/anki-tan/generated/frozen-chibi.png`), generated with OpenAI
+`image_gen` (model identifier not exposed); record in
+[the core poses documentation](../../docs/core-poses-2026-11/README.md).
+It shows head and shoulders, and poses other than `face` are full body
+(hill, 2026-11-21), so chibi frozen is now `anki-tan/chibi/idle.png`.
+CC BY-SA 4.0 under [LICENSE](LICENSE).

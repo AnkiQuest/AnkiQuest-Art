@@ -19,11 +19,12 @@ time, so no code repository checks in art.
 | `duo/` | Pictures of more than one companion: `friends.png`, Aki and Ankilope. |
 | `archive/` | Pictures that are no longer masters; never exported ([README](archive/README.md)). |
 | `docs/` | Generation records, prompts, measurements and review sheets. |
-| `manifest.json` | Every master (companion, pose, kind, file, licence, origin and author), the core poses still missing, and what the archive holds. |
+| `manifest.json` | Every master (companion, pose, kind, framing, file, licence, origin and author), the core poses still missing, and what the archive holds. |
 | `RENAMES.md` | Where each file of AnkiQuest-Server's `static/` art is now. |
+| `tools/art-check/` | The check of `manifest.json`: every picture outside `archive/` is used, and `face` and launcher icons are headshots while every other master is full body (`cargo run --manifest-path tools/art-check/Cargo.toml -- .`). |
 
-A master is `<companion>/<pose>.png`, one file per pose, a transparent
-PNG. Pose names and their fallbacks come from
+A master is `<companion>/<pose>.png`, a transparent PNG. Pose names and
+their fallbacks come from
 [`tests/fixtures/companion_poses.json`](https://github.com/AnkiQuest/AnkiQuest-Server/blob/master/tests/fixtures/companion_poses.json)
 in AnkiQuest-Server, which the clients pin; this repository does not copy
 it. Files with other names (`achievement.png`, `icon_happy.png`,
@@ -32,6 +33,20 @@ it. Files with other names (`achievement.png`, `icon_happy.png`,
 pack files (`shigeyuki`, with their path in the pack) from art AnkiQuest
 made: derivatives of his Anki-tan (`derivative`) and AnkiQuest's own
 companions (`ankiquest`).
+
+Two rules (hill, 2026-11-21), checked by `tools/art-check`:
+
+- A picture is outside `archive/` only if something uses it: it is a
+  pose master, a launcher icon or a moment picture an exporter exports.
+  Everything else is in `archive/`.
+- `face` and the launcher icons (`icon`, `icon_mono`, `icon_happy`,
+  `icon_worried`, `icon_frozen`, `icon_sleepy`) are headshots of the
+  face; every other master shows the full body. `framing` in the
+  manifest records it.
+
+Where one picture shows several poses, their manifest entries name the
+same file instead of copies: `anki-tan/chibi/idle.png` is ten of Anki-tan
+chibi's poses.
 
 Nothing here is generated: smaller sizes and other copies are made by the
 code repositories' exporters and are not committed here.
@@ -42,10 +57,10 @@ code repositories' exporters and are not committed here.
 git submodule add https://github.com/AnkiQuest/AnkiQuest-Art art
 ```
 
-The exporters read `art/<companion>/<pose>.png`, or `art/manifest.json`
-to find every master without walking the tree. A new or changed master
-lands here first; a code repository picks it up by moving its submodule
-to the new commit.
+The exporters read `art/manifest.json` to find each pose's file; most
+are `art/<companion>/<pose>.png`. A new or changed master lands here
+first; a code repository picks it up by moving its submodule to the new
+commit.
 
 ## The matrix
 
