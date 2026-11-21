@@ -1,10 +1,10 @@
 # Anki-tan chibi
 
-Masters for companion id `anki_tan_chibi`, one file per pose; the table
-in [../README.md](../README.md) gives each file's source.
-
-`frozen.png` is generated with OpenAI `image_gen` (model identifier not
-exposed). The others are files from Shigeyuki's pack.
+Masters for companion id `anki_tan_chibi`; the table in
+[../README.md](../README.md) gives each pose's file and source. All three
+files are from Shigeyuki's pack, unchanged: `face.png` (emoji smile),
+`happy.png` (waving sprite frame) and `idle.png` (neutral sprite frame,
+shown for ten poses).
 
 CC BY-SA 4.0 under [LICENSE](../LICENSE).
 Anki-tan by Shigeyuki (https://www.patreon.com/Shigeyuki).

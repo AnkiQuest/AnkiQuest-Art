@@ -1,0 +1,26 @@
+# Checks the masters in manifest.json: every picture outside archive/ is
+# used (a pose, a launcher icon or an exported moment picture), and face
+# and launcher icons are headshots while everything else is full body.
+name: Art check
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+  merge_group:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  art-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test the check
+        run: cargo test --manifest-path tools/art-check/Cargo.toml
+      - name: Check the masters
+        run: cargo run --manifest-path tools/art-check/Cargo.toml -- .

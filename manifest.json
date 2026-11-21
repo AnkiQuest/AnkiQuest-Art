@@ -1,5 +1,5 @@
 {
-  "_about": "Every master in this repository: one file per companion and pose. kind is core or extension for poses in AnkiQuest-Server tests/fixtures/companion_poses.json, picture for other per-companion art (moment, notification and icon pictures). origin is shigeyuki for a file of Shigeyuki's Anki-tan asset pack v1.0, unchanged (pack is its path in the pack), derivative for art AnkiQuest made from his Anki-tan, ankiquest for AnkiQuest's own companions; author is who to credit. framing is full_body, bust (head and shoulders or waist up) or headshot (the head only); face and the launcher icons are headshots and every other master is full_body (AGENTS.md, Companion art), checked by tools/framing. shared lists pictures of more than one companion. missing lists the core poses a companion has no master for yet, tracked in AnkiQuest-Server#57; extensions without a master show their fallback and are not listed. archive lists what archive/ holds, which is never exported: retired pictures one by one, with the master that replaced them and, where known, the source commit and path they came from, and the rest of Shigeyuki's pack by folder.",
+  "_about": "Every master in this repository: one entry per companion and pose; several poses may name the same file. A picture is outside archive/ only if something uses it: a pose, a launcher icon or an exported moment picture (hill, 2026-11-21). kind is core or extension for poses in AnkiQuest-Server tests/fixtures/companion_poses.json, picture for other per-companion art (moment, notification and icon pictures). origin is shigeyuki for a file of Shigeyuki's Anki-tan asset pack v1.0, unchanged (pack is its path in the pack), derivative for art AnkiQuest made from his Anki-tan, ankiquest for AnkiQuest's own companions; author is who to credit. framing is full_body, bust (head and shoulders or waist up) or headshot (the head only); face and the launcher icons are headshots and every other master is full_body (AGENTS.md, Companion art), checked with use by tools/art-check. shared lists pictures of more than one companion. missing lists the core poses a companion has no master for yet, tracked in AnkiQuest-Server#57; extensions without a master show their fallback and are not listed. archive lists what archive/ holds, which is never exported: retired pictures one by one, with the master that replaced them and, where known, the source commit and path they came from, and the rest of Shigeyuki's pack by folder.",
   "masters": [
     {
       "companion": "aki",
@@ -383,6 +383,16 @@
     },
     {
       "companion": "anki_tan",
+      "pose": "face",
+      "kind": "core",
+      "framing": "headshot",
+      "file": "anki-tan/face.png",
+      "licence": "CC-BY-SA-4.0",
+      "origin": "derivative",
+      "author": "AnkiQuest, after Shigeyuki"
+    },
+    {
+      "companion": "anki_tan",
       "pose": "frozen",
       "kind": "core",
       "framing": "full_body",
@@ -415,80 +425,14 @@
     },
     {
       "companion": "anki_tan",
-      "pose": "icon_dead",
-      "kind": "picture",
-      "framing": "headshot",
-      "file": "anki-tan/icon_dead.png",
-      "licence": "CC-BY-SA-4.0",
-      "origin": "shigeyuki",
-      "author": "Shigeyuki",
-      "pack": "emoji/Ankitan_39_crossed_out_eyes.png"
-    },
-    {
-      "companion": "anki_tan",
-      "pose": "icon_fire",
-      "kind": "picture",
-      "framing": "headshot",
-      "file": "anki-tan/icon_fire.png",
-      "licence": "CC-BY-SA-4.0",
-      "origin": "shigeyuki",
-      "author": "Shigeyuki",
-      "pack": "emoji/Ankitan_09_fire_eyes.png"
-    },
-    {
-      "companion": "anki_tan",
       "pose": "icon_happy",
       "kind": "picture",
-      "framing": "bust",
+      "framing": "headshot",
       "file": "anki-tan/icon_happy.png",
       "licence": "CC-BY-SA-4.0",
       "origin": "shigeyuki",
       "author": "Shigeyuki",
-      "pack": "sticker/anki_tan_good.png"
-    },
-    {
-      "companion": "anki_tan",
-      "pose": "icon_hello",
-      "kind": "picture",
-      "framing": "bust",
-      "file": "anki-tan/icon_hello.png",
-      "licence": "CC-BY-SA-4.0",
-      "origin": "shigeyuki",
-      "author": "Shigeyuki",
-      "pack": "sticker/anki_tan_hello.png"
-    },
-    {
-      "companion": "anki_tan",
-      "pose": "icon_hurt",
-      "kind": "picture",
-      "framing": "headshot",
-      "file": "anki-tan/icon_hurt.png",
-      "licence": "CC-BY-SA-4.0",
-      "origin": "shigeyuki",
-      "author": "Shigeyuki",
-      "pack": "emoji/Ankitan_28_spiral_eyes.png"
-    },
-    {
-      "companion": "anki_tan",
-      "pose": "icon_mono",
-      "kind": "picture",
-      "framing": "headshot",
-      "file": "anki-tan/icon_mono.png",
-      "licence": "CC-BY-SA-4.0",
-      "origin": "shigeyuki",
-      "author": "Shigeyuki",
-      "pack": "emoji/Ankitan_00_smile.png"
-    },
-    {
-      "companion": "anki_tan",
-      "pose": "icon_review",
-      "kind": "picture",
-      "framing": "bust",
-      "file": "anki-tan/icon_review.png",
-      "licence": "CC-BY-SA-4.0",
-      "origin": "shigeyuki",
-      "author": "Shigeyuki",
-      "pack": "sticker/press_spacebar.png"
+      "pack": "emoji/Ankitan_09_fire_eyes.png"
     },
     {
       "companion": "anki_tan",
@@ -536,143 +480,133 @@
       "companion": "anki_tan_chibi",
       "pose": "asleep",
       "kind": "core",
-      "framing": "headshot",
-      "file": "anki-tan/chibi/asleep.png",
+      "framing": "full_body",
+      "file": "anki-tan/chibi/idle.png",
       "licence": "CC-BY-SA-4.0",
       "origin": "shigeyuki",
       "author": "Shigeyuki",
-      "pack": "emoji/Ankitan_35_sleeping.png"
+      "pack": "sprite/idle/anki-tan_idle_0013.png"
     },
     {
       "companion": "anki_tan_chibi",
       "pose": "dead",
       "kind": "extension",
-      "framing": "headshot",
-      "file": "anki-tan/chibi/dead.png",
+      "framing": "full_body",
+      "file": "anki-tan/chibi/idle.png",
       "licence": "CC-BY-SA-4.0",
       "origin": "shigeyuki",
       "author": "Shigeyuki",
-      "pack": "emoji/Ankitan_39_crossed_out_eyes.png"
+      "pack": "sprite/idle/anki-tan_idle_0013.png"
     },
     {
       "companion": "anki_tan_chibi",
       "pose": "face",
       "kind": "core",
-      "framing": "full_body",
+      "framing": "headshot",
       "file": "anki-tan/chibi/face.png",
       "licence": "CC-BY-SA-4.0",
       "origin": "shigeyuki",
       "author": "Shigeyuki",
-      "pack": "sprite/idle/anki-tan_idle_0001.png"
+      "pack": "emoji/Ankitan_00_smile.png"
     },
     {
       "companion": "anki_tan_chibi",
       "pose": "frozen",
       "kind": "core",
-      "framing": "bust",
-      "file": "anki-tan/chibi/frozen.png",
+      "framing": "full_body",
+      "file": "anki-tan/chibi/idle.png",
       "licence": "CC-BY-SA-4.0",
-      "origin": "derivative",
-      "author": "AnkiQuest, after Shigeyuki"
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "sprite/idle/anki-tan_idle_0013.png"
     },
     {
       "companion": "anki_tan_chibi",
       "pose": "happy",
       "kind": "core",
-      "framing": "headshot",
+      "framing": "full_body",
       "file": "anki-tan/chibi/happy.png",
       "licence": "CC-BY-SA-4.0",
       "origin": "shigeyuki",
       "author": "Shigeyuki",
-      "pack": "emoji/Ankitan_10_party.png"
+      "pack": "sprite/hello/anki-tan-hello_0006.png"
     },
     {
       "companion": "anki_tan_chibi",
       "pose": "hopeful",
       "kind": "core",
-      "framing": "headshot",
-      "file": "anki-tan/chibi/hopeful.png",
+      "framing": "full_body",
+      "file": "anki-tan/chibi/idle.png",
       "licence": "CC-BY-SA-4.0",
       "origin": "shigeyuki",
       "author": "Shigeyuki",
-      "pack": "emoji/Ankitan_06_pleading.png"
+      "pack": "sprite/idle/anki-tan_idle_0013.png"
     },
     {
       "companion": "anki_tan_chibi",
       "pose": "hurt",
       "kind": "extension",
-      "framing": "headshot",
-      "file": "anki-tan/chibi/hurt.png",
+      "framing": "full_body",
+      "file": "anki-tan/chibi/idle.png",
       "licence": "CC-BY-SA-4.0",
       "origin": "shigeyuki",
       "author": "Shigeyuki",
-      "pack": "emoji/Ankitan_28_spiral_eyes.png"
+      "pack": "sprite/idle/anki-tan_idle_0013.png"
     },
     {
       "companion": "anki_tan_chibi",
       "pose": "neglected",
       "kind": "core",
-      "framing": "headshot",
-      "file": "anki-tan/chibi/neglected.png",
+      "framing": "full_body",
+      "file": "anki-tan/chibi/idle.png",
       "licence": "CC-BY-SA-4.0",
       "origin": "shigeyuki",
       "author": "Shigeyuki",
-      "pack": "emoji/Ankitan_49_lost_streaks.png"
+      "pack": "sprite/idle/anki-tan_idle_0013.png"
     },
     {
       "companion": "anki_tan_chibi",
       "pose": "sad",
       "kind": "core",
-      "framing": "headshot",
-      "file": "anki-tan/chibi/sad.png",
+      "framing": "full_body",
+      "file": "anki-tan/chibi/idle.png",
       "licence": "CC-BY-SA-4.0",
       "origin": "shigeyuki",
       "author": "Shigeyuki",
-      "pack": "emoji/Ankitan_02_cry.png"
+      "pack": "sprite/idle/anki-tan_idle_0013.png"
     },
     {
       "companion": "anki_tan_chibi",
       "pose": "streak",
       "kind": "core",
-      "framing": "headshot",
-      "file": "anki-tan/chibi/streak.png",
+      "framing": "full_body",
+      "file": "anki-tan/chibi/idle.png",
       "licence": "CC-BY-SA-4.0",
       "origin": "shigeyuki",
       "author": "Shigeyuki",
-      "pack": "emoji/Ankitan_09_fire_eyes.png"
+      "pack": "sprite/idle/anki-tan_idle_0013.png"
     },
     {
       "companion": "anki_tan_chibi",
       "pose": "streak_legend",
       "kind": "extension",
-      "framing": "headshot",
-      "file": "anki-tan/chibi/streak_legend.png",
+      "framing": "full_body",
+      "file": "anki-tan/chibi/idle.png",
       "licence": "CC-BY-SA-4.0",
       "origin": "shigeyuki",
       "author": "Shigeyuki",
-      "pack": "emoji/Ankitan_43_crown.png"
+      "pack": "sprite/idle/anki-tan_idle_0013.png"
     },
     {
       "companion": "anki_tan_chibi",
       "pose": "streak_milestone",
       "kind": "extension",
-      "framing": "headshot",
-      "file": "anki-tan/chibi/streak_milestone.png",
+      "framing": "full_body",
+      "file": "anki-tan/chibi/idle.png",
       "licence": "CC-BY-SA-4.0",
       "origin": "shigeyuki",
       "author": "Shigeyuki",
-      "pack": "emoji/Ankitan_48_perfect_streaks.png"
-    },
-    {
-      "companion": "anki_tan_chibi",
-      "pose": "welcome",
-      "kind": "extension",
-      "framing": "headshot",
-      "file": "anki-tan/chibi/welcome.png",
-      "licence": "CC-BY-SA-4.0",
-      "origin": "shigeyuki",
-      "author": "Shigeyuki",
-      "pack": "emoji/Ankitan_21_saluting.png"
+      "pack": "sprite/idle/anki-tan_idle_0013.png"
     },
     {
       "companion": "ankilope",
@@ -947,11 +881,6 @@
     },
     {
       "companion": "anki_tan",
-      "pose": "face",
-      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
-    },
-    {
-      "companion": "anki_tan",
       "pose": "happy",
       "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
     },
@@ -1036,6 +965,16 @@
           "path": "static/ankilope/celebrate.png",
           "replaced_in": "10f8c020519ca6a1aba52742f9d205d34ac18590"
         }
+      },
+      {
+        "companion": "anki_tan_chibi",
+        "pose": "frozen",
+        "file": "archive/anki-tan/chibi/frozen-bust.png",
+        "replaced_by": "anki-tan/chibi/idle.png",
+        "note": "Head and shoulders in a blanket; poses other than face are full body (hill, 2026-11-21).",
+        "origin": "derivative",
+        "author": "AnkiQuest, after Shigeyuki",
+        "licence": "CC-BY-SA-4.0"
       }
     ],
     "pack": {

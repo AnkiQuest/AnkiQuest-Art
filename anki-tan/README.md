@@ -1,62 +1,71 @@
 # Anki-tan
 
 Anki-tan's masters, companion ids `anki_tan` (this folder) and
-`anki_tan_chibi` (`chibi/`), one file per pose. Licence and credit:
-[LICENSE](LICENSE) (CC BY-SA 4.0, by Shigeyuki).
+`anki_tan_chibi` (`chibi/`). Licence and credit: [LICENSE](LICENSE)
+(CC BY-SA 4.0, by Shigeyuki).
 
 Most masters are files from Shigeyuki's Anki-tan asset pack v1.0, moved
 here unchanged. The rest of the pack is in
 [`../archive/anki-tan-pack/`](../archive/anki-tan-pack/README.md).
 
-The two versions share no full-size pose (hill, 2026-11-21). The pack's
-emoji are the chibi head design and are chibi's poses. Regular Anki-tan's
-full-size poses are `asleep`, `sad`, `frozen`, `neglected` and `hopeful`;
-her other pictures are icons only. Head-only icons may repeat a chibi
-pose.
+The two versions share no full-size pose (hill, 2026-11-21). `face` and
+the launcher icons are headshots; every other pose is full body (hill,
+2026-11-21). The pack's emoji are the chibi head design: headshots, so
+they serve only as faces and launcher icons. hill chose these masters on
+2026-11-21:
 
 | Pose | Anki-tan | Anki-tan chibi |
 |---|---|---|
-| face | missing | pack `sprite/idle/anki-tan_idle_0001.png` |
-| asleep | generated | pack `emoji/Ankitan_35_sleeping.png` |
-| happy | missing | pack `emoji/Ankitan_10_party.png` |
-| streak | missing | pack `emoji/Ankitan_09_fire_eyes.png` |
-| sad | generated | pack `emoji/Ankitan_02_cry.png` |
-| hopeful | pack `sticker/ankitan_lets_study.png` | pack `emoji/Ankitan_06_pleading.png` |
-| frozen | generated | generated |
-| neglected | generated | pack `emoji/Ankitan_49_lost_streaks.png` |
-| welcome | falls back | pack `emoji/Ankitan_21_saluting.png` |
-| review | falls back | missing |
-| streak_legend | falls back | pack `emoji/Ankitan_43_crown.png` |
-| streak_milestone | falls back | pack `emoji/Ankitan_48_perfect_streaks.png` |
-| hurt | falls back | pack `emoji/Ankitan_28_spiral_eyes.png` |
-| dead | falls back | pack `emoji/Ankitan_39_crossed_out_eyes.png` |
+| face | `face.png`: pack `icon.png` with the app tile cut away (derivative) | `chibi/face.png`: pack `emoji/Ankitan_00_smile.png` |
+| asleep | generated | `chibi/idle.png` |
+| happy | missing | `chibi/happy.png`: pack `sprite/hello/anki-tan-hello_0006.png` (waving) |
+| streak | missing | `chibi/idle.png` |
+| sad | generated | `chibi/idle.png` |
+| hopeful | pack `sticker/ankitan_lets_study.png` | `chibi/idle.png` |
+| frozen | generated | `chibi/idle.png` |
+| neglected | generated | `chibi/idle.png` |
+| welcome | falls back | falls back |
+| review | falls back | falls back |
+| streak_legend | falls back | `chibi/idle.png` |
+| streak_milestone | falls back | `chibi/idle.png` |
+| hurt | falls back | `chibi/idle.png` |
+| dead | falls back | `chibi/idle.png` |
 
-Anki-tan's icons:
+`chibi/idle.png` is pack `sprite/idle/anki-tan_idle_0013.png`, the
+neutral standing chibi; `manifest.json` names it for each of those poses.
+
+Anki-tan's launcher icons (AnkiQuest-Server exports them as
+`anki_tan_icon*`):
 
 | Icon | Source |
 |---|---|
-| `icon.png` | pack app icon, the launcher icon's master |
-| `icon_mono.png` | pack `emoji/Ankitan_00_smile.png`, the monochrome (themed) launcher icon |
-| `icon_fire.png` | pack `emoji/Ankitan_09_fire_eyes.png`, the streak icon; was `streak.png` and the old `icon_happy.png` |
-| `icon_happy.png` | pack `sticker/anki_tan_good.png`; was `happy.png` |
+| `icon.png` | pack app icon, the launcher icon |
+| `icon_happy.png` | pack `emoji/Ankitan_09_fire_eyes.png`, the icon while today counts |
 | `icon_sleepy.png` | pack `emoji/Ankitan_35_sleeping.png` |
 | `icon_worried.png` | pack `emoji/Ankitan_02_cry.png` |
-| `icon_hello.png` | pack `sticker/anki_tan_hello.png`; was `welcome.png` |
-| `icon_review.png` | pack `sticker/press_spacebar.png`; was `review.png` |
-| `icon_dead.png` | pack `emoji/Ankitan_39_crossed_out_eyes.png`; was `dead.png` |
-| `icon_hurt.png` | pack `emoji/Ankitan_28_spiral_eyes.png`; was `hurt.png` |
 
-Anki-tan's `face`, `happy` and `streak` need drawing
-(AnkiQuest-Server#57); `manifest.json` lists them under `missing`. The
-sprite that was her face is the chibi design and is `chibi/face.png`.
-Her extensions show their fallbacks until drawn.
+The monochrome launcher icon is made from `chibi/face.png`.
+
+Anki-tan's `happy` and `streak` need drawing (AnkiQuest-Server#57);
+`manifest.json` lists them under `missing`. Her extensions show their
+fallbacks until drawn.
+
+## Face
+
+`face.png` is the pack's `icon.png` (256 px) with the rounded tile, its
+frame and the green grid behind her cut away by a hand-traced polygon
+mask (ImageMagick 6.9, 0.6 px blur on the mask edge). Her hair is cut
+straight where the tile cut it. Record: [docs/anki-tan-face-2026-11](../docs/anki-tan-face-2026-11/README.md).
+CC BY-SA 4.0 under [LICENSE](LICENSE). Credit: Anki-tan by Shigeyuki
+(https://www.patreon.com/Shigeyuki).
 
 ## Generated masters
 
-`asleep.png`, `sad.png`, `neglected.png`, `frozen.png` and
-`chibi/frozen.png` are derivatives of the pack, generated with OpenAI
-`image_gen` (model identifier not exposed). They are CC BY-SA 4.0 under
-[LICENSE](LICENSE). Credit: Anki-tan by Shigeyuki
-(https://www.patreon.com/Shigeyuki). Records:
+`asleep.png`, `sad.png`, `neglected.png` and `frozen.png` are derivatives
+of the pack, generated with OpenAI `image_gen` (model identifier not
+exposed). They are CC BY-SA 4.0 under [LICENSE](LICENSE). Credit:
+Anki-tan by Shigeyuki (https://www.patreon.com/Shigeyuki). Records:
 [core poses](../docs/core-poses-2026-11/README.md) and
-[full-size additions](../docs/ankitan-full-2026-11/README.md).
+[full-size additions](../docs/ankitan-full-2026-11/README.md). The
+generated chibi frozen bust is in
+[`../archive/anki-tan/chibi/`](../archive/anki-tan/README.md).
