@@ -1,0 +1,25 @@
+# Checks that every master's framing in manifest.json fits its pose:
+# face and launcher icons are headshots, everything else is full body.
+name: Framing
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+  merge_group:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  framing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test the check
+        run: cargo test --manifest-path tools/framing/Cargo.toml
+      - name: Check the masters
+        run: cargo run --manifest-path tools/framing/Cargo.toml -- manifest.json

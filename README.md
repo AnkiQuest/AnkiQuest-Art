@@ -19,8 +19,9 @@ time, so no code repository checks in art.
 | `duo/` | Pictures of more than one companion: `friends.png`, Aki and Ankilope. |
 | `archive/` | Pictures that are no longer masters; never exported ([README](archive/README.md)). |
 | `docs/` | Generation records, prompts, measurements and review sheets. |
-| `manifest.json` | Every master (companion, pose, kind, file, licence, origin and author), the core poses still missing, and what the archive holds. |
+| `manifest.json` | Every master (companion, pose, kind, framing, file, licence, origin and author), the core poses still missing, and what the archive holds. |
 | `RENAMES.md` | Where each file of AnkiQuest-Server's `static/` art is now. |
+| `tools/framing/` | The framing check: `face` and launcher icons are headshots, every other master is full body (`cargo run --manifest-path tools/framing/Cargo.toml -- manifest.json`). |
 
 A master is `<companion>/<pose>.png`, one file per pose, a transparent
 PNG. Pose names and their fallbacks come from
