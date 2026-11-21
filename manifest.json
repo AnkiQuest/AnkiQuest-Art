@@ -345,32 +345,12 @@
     },
     {
       "companion": "anki_tan",
-      "pose": "dead",
-      "kind": "extension",
-      "file": "anki-tan/dead.png",
-      "licence": "CC-BY-SA-4.0",
-      "origin": "shigeyuki",
-      "author": "Shigeyuki",
-      "pack": "emoji/Ankitan_39_crossed_out_eyes.png"
-    },
-    {
-      "companion": "anki_tan",
       "pose": "frozen",
       "kind": "core",
       "file": "anki-tan/frozen.png",
       "licence": "CC-BY-SA-4.0",
       "origin": "derivative",
       "author": "AnkiQuest, after Shigeyuki"
-    },
-    {
-      "companion": "anki_tan",
-      "pose": "happy",
-      "kind": "core",
-      "file": "anki-tan/happy.png",
-      "licence": "CC-BY-SA-4.0",
-      "origin": "shigeyuki",
-      "author": "Shigeyuki",
-      "pack": "sticker/anki_tan_good.png"
     },
     {
       "companion": "anki_tan",
@@ -384,16 +364,6 @@
     },
     {
       "companion": "anki_tan",
-      "pose": "hurt",
-      "kind": "extension",
-      "file": "anki-tan/hurt.png",
-      "licence": "CC-BY-SA-4.0",
-      "origin": "shigeyuki",
-      "author": "Shigeyuki",
-      "pack": "emoji/Ankitan_28_spiral_eyes.png"
-    },
-    {
-      "companion": "anki_tan",
       "pose": "icon",
       "kind": "picture",
       "file": "anki-tan/icon.png",
@@ -404,13 +374,53 @@
     },
     {
       "companion": "anki_tan",
+      "pose": "icon_dead",
+      "kind": "picture",
+      "file": "anki-tan/icon_dead.png",
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "emoji/Ankitan_39_crossed_out_eyes.png"
+    },
+    {
+      "companion": "anki_tan",
+      "pose": "icon_fire",
+      "kind": "picture",
+      "file": "anki-tan/icon_fire.png",
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "emoji/Ankitan_09_fire_eyes.png"
+    },
+    {
+      "companion": "anki_tan",
       "pose": "icon_happy",
       "kind": "picture",
       "file": "anki-tan/icon_happy.png",
       "licence": "CC-BY-SA-4.0",
       "origin": "shigeyuki",
       "author": "Shigeyuki",
-      "pack": "emoji/Ankitan_09_fire_eyes.png"
+      "pack": "sticker/anki_tan_good.png"
+    },
+    {
+      "companion": "anki_tan",
+      "pose": "icon_hello",
+      "kind": "picture",
+      "file": "anki-tan/icon_hello.png",
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "sticker/anki_tan_hello.png"
+    },
+    {
+      "companion": "anki_tan",
+      "pose": "icon_hurt",
+      "kind": "picture",
+      "file": "anki-tan/icon_hurt.png",
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "emoji/Ankitan_28_spiral_eyes.png"
     },
     {
       "companion": "anki_tan",
@@ -421,6 +431,16 @@
       "origin": "shigeyuki",
       "author": "Shigeyuki",
       "pack": "emoji/Ankitan_00_smile.png"
+    },
+    {
+      "companion": "anki_tan",
+      "pose": "icon_review",
+      "kind": "picture",
+      "file": "anki-tan/icon_review.png",
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "sticker/press_spacebar.png"
     },
     {
       "companion": "anki_tan",
@@ -453,62 +473,12 @@
     },
     {
       "companion": "anki_tan",
-      "pose": "review",
-      "kind": "extension",
-      "file": "anki-tan/review.png",
-      "licence": "CC-BY-SA-4.0",
-      "origin": "shigeyuki",
-      "author": "Shigeyuki",
-      "pack": "sticker/press_spacebar.png"
-    },
-    {
-      "companion": "anki_tan",
       "pose": "sad",
       "kind": "core",
       "file": "anki-tan/sad.png",
       "licence": "CC-BY-SA-4.0",
       "origin": "derivative",
       "author": "AnkiQuest, after Shigeyuki"
-    },
-    {
-      "companion": "anki_tan",
-      "pose": "streak",
-      "kind": "core",
-      "file": "anki-tan/streak.png",
-      "licence": "CC-BY-SA-4.0",
-      "origin": "shigeyuki",
-      "author": "Shigeyuki",
-      "pack": "emoji/Ankitan_09_fire_eyes.png"
-    },
-    {
-      "companion": "anki_tan",
-      "pose": "streak_legend",
-      "kind": "extension",
-      "file": "anki-tan/streak_legend.png",
-      "licence": "CC-BY-SA-4.0",
-      "origin": "shigeyuki",
-      "author": "Shigeyuki",
-      "pack": "emoji/Ankitan_43_crown.png"
-    },
-    {
-      "companion": "anki_tan",
-      "pose": "streak_milestone",
-      "kind": "extension",
-      "file": "anki-tan/streak_milestone.png",
-      "licence": "CC-BY-SA-4.0",
-      "origin": "shigeyuki",
-      "author": "Shigeyuki",
-      "pack": "emoji/Ankitan_48_perfect_streaks.png"
-    },
-    {
-      "companion": "anki_tan",
-      "pose": "welcome",
-      "kind": "extension",
-      "file": "anki-tan/welcome.png",
-      "licence": "CC-BY-SA-4.0",
-      "origin": "shigeyuki",
-      "author": "Shigeyuki",
-      "pack": "sticker/anki_tan_hello.png"
     },
     {
       "companion": "anki_tan_chibi",
@@ -588,16 +558,6 @@
       "origin": "shigeyuki",
       "author": "Shigeyuki",
       "pack": "emoji/Ankitan_49_lost_streaks.png"
-    },
-    {
-      "companion": "anki_tan_chibi",
-      "pose": "review",
-      "kind": "extension",
-      "file": "anki-tan/chibi/review.png",
-      "licence": "CC-BY-SA-4.0",
-      "origin": "shigeyuki",
-      "author": "Shigeyuki",
-      "pack": "sticker/press_spacebar.png"
     },
     {
       "companion": "anki_tan_chibi",
@@ -897,6 +857,16 @@
     {
       "companion": "anki_tan",
       "pose": "face",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "anki_tan",
+      "pose": "happy",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "anki_tan",
+      "pose": "streak",
       "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
     }
   ],

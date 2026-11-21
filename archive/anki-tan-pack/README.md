@@ -16,15 +16,15 @@ Files moved out to be masters, unchanged:
 | Pack file | Master |
 |---|---|
 | `sprite/idle/anki-tan_idle_0001.png` | `anki-tan/chibi/face.png` |
-| `sticker/anki_tan_good.png` | `anki-tan/happy.png` |
+| `sticker/anki_tan_good.png` | `anki-tan/icon_happy.png` |
 | `sticker/ankitan_lets_study.png` | `anki-tan/hopeful.png` |
-| `sticker/anki_tan_hello.png` | `anki-tan/welcome.png` |
-| `sticker/press_spacebar.png` | `anki-tan/review.png` |
-| `emoji/Ankitan_09_fire_eyes.png` | `anki-tan/streak.png` |
-| `emoji/Ankitan_43_crown.png` | `anki-tan/streak_legend.png` |
-| `emoji/Ankitan_48_perfect_streaks.png` | `anki-tan/streak_milestone.png` |
-| `emoji/Ankitan_28_spiral_eyes.png` | `anki-tan/hurt.png` |
-| `emoji/Ankitan_39_crossed_out_eyes.png` | `anki-tan/dead.png` |
+| `sticker/anki_tan_hello.png` | `anki-tan/icon_hello.png` |
+| `sticker/press_spacebar.png` | `anki-tan/icon_review.png` |
+| `emoji/Ankitan_09_fire_eyes.png` | `anki-tan/chibi/streak.png` |
+| `emoji/Ankitan_43_crown.png` | `anki-tan/chibi/streak_legend.png` |
+| `emoji/Ankitan_48_perfect_streaks.png` | `anki-tan/chibi/streak_milestone.png` |
+| `emoji/Ankitan_28_spiral_eyes.png` | `anki-tan/chibi/hurt.png` |
+| `emoji/Ankitan_39_crossed_out_eyes.png` | `anki-tan/chibi/dead.png` |
 | `emoji/Ankitan_00_smile.png` | `anki-tan/icon_mono.png` |
 | `emoji/Ankitan_35_sleeping.png` | `anki-tan/chibi/asleep.png` |
 | `emoji/Ankitan_10_party.png` | `anki-tan/chibi/happy.png` |
