@@ -15,7 +15,7 @@ edited: each one has the same bytes as before.
 |---|---|
 | `static/aki/celebrate.png` | `aki/happy.png` |
 | `static/aki/leech.png` | `aki/leech_defeated.png` |
-| `static/anki-tan/emoji/Ankitan_00_smile.png` | `anki-tan/chibi/face.png` |
+| `static/anki-tan/emoji/Ankitan_00_smile.png` | `anki-tan/icon_mono.png` |
 | `static/anki-tan/emoji/Ankitan_02_cry.png` | `anki-tan/chibi/sad.png` |
 | `static/anki-tan/emoji/Ankitan_06_pleading.png` | `anki-tan/chibi/hopeful.png` |
 | `static/anki-tan/emoji/Ankitan_09_fire_eyes.png` | `anki-tan/streak.png` |
@@ -27,7 +27,7 @@ edited: each one has the same bytes as before.
 | `static/anki-tan/emoji/Ankitan_43_crown.png` | `anki-tan/streak_legend.png` |
 | `static/anki-tan/emoji/Ankitan_48_perfect_streaks.png` | `anki-tan/streak_milestone.png` |
 | `static/anki-tan/emoji/Ankitan_49_lost_streaks.png` | `anki-tan/chibi/neglected.png` |
-| `static/anki-tan/sprite/idle/anki-tan_idle_0001.png` | `anki-tan/face.png` |
+| `static/anki-tan/sprite/idle/anki-tan_idle_0001.png` | `anki-tan/chibi/face.png` |
 | `static/anki-tan/sticker/anki_tan_good.png` | `anki-tan/happy.png` |
 | `static/anki-tan/sticker/anki_tan_hello.png` | `anki-tan/welcome.png` |
 | `static/anki-tan/sticker/ankitan_lets_study.png` | `anki-tan/hopeful.png` |
@@ -44,7 +44,13 @@ the rest: `emoji/Ankitan_09_fire_eyes.png` (icon_happy) is
 `anki-tan/streak.png`, `emoji/Ankitan_02_cry.png` (icon_worried) is
 `anki-tan/chibi/sad.png`, `emoji/Ankitan_35_sleeping.png` (icon_sleepy)
 is `anki-tan/chibi/asleep.png`, `emoji/Ankitan_00_smile.png` (icon_mono)
-is `anki-tan/chibi/face.png`.
+is `anki-tan/icon_mono.png`.
+
+Anki-tan has no `face` master: `sprite/idle/anki-tan_idle_0001.png`, her
+face in AnkiQuest-Server, is the chibi design and is Anki-tan chibi's
+face (hill, 2026-11-21). An exporter that made `anki_tan_face` from it
+has no master for regular Anki-tan until her face is drawn
+(AnkiQuest-Server#57).
 
 ## Moved to the archive
 

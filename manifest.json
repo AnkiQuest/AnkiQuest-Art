@@ -1,5 +1,5 @@
 {
-  "_about": "Every master in this repository: one file per companion and pose. kind is core or extension for poses in AnkiQuest-Server tests/fixtures/companion_poses.json, picture for other per-companion art (moment, notification and icon pictures). shared lists pictures of more than one companion. The archive is not listed: it is never exported.",
+  "_about": "Every master in this repository: one file per companion and pose. kind is core or extension for poses in AnkiQuest-Server tests/fixtures/companion_poses.json, picture for other per-companion art (moment, notification and icon pictures). shared lists pictures of more than one companion. The archive is not listed: it is never exported. missing lists the core poses a companion has no master for yet, tracked in AnkiQuest-Server#57; extensions without a master show their fallback and are not listed.",
   "masters": [
     {
       "companion": "aki",
@@ -451,13 +451,6 @@
     },
     {
       "companion": "anki_tan",
-      "pose": "face",
-      "kind": "core",
-      "file": "anki-tan/face.png",
-      "licence": "CC-BY-SA-4.0"
-    },
-    {
-      "companion": "anki_tan",
       "pose": "frozen",
       "kind": "core",
       "file": "anki-tan/frozen.png",
@@ -489,6 +482,13 @@
       "pose": "icon",
       "kind": "picture",
       "file": "anki-tan/icon.png",
+      "licence": "CC-BY-SA-4.0"
+    },
+    {
+      "companion": "anki_tan",
+      "pose": "icon_mono",
+      "kind": "picture",
+      "file": "anki-tan/icon_mono.png",
       "licence": "CC-BY-SA-4.0"
     },
     {
@@ -648,6 +648,18 @@
       ],
       "file": "duo/friends.png",
       "licence": "AGPL-3.0-or-later"
+    }
+  ],
+  "missing": [
+    {
+      "companion": "ankilope",
+      "pose": "streak",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "anki_tan",
+      "pose": "face",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
     }
   ]
 }
