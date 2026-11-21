@@ -40,7 +40,9 @@ Anki-tan chibi uses the same pack file as Anki-tan for these poses, so
 read one of those pack files for the chibi reads `anki-tan/chibi/<pose>.png`.
 
 The pack files AnkiQuest-Server's Anki-tan launcher icons read map like
-the rest: `emoji/Ankitan_09_fire_eyes.png` (icon_happy) is
+the rest, and each mood icon also has its own master (`anki-tan/icon_happy.png`,
+`icon_worried.png`, `icon_sleepy.png`, byte copies of the pose pictures named
+below): `emoji/Ankitan_09_fire_eyes.png` (icon_happy) is
 `anki-tan/streak.png`, `emoji/Ankitan_02_cry.png` (icon_worried) is
 `anki-tan/chibi/sad.png`, `emoji/Ankitan_35_sleeping.png` (icon_sleepy)
 is `anki-tan/chibi/asleep.png`, `emoji/Ankitan_00_smile.png` (icon_mono)
