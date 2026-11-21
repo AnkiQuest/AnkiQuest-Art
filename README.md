@@ -19,7 +19,7 @@ time, so no code repository checks in art.
 | `duo/` | Pictures of more than one companion: `friends.png`, Aki and Ankilope. |
 | `archive/` | Pictures that are no longer masters; never exported ([README](archive/README.md)). |
 | `docs/` | Generation records, prompts, measurements and review sheets. |
-| `manifest.json` | Every master: companion, pose, kind, file and licence. |
+| `manifest.json` | Every master (companion, pose, kind, file, licence, origin and author), the core poses still missing, and what the archive holds. |
 | `RENAMES.md` | Where each file of AnkiQuest-Server's `static/` art is now. |
 
 A master is `<companion>/<pose>.png`, one file per pose, a transparent
@@ -28,7 +28,10 @@ PNG. Pose names and their fallbacks come from
 in AnkiQuest-Server, which the clients pin; this repository does not copy
 it. Files with other names (`achievement.png`, `icon_happy.png`,
 `place_1.png` and so on) are moment, notification and icon pictures;
-`manifest.json` marks them `picture`.
+`manifest.json` marks them `picture`. Its `origin` tells Shigeyuki's
+pack files (`shigeyuki`, with their path in the pack) from art AnkiQuest
+made: derivatives of his Anki-tan (`derivative`) and AnkiQuest's own
+companions (`ankiquest`).
 
 Nothing here is generated: smaller sizes and other copies are made by the
 code repositories' exporters and are not committed here.

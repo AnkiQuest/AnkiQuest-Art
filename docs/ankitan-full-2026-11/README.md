@@ -49,7 +49,8 @@ hill requested one unlit headband star for neglected, two for abandoned and
 three for dead in [#88](https://github.com/AnkiQuest/AnkiQuest-Desktop/issues/88#issuecomment-6920200927).
 Aldana approved the revised neglected image on 2026-11-16. Only neglected
 changes here; the other two poses remain future work. The earlier neglected
-master stays byte for byte in `static/anki-tan/archive/neglected-full.png`.
+master stays byte for byte in `static/anki-tan/archive/neglected-full.png`,
+now `archive/anki-tan/neglected-three-blue-stars.png` in AnkiQuest-Art.
 [The edit record](neglected-revision.json) contains the prompt, model
 disclosure, hashes and cleanup measurements. The new master was inspected
 at full size and 64 px on light and dark backgrounds. Canonical
@@ -61,6 +62,9 @@ The asleep export is now `anki_tan_asleep`. Its PNG is the byte-identical
 Linux export formerly named `anki_tan_sleeping`, which is preserved under
 `static/anki-tan/archive/addon/` and remains recorded in the retired manifest.
 It is excluded from the app package. No existing artwork was overwritten.
+AnkiQuest-Art later removed both archived add-on exports and the
+byte-identical asleep and sad copies as duplicates
+([archive README](../../archive/README.md#removed-duplicates)).
 
 The inventory uses canonical paths, without an exporter-registration
 fallback. Its regression still checks the same full-size poses and chibi

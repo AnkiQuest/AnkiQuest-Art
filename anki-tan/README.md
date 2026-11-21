@@ -11,7 +11,7 @@ both versions use the same pack file, `chibi/` has a byte-identical copy.
 
 | Pose | Anki-tan | Anki-tan chibi |
 |---|---|---|
-| face | pack `sprite/idle/anki-tan_idle_0001.png` | pack `emoji/Ankitan_00_smile.png` |
+| face | missing | pack `sprite/idle/anki-tan_idle_0001.png` |
 | asleep | generated | pack `emoji/Ankitan_35_sleeping.png` |
 | happy | pack `sticker/anki_tan_good.png` | pack `emoji/Ankitan_10_party.png` |
 | streak | pack `emoji/Ankitan_09_fire_eyes.png` | same file |
@@ -27,6 +27,14 @@ both versions use the same pack file, `chibi/` has a byte-identical copy.
 | dead | pack `emoji/Ankitan_39_crossed_out_eyes.png` | same file |
 
 `icon.png` is the pack's app icon, the launcher icon's master.
+`icon_mono.png` is the pack's `emoji/Ankitan_00_smile.png`, the master of
+the monochrome (themed) launcher icon; it was Anki-tan chibi's face
+until hill identified the sprite as the chibi design (2026-11-21).
+
+Anki-tan has no `face` master: the pack sprite that was her face is the
+chibi design and is now `chibi/face.png` (hill, 2026-11-21). Her face
+needs drawing (AnkiQuest-Server#57); `manifest.json` lists it under
+`missing`.
 
 Missing extensions (`streak_hot`, `streak_blazing`, `frozen_2`,
 `frozen_3`, `abandoned`, `leech_defeated`, `winner`) show their fallbacks

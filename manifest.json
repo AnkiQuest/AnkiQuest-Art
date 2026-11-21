@@ -1,663 +1,878 @@
 {
-  "_about": "Every master in this repository: one file per companion and pose. kind is core or extension for poses in AnkiQuest-Server tests/fixtures/companion_poses.json, picture for other per-companion art (moment, notification and icon pictures). shared lists pictures of more than one companion. The archive is not listed: it is never exported.",
+  "_about": "Every master in this repository: one file per companion and pose. kind is core or extension for poses in AnkiQuest-Server tests/fixtures/companion_poses.json, picture for other per-companion art (moment, notification and icon pictures). origin is shigeyuki for a file of Shigeyuki's Anki-tan asset pack v1.0, unchanged (pack is its path in the pack), derivative for art AnkiQuest made from his Anki-tan, ankiquest for AnkiQuest's own companions; author is who to credit. shared lists pictures of more than one companion. missing lists the core poses a companion has no master for yet, tracked in AnkiQuest-Server#57; extensions without a master show their fallback and are not listed. archive lists what archive/ holds, which is never exported: retired pictures one by one, with the master that replaced them, and the rest of Shigeyuki's pack by folder.",
   "masters": [
     {
       "companion": "aki",
       "pose": "achievement",
       "kind": "picture",
       "file": "aki/achievement.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "asleep",
       "kind": "core",
       "file": "aki/asleep.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "at_risk",
       "kind": "picture",
       "file": "aki/at_risk.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "backlog",
       "kind": "picture",
       "file": "aki/backlog.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "challenge",
       "kind": "picture",
       "file": "aki/challenge.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "challenge_lost",
       "kind": "picture",
       "file": "aki/challenge_lost.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "challenge_won",
       "kind": "picture",
       "file": "aki/challenge_won.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "comeback",
       "kind": "picture",
       "file": "aki/comeback.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "deck_conquered",
       "kind": "picture",
       "file": "aki/deck_conquered.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "face",
       "kind": "core",
       "file": "aki/face.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "freeze",
       "kind": "picture",
       "file": "aki/freeze.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "freeze_used",
       "kind": "picture",
       "file": "aki/freeze_used.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "frozen",
       "kind": "core",
       "file": "aki/frozen.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "goal",
       "kind": "picture",
       "file": "aki/goal.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "happy",
       "kind": "core",
       "file": "aki/happy.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "hopeful",
       "kind": "core",
       "file": "aki/hopeful.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "icon_frozen",
       "kind": "picture",
       "file": "aki/icon_frozen.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "icon_happy",
       "kind": "picture",
       "file": "aki/icon_happy.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "icon_sleepy",
       "kind": "picture",
       "file": "aki/icon_sleepy.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "icon_worried",
       "kind": "picture",
       "file": "aki/icon_worried.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "leech_defeated",
       "kind": "extension",
       "file": "aki/leech_defeated.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "level_up",
       "kind": "picture",
       "file": "aki/level_up.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "minimum",
       "kind": "picture",
       "file": "aki/minimum.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "neglected",
       "kind": "core",
       "file": "aki/neglected.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "nudge",
       "kind": "picture",
       "file": "aki/nudge.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "place_1",
       "kind": "picture",
       "file": "aki/place_1.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "place_2",
       "kind": "picture",
       "file": "aki/place_2.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "place_3",
       "kind": "picture",
       "file": "aki/place_3.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "review",
       "kind": "extension",
       "file": "aki/review.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "sad",
       "kind": "core",
       "file": "aki/sad.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "streak",
       "kind": "core",
       "file": "aki/streak.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "streak_blazing",
       "kind": "extension",
       "file": "aki/streak_blazing.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "streak_hot",
       "kind": "extension",
       "file": "aki/streak_hot.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "streak_legend",
       "kind": "extension",
       "file": "aki/streak_legend.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "streak_milestone",
       "kind": "extension",
       "file": "aki/streak_milestone.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "welcome",
       "kind": "extension",
       "file": "aki/welcome.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "aki",
       "pose": "winner",
       "kind": "extension",
       "file": "aki/winner.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "anki_tan",
       "pose": "asleep",
       "kind": "core",
       "file": "anki-tan/asleep.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "derivative",
+      "author": "AnkiQuest, after Shigeyuki"
     },
     {
       "companion": "anki_tan",
       "pose": "dead",
       "kind": "extension",
       "file": "anki-tan/dead.png",
-      "licence": "CC-BY-SA-4.0"
-    },
-    {
-      "companion": "anki_tan",
-      "pose": "face",
-      "kind": "core",
-      "file": "anki-tan/face.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "emoji/Ankitan_39_crossed_out_eyes.png"
     },
     {
       "companion": "anki_tan",
       "pose": "frozen",
       "kind": "core",
       "file": "anki-tan/frozen.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "derivative",
+      "author": "AnkiQuest, after Shigeyuki"
     },
     {
       "companion": "anki_tan",
       "pose": "happy",
       "kind": "core",
       "file": "anki-tan/happy.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "sticker/anki_tan_good.png"
     },
     {
       "companion": "anki_tan",
       "pose": "hopeful",
       "kind": "core",
       "file": "anki-tan/hopeful.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "sticker/ankitan_lets_study.png"
     },
     {
       "companion": "anki_tan",
       "pose": "hurt",
       "kind": "extension",
       "file": "anki-tan/hurt.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "emoji/Ankitan_28_spiral_eyes.png"
     },
     {
       "companion": "anki_tan",
       "pose": "icon",
       "kind": "picture",
       "file": "anki-tan/icon.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "icon.png"
     },
     {
       "companion": "anki_tan",
       "pose": "icon_happy",
       "kind": "picture",
       "file": "anki-tan/icon_happy.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "emoji/Ankitan_09_fire_eyes.png"
+    },
+    {
+      "companion": "anki_tan",
+      "pose": "icon_mono",
+      "kind": "picture",
+      "file": "anki-tan/icon_mono.png",
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "emoji/Ankitan_00_smile.png"
     },
     {
       "companion": "anki_tan",
       "pose": "icon_sleepy",
       "kind": "picture",
       "file": "anki-tan/icon_sleepy.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "emoji/Ankitan_35_sleeping.png"
     },
     {
       "companion": "anki_tan",
       "pose": "icon_worried",
       "kind": "picture",
       "file": "anki-tan/icon_worried.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "emoji/Ankitan_02_cry.png"
     },
     {
       "companion": "anki_tan",
       "pose": "neglected",
       "kind": "core",
       "file": "anki-tan/neglected.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "derivative",
+      "author": "AnkiQuest, after Shigeyuki"
     },
     {
       "companion": "anki_tan",
       "pose": "review",
       "kind": "extension",
       "file": "anki-tan/review.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "sticker/press_spacebar.png"
     },
     {
       "companion": "anki_tan",
       "pose": "sad",
       "kind": "core",
       "file": "anki-tan/sad.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "derivative",
+      "author": "AnkiQuest, after Shigeyuki"
     },
     {
       "companion": "anki_tan",
       "pose": "streak",
       "kind": "core",
       "file": "anki-tan/streak.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "emoji/Ankitan_09_fire_eyes.png"
     },
     {
       "companion": "anki_tan",
       "pose": "streak_legend",
       "kind": "extension",
       "file": "anki-tan/streak_legend.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "emoji/Ankitan_43_crown.png"
     },
     {
       "companion": "anki_tan",
       "pose": "streak_milestone",
       "kind": "extension",
       "file": "anki-tan/streak_milestone.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "emoji/Ankitan_48_perfect_streaks.png"
     },
     {
       "companion": "anki_tan",
       "pose": "welcome",
       "kind": "extension",
       "file": "anki-tan/welcome.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "sticker/anki_tan_hello.png"
     },
     {
       "companion": "anki_tan_chibi",
       "pose": "asleep",
       "kind": "core",
       "file": "anki-tan/chibi/asleep.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "emoji/Ankitan_35_sleeping.png"
     },
     {
       "companion": "anki_tan_chibi",
       "pose": "dead",
       "kind": "extension",
       "file": "anki-tan/chibi/dead.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "emoji/Ankitan_39_crossed_out_eyes.png"
     },
     {
       "companion": "anki_tan_chibi",
       "pose": "face",
       "kind": "core",
       "file": "anki-tan/chibi/face.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "sprite/idle/anki-tan_idle_0001.png"
     },
     {
       "companion": "anki_tan_chibi",
       "pose": "frozen",
       "kind": "core",
       "file": "anki-tan/chibi/frozen.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "derivative",
+      "author": "AnkiQuest, after Shigeyuki"
     },
     {
       "companion": "anki_tan_chibi",
       "pose": "happy",
       "kind": "core",
       "file": "anki-tan/chibi/happy.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "emoji/Ankitan_10_party.png"
     },
     {
       "companion": "anki_tan_chibi",
       "pose": "hopeful",
       "kind": "core",
       "file": "anki-tan/chibi/hopeful.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "emoji/Ankitan_06_pleading.png"
     },
     {
       "companion": "anki_tan_chibi",
       "pose": "hurt",
       "kind": "extension",
       "file": "anki-tan/chibi/hurt.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "emoji/Ankitan_28_spiral_eyes.png"
     },
     {
       "companion": "anki_tan_chibi",
       "pose": "neglected",
       "kind": "core",
       "file": "anki-tan/chibi/neglected.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "emoji/Ankitan_49_lost_streaks.png"
     },
     {
       "companion": "anki_tan_chibi",
       "pose": "review",
       "kind": "extension",
       "file": "anki-tan/chibi/review.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "sticker/press_spacebar.png"
     },
     {
       "companion": "anki_tan_chibi",
       "pose": "sad",
       "kind": "core",
       "file": "anki-tan/chibi/sad.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "emoji/Ankitan_02_cry.png"
     },
     {
       "companion": "anki_tan_chibi",
       "pose": "streak",
       "kind": "core",
       "file": "anki-tan/chibi/streak.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "emoji/Ankitan_09_fire_eyes.png"
     },
     {
       "companion": "anki_tan_chibi",
       "pose": "streak_legend",
       "kind": "extension",
       "file": "anki-tan/chibi/streak_legend.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "emoji/Ankitan_43_crown.png"
     },
     {
       "companion": "anki_tan_chibi",
       "pose": "streak_milestone",
       "kind": "extension",
       "file": "anki-tan/chibi/streak_milestone.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "emoji/Ankitan_48_perfect_streaks.png"
     },
     {
       "companion": "anki_tan_chibi",
       "pose": "welcome",
       "kind": "extension",
       "file": "anki-tan/chibi/welcome.png",
-      "licence": "CC-BY-SA-4.0"
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "emoji/Ankitan_21_saluting.png"
     },
     {
       "companion": "ankilope",
       "pose": "asleep",
       "kind": "core",
       "file": "ankilope/asleep.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "ankilope",
       "pose": "backlog",
       "kind": "picture",
       "file": "ankilope/backlog.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "ankilope",
       "pose": "challenge",
       "kind": "picture",
       "file": "ankilope/challenge.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "ankilope",
       "pose": "challenge_lost",
       "kind": "picture",
       "file": "ankilope/challenge_lost.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "ankilope",
       "pose": "challenge_won",
       "kind": "picture",
       "file": "ankilope/challenge_won.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "ankilope",
       "pose": "face",
       "kind": "core",
       "file": "ankilope/face.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "ankilope",
       "pose": "frozen",
       "kind": "core",
       "file": "ankilope/frozen.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "ankilope",
       "pose": "happy",
       "kind": "core",
       "file": "ankilope/happy.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "ankilope",
       "pose": "hopeful",
       "kind": "core",
       "file": "ankilope/hopeful.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "ankilope",
       "pose": "neglected",
       "kind": "core",
       "file": "ankilope/neglected.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "ankilope",
       "pose": "nudge",
       "kind": "picture",
       "file": "ankilope/nudge.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "ankilope",
       "pose": "place_1",
       "kind": "picture",
       "file": "ankilope/place_1.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "ankilope",
       "pose": "place_2",
       "kind": "picture",
       "file": "ankilope/place_2.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "ankilope",
       "pose": "place_3",
       "kind": "picture",
       "file": "ankilope/place_3.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "ankilope",
       "pose": "sad",
       "kind": "core",
       "file": "ankilope/sad.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "ankilope",
       "pose": "study",
       "kind": "picture",
       "file": "ankilope/study.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "ankilope",
       "pose": "welcome",
       "kind": "extension",
       "file": "ankilope/welcome.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "cow",
       "pose": "asleep",
       "kind": "core",
       "file": "cow/asleep.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "cow",
       "pose": "face",
       "kind": "core",
       "file": "cow/face.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "cow",
       "pose": "frozen",
       "kind": "core",
       "file": "cow/frozen.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "cow",
       "pose": "happy",
       "kind": "core",
       "file": "cow/happy.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "cow",
       "pose": "hopeful",
       "kind": "core",
       "file": "cow/hopeful.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "cow",
       "pose": "neglected",
       "kind": "core",
       "file": "cow/neglected.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "cow",
       "pose": "sad",
       "kind": "core",
       "file": "cow/sad.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     },
     {
       "companion": "cow",
       "pose": "streak",
       "kind": "core",
       "file": "cow/streak.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     }
   ],
   "shared": [
@@ -668,7 +883,43 @@
         "ankilope"
       ],
       "file": "duo/friends.png",
-      "licence": "AGPL-3.0-or-later"
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
     }
-  ]
+  ],
+  "missing": [
+    {
+      "companion": "ankilope",
+      "pose": "streak",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "anki_tan",
+      "pose": "face",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    }
+  ],
+  "archive": {
+    "retired": [
+      {
+        "companion": "anki_tan",
+        "pose": "neglected",
+        "file": "archive/anki-tan/neglected-three-blue-stars.png",
+        "replaced_by": "anki-tan/neglected.png",
+        "note": "All three headband stars lit; the master has one unlit star.",
+        "origin": "derivative",
+        "author": "AnkiQuest, after Shigeyuki",
+        "licence": "CC-BY-SA-4.0"
+      }
+    ],
+    "pack": {
+      "companion": "anki_tan",
+      "folder": "archive/anki-tan-pack/",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "licence": "CC-BY-SA-4.0",
+      "source": "https://shigeyukey.github.io/shige-addons-wiki/Anki-tan.html"
+    }
+  }
 }
