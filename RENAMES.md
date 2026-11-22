@@ -35,7 +35,7 @@ extension, then moment picture); the other poses name the same file in
 | `static/anki-tan/sticker/ankitan_lets_study.png` | `anki-tan/hopeful.png` |
 | `static/ankilope/celebrate.png` | `ankilope/happy.png` |
 
-AnkiQuest-Server exports Anki-tan's poses as follows (hill, 2026-11-21:
+AnkiQuest-Server exports Anki-tan's poses as follows (the rules:
 `face` and launcher icons are headshots, every other pose full body, and
 a picture nothing uses is in `archive/`):
 

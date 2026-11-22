@@ -26,7 +26,7 @@ Files moved out to be masters, unchanged:
 
 The emoji, stickers and the first idle frame that were masters until
 2026-11-21 are back here under their pack names: poses other than
-`face` are full body, and a picture nothing uses stays in the archive
-(hill, 2026-11-21).
+`face` are full body, and a picture nothing uses stays in the
+archive.
 
 The pack is never exported to a client.

@@ -10,8 +10,8 @@ Generated with OpenAI image_gen; its model identifier was not exposed.
 
 The original path was relative to AnkiQuest-Server's `static/anki-tan/`.
 This neglected pose has all three blue headband stars lit; the current
-master `anki-tan/neglected.png` has one unlit star, requested by hill and
-approved by Aldana.
+master `anki-tan/neglected.png` has one unlit star, approved by
+Aldana.
 
 [Aldana Belen Rodriguez approved this archive](https://github.com/AnkiQuest/AnkiQuest-Desktop/issues/88#issuecomment-6918911105).
 Generation and cleanup records are in

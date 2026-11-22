@@ -34,7 +34,7 @@ pack files (`shigeyuki`, with their path in the pack) from art AnkiQuest
 made: derivatives of his Anki-tan (`derivative`) and AnkiQuest's own
 companions (`ankiquest`).
 
-Two rules (hill, 2026-11-21), checked by `tools/art-check`:
+Two rules, checked by `tools/art-check`:
 
 - A picture is outside `archive/` only if something uses it: it is a
   pose master, a launcher icon or a moment picture an exporter exports.

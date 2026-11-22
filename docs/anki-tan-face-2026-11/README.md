@@ -1,7 +1,6 @@
 # Anki-tan's face
 
-hill chose the pack's app icon as Anki-tan's `face` on 2026-11-21 ("1:
-pack icon"). `anki-tan/face.png` is that icon with the rounded tile, its
+Anki-tan's `face` is the pack's app icon. `anki-tan/face.png` is that icon with the rounded tile, its
 frame and the green grid behind her cut away. No pixel inside the mask
 changed.
 
