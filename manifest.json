@@ -386,10 +386,11 @@
       "pose": "face",
       "kind": "core",
       "framing": "headshot",
-      "file": "anki-tan/face.png",
+      "file": "anki-tan/icon.png",
       "licence": "CC-BY-SA-4.0",
-      "origin": "derivative",
-      "author": "AnkiQuest, after Shigeyuki"
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "icon.png"
     },
     {
       "companion": "anki_tan",
@@ -1167,6 +1168,16 @@
           "path": "addon/art/ankilope_welcome.png",
           "replaced_in": "587fa3f52e5dc8ba52e02faadb0032010428be75"
         }
+      },
+      {
+        "companion": "anki_tan",
+        "pose": "face",
+        "file": "archive/anki-tan/face-tile-cut.png",
+        "replaced_by": "anki-tan/icon.png",
+        "note": "The pack's app icon with the rounded tile, its frame and the green grid cut away; her face is the app icon with its tile again.",
+        "origin": "derivative",
+        "author": "AnkiQuest, after Shigeyuki",
+        "licence": "CC-BY-SA-4.0"
       }
     ],
     "pack": {

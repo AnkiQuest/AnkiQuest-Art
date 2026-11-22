@@ -15,7 +15,7 @@ Files moved out to be masters, unchanged:
 
 | Pack file | Master |
 |---|---|
-| `icon.png` | `anki-tan/icon.png`; `anki-tan/face.png` is cut from it |
+| `icon.png` | `anki-tan/icon.png`, her face and launcher icon; `archive/anki-tan/face-tile-cut.png` is cut from it |
 | `sticker/ankitan_lets_study.png` | `anki-tan/hopeful.png` |
 | `emoji/Ankitan_00_smile.png` | `anki-tan/chibi/face.png` |
 | `emoji/Ankitan_02_cry.png` | `anki-tan/icon_worried.png` |
