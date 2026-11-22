@@ -2,9 +2,10 @@
 //! 2026-11-21):
 //!
 //! - Use: a picture is outside `archive/` only if something uses it: it
-//!   is the master of a pose in `poses.json`, a launcher icon, or a
-//!   moment picture an exporter exports. Every other picture is in
-//!   `archive/`.
+//!   is the master of a pose, launcher icon or moment picture in
+//!   `poses.json`, or one of the few pictures the exporters use that it
+//!   does not list (`UNLISTED_ICONS`, `UNLISTED_MOMENTS`). Every other
+//!   picture is in `archive/`.
 //! - Framing: `face` and the launcher icons are headshots; every other
 //!   master shows the companion's full body.
 //!
@@ -21,41 +22,14 @@ use std::collections::BTreeMap;
 use std::path::{Path, PathBuf};
 use std::process::ExitCode;
 
-/// Launcher icons, as AnkiQuest-Server's exporter names them
-/// (`crates/xtask/src/art.rs`: `<companion>_icon*`, used by
-/// AnkiQuest-Android's launcher).
-const LAUNCHER_ICONS: &[&str] = &[
-    "icon",
-    "icon_mono",
-    "icon_happy",
-    "icon_worried",
-    "icon_frozen",
-    "icon_sleepy",
-];
+/// Launcher icons the exporters use that `poses.json` does not list:
+/// the monochrome layer, which the Android exporter makes from the face's
+/// line art unless a companion has its own master.
+const UNLISTED_ICONS: &[&str] = &["icon_mono"];
 
-/// Moment, notification and leaderboard pictures AnkiQuest-Server's
-/// exporter exports (`crates/xtask/src/art.rs`) for the add-on and the
-/// Android app.
-const MOMENTS: &[&str] = &[
-    "achievement",
-    "at_risk",
-    "backlog",
-    "challenge",
-    "challenge_lost",
-    "challenge_won",
-    "comeback",
-    "deck_conquered",
-    "freeze",
-    "freeze_used",
-    "goal",
-    "level_up",
-    "minimum",
-    "nudge",
-    "place_1",
-    "place_2",
-    "place_3",
-    "study",
-];
+/// Moment pictures the exporters export that `poses.json` does not list,
+/// having no slot or fallback of their own.
+const UNLISTED_MOMENTS: &[&str] = &["study"];
 
 /// Picture file extensions the duplicate check compares.
 const PICTURE_EXTENSIONS: &[&str] = &["png", "webp", "jpg", "jpeg", "gif"];
@@ -123,8 +97,30 @@ struct Manifest {
 struct Poses {
     core: Vec<String>,
     extensions: BTreeMap<String, String>,
+    pictures: BTreeMap<String, String>,
+    icons: BTreeMap<String, String>,
     #[serde(default)]
     core_fallbacks: BTreeMap<String, String>,
+}
+
+impl Poses {
+    /// The groups that map each name to its fallback, with their names.
+    fn groups(&self) -> [(&'static str, &BTreeMap<String, String>); 3] {
+        [
+            ("extension", &self.extensions),
+            ("picture", &self.pictures),
+            ("icon", &self.icons),
+        ]
+    }
+
+    /// The pose, picture or icon a companion without `name` shows.
+    fn fallback(&self, name: &str) -> Option<&String> {
+        self.extensions
+            .get(name)
+            .or(self.pictures.get(name))
+            .or(self.icons.get(name))
+            .or(self.core_fallbacks.get(name))
+    }
 }
 
 /// An entry of `missing` in the manifest.
@@ -149,10 +145,10 @@ fn use_of(name: &str, poses: &Poses) -> Use {
     if poses.extensions.contains_key(name) {
         return Use::Extension;
     }
-    if LAUNCHER_ICONS.contains(&name) {
+    if poses.icons.contains_key(name) || UNLISTED_ICONS.contains(&name) {
         return Use::LauncherIcon;
     }
-    if MOMENTS.contains(&name) {
+    if poses.pictures.contains_key(name) || UNLISTED_MOMENTS.contains(&name) {
         return Use::Moment;
     }
     Use::Unused
@@ -207,25 +203,34 @@ fn violations(manifest: &Manifest, poses: &Poses) -> Vec<String> {
 }
 
 /// One line per fallback in `poses.json` that names an unknown pose or
-/// forms a cycle, and per pose listed twice.
+/// forms a cycle, and per name listed twice.
 fn pose_violations(poses: &Poses) -> Vec<String> {
     let mut out = Vec::new();
     let is_core = |p: &str| poses.core.iter().any(|c| c == p);
-    let known = |p: &str| is_core(p) || poses.extensions.contains_key(p);
 
-    for (i, p) in poses.core.iter().enumerate() {
-        if poses.core[..i].contains(p) {
-            out.push(format!("poses.json: core pose {p} is listed twice"));
-        }
-        if poses.extensions.contains_key(p) {
-            out.push(format!("poses.json: {p} is both core and an extension"));
+    // Every name once, in one group.
+    let mut seen: BTreeMap<&str, &str> = BTreeMap::new();
+    let names = poses.core.iter().map(|p| ("core", p)).chain(
+        poses
+            .groups()
+            .into_iter()
+            .flat_map(|(group, map)| map.keys().map(move |p| (group, p))),
+    );
+    for (group, name) in names {
+        if let Some(before) = seen.insert(name, group) {
+            out.push(format!(
+                "poses.json: {name} is listed as {before} and {group}"
+            ));
         }
     }
-    for (ext, to) in &poses.extensions {
-        if !known(to) {
-            out.push(format!(
-                "poses.json: extension {ext} falls back to unknown pose {to}"
-            ));
+
+    for (group, map) in poses.groups() {
+        for (name, to) in map {
+            if !seen.contains_key(to.as_str()) {
+                out.push(format!(
+                    "poses.json: {group} {name} falls back to unknown pose {to}"
+                ));
+            }
         }
     }
     for (from, to) in &poses.core_fallbacks {
@@ -241,17 +246,20 @@ fn pose_violations(poses: &Poses) -> Vec<String> {
         }
     }
 
-    // Follow each chain: extensions first, then core_fallbacks. A chain
-    // longer than the number of poses has a cycle.
-    let next = |p: &str| poses.extensions.get(p).or(poses.core_fallbacks.get(p));
-    let limit = poses.core.len() + poses.extensions.len();
-    for start in poses.extensions.keys().chain(poses.core_fallbacks.keys()) {
+    // Follow each chain until it ends. A chain longer than the number of
+    // names has a cycle.
+    let starts = poses
+        .groups()
+        .into_iter()
+        .flat_map(|(_, map)| map.keys())
+        .chain(poses.core_fallbacks.keys());
+    for start in starts {
         let mut at = start.as_str();
         let mut steps = 0;
-        while let Some(to) = next(at) {
+        while let Some(to) = poses.fallback(at) {
             at = to;
             steps += 1;
-            if steps > limit {
+            if steps > seen.len() {
                 out.push(format!(
                     "poses.json: the fallbacks from {start} form a cycle"
                 ));
@@ -519,8 +527,12 @@ mod tests {
     }
 
     fn pose_list(extensions: &str, core_fallbacks: &str) -> Poses {
+        slot_list(extensions, "", "", core_fallbacks)
+    }
+
+    fn slot_list(extensions: &str, pictures: &str, icons: &str, core_fallbacks: &str) -> Poses {
         let json = format!(
-            r#"{{"core": ["face", "happy", "hopeful"], "extensions": {{{extensions}}}, "core_fallbacks": {{{core_fallbacks}}}}}"#
+            r#"{{"core": ["face", "happy", "hopeful"], "extensions": {{{extensions}}}, "pictures": {{{pictures}}}, "icons": {{{icons}}}, "core_fallbacks": {{{core_fallbacks}}}}}"#
         );
         serde_json::from_str(&json).unwrap()
     }
@@ -565,11 +577,69 @@ mod tests {
     }
 
     #[test]
+    fn picture_and_icon_fallbacks_are_checked() {
+        let ok = slot_list(
+            r#""winner": "happy""#,
+            r#""place_1": "winner", "goal": "happy""#,
+            r#""icon": "face", "icon_happy": "icon""#,
+            "",
+        );
+        assert!(pose_violations(&ok).is_empty());
+
+        let found = pose_violations(&slot_list("", r#""goal": "jolly""#, "", ""));
+        assert_eq!(
+            found,
+            ["poses.json: picture goal falls back to unknown pose jolly"]
+        );
+
+        let found = pose_violations(&slot_list(
+            "",
+            "",
+            r#""icon": "icon_happy", "icon_happy": "icon""#,
+            "",
+        ));
+        assert_eq!(found.len(), 2);
+        assert!(found.iter().all(|f| f.contains("cycle")));
+
+        // A cycle through several groups.
+        let found = pose_violations(&slot_list(
+            r#""winner": "goal""#,
+            r#""goal": "icon""#,
+            r#""icon": "winner""#,
+            "",
+        ));
+        assert_eq!(found.len(), 3);
+    }
+
+    #[test]
+    fn pictures_and_icons_must_be_slots() {
+        assert!(check(&manifest("place_1", "picture", "full_body")).is_empty());
+        assert!(check(&manifest("icon_sleepy", "picture", "headshot")).is_empty());
+        // Used by the exporters but not slots.
+        assert!(check(&manifest("study", "picture", "full_body")).is_empty());
+        assert!(check(&manifest("icon_mono", "picture", "headshot")).is_empty());
+
+        let found = check(&manifest("place_4", "picture", "full_body"));
+        assert_eq!(found.len(), 1);
+        assert!(found[0].contains("archive/"));
+    }
+
+    #[test]
     fn poses_are_listed_once() {
         let found = pose_violations(&pose_list(r#""happy": "hopeful""#, ""));
         assert!(found
             .iter()
-            .any(|f| f.contains("both core and an extension")));
+            .any(|f| f.contains("listed as core and extension")));
+        let found = pose_violations(&slot_list(
+            r#""goal": "happy""#,
+            r#""goal": "happy""#,
+            "",
+            "",
+        ));
+        assert_eq!(
+            found,
+            ["poses.json: goal is listed as extension and picture"]
+        );
     }
 
     #[test]
@@ -647,8 +717,10 @@ mod tests {
         // A name has one use: the lists never overlap.
         let poses = poses();
         let mut all: Vec<&str> = poses.core.iter().map(String::as_str).collect();
-        all.extend(poses.extensions.keys().map(String::as_str));
-        all.extend(LAUNCHER_ICONS.iter().chain(MOMENTS));
+        for (_, map) in poses.groups() {
+            all.extend(map.keys().map(String::as_str));
+        }
+        all.extend(UNLISTED_ICONS.iter().chain(UNLISTED_MOMENTS));
         let mut unique = all.clone();
         unique.sort();
         unique.dedup();

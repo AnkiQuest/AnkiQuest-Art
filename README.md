@@ -20,19 +20,19 @@ time, so no code repository checks in art.
 | `archive/` | Pictures that are no longer masters; never exported ([README](archive/README.md)). |
 | `docs/` | Generation records, prompts, measurements and review sheets. |
 | `manifest.json` | Every master (companion, pose, kind, framing, file, licence, origin and author), the core poses still missing, and what the archive holds. |
-| `poses.json` | The pose names: the core poses, each extension's fallback and the core poses' stopgap fallbacks; checked by `tools/art-check`. |
+| `poses.json` | Every slot a companion has: the core poses, extensions, moment pictures and launcher icons, each with its fallback, and the core poses' stopgap fallbacks; checked by `tools/art-check`. |
 | `RENAMES.md` | Where each file of AnkiQuest-Server's `static/` art is now. |
 | `tools/art-check/` | The check of `manifest.json`: every picture outside `archive/` is used, and `face` and launcher icons are headshots while every other master is full body (`cargo run --manifest-path tools/art-check/Cargo.toml -- .`). |
 
 A master is `<companion>/<pose>.png`, a transparent PNG. Pose names and
 their fallbacks are in [`poses.json`](poses.json), which the server and
-clients read from this submodule. A companion with no master for a pose
-shows a fallback: an extension follows its chain in `extensions` until a
-pose is drawn, reaching a core pose; a core pose with no master shows its
-`core_fallbacks` entry (`happy` and `streak` show `hopeful`). Files
-with other names (`achievement.png`, `icon_happy.png`,
-`place_1.png` and so on) are moment, notification and icon pictures;
-`manifest.json` marks them `picture`. Its `origin` tells Shigeyuki's
+clients read from this submodule, together with the moment pictures
+(`pictures`: `achievement`, `place_1` and so on) and launcher icons
+(`icons`); `manifest.json` marks those `picture`. A companion with no
+master for a name shows a fallback: an extension, picture or icon follows
+its chain until something is drawn, reaching a core pose; a core pose with
+no master shows its `core_fallbacks` entry (`happy` and `streak` show
+`hopeful`). The manifest's `origin` tells Shigeyuki's
 pack files (`shigeyuki`, with their path in the pack) from art AnkiQuest
 made: derivatives of his Anki-tan (`derivative`) and AnkiQuest's own
 companions (`ankiquest`).
