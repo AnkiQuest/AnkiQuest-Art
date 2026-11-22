@@ -31,7 +31,7 @@ files are in this repository's history.
 | Removed | Kept | Why |
 |---|---|---|
 | `aki/cards/aki-celebrate.png` | `aki/happy.png` | 512 px copy |
-| `aki/cards/aki-freeze.png` | `aki/freeze.png` | 512 px copy |
+| `aki/cards/aki-freeze.png` | `aki/frozen.png` | 512 px copy |
 | `aki/cards/aki-streak.png` | `aki/streak.png` | 512 px copy |
 | `aki/cards/aki-winner.png` | `aki/winner.png` | 512 px copy |
 | `ankilope/cards/ankilope-celebrate.png` | `ankilope/happy.png` | 512 px copy |

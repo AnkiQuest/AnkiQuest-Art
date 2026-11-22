@@ -16,21 +16,21 @@ icons. The masters:
 | Pose | Anki-tan | Anki-tan chibi |
 |---|---|---|
 | face | `chibi/face.png`, the chibi's face | `chibi/face.png`: pack `emoji/Ankitan_00_smile.png` |
-| asleep | generated | `chibi/idle.png` |
+| asleep | generated | `chibi/asleep.png` |
 | happy | missing | `chibi/happy.png`: pack `sprite/hello/anki-tan-hello_0006.png` (waving) |
-| streak | missing | `chibi/idle.png` |
-| sad | generated | `chibi/idle.png` |
-| hopeful | pack `sticker/ankitan_lets_study.png` | `chibi/idle.png` |
-| frozen | generated | `chibi/idle.png` |
-| neglected | generated | `chibi/idle.png` |
+| streak | missing | `chibi/asleep.png` |
+| sad | generated | `chibi/asleep.png` |
+| hopeful | pack `sticker/ankitan_lets_study.png` | `chibi/asleep.png` |
+| frozen | generated | `chibi/asleep.png` |
+| neglected | generated | `chibi/asleep.png` |
 | welcome | `hopeful.png` | falls back |
 | review | falls back | falls back |
-| streak_legend | falls back | `chibi/idle.png` |
-| streak_milestone | falls back | `chibi/idle.png` |
-| hurt | falls back | `chibi/idle.png` |
-| dead | falls back | `chibi/idle.png` |
+| streak_legend | falls back | `chibi/asleep.png` |
+| streak_milestone | falls back | `chibi/asleep.png` |
+| hurt | falls back | `chibi/asleep.png` |
+| dead | falls back | `chibi/asleep.png` |
 
-`chibi/idle.png` is pack `sprite/idle/anki-tan_idle_0013.png`, the
+`chibi/asleep.png` is pack `sprite/idle/anki-tan_idle_0013.png`, the
 neutral standing chibi; `manifest.json` names it for each of those poses.
 
 Anki-tan's launcher icons (AnkiQuest-Server exports them as

@@ -26,7 +26,7 @@ The copies that were here before are listed in
 `image_gen` (model identifier not exposed); record in
 [the core poses documentation](../../docs/core-poses-2026-11/README.md).
 It shows head and shoulders, and poses other than `face` are full body,
-so chibi frozen is now `anki-tan/chibi/idle.png`.
+so chibi frozen is now `anki-tan/chibi/asleep.png`.
 CC BY-SA 4.0 under [LICENSE](LICENSE).
 
 ## Face with the tile cut away

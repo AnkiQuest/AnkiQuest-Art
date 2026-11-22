@@ -22,7 +22,7 @@ Files moved out to be masters, unchanged:
 | `emoji/Ankitan_09_fire_eyes.png` | `anki-tan/icon_happy.png` |
 | `emoji/Ankitan_35_sleeping.png` | `anki-tan/icon_sleepy.png` |
 | `sprite/hello/anki-tan-hello_0006.png` | `anki-tan/chibi/happy.png` |
-| `sprite/idle/anki-tan_idle_0013.png` | `anki-tan/chibi/idle.png` |
+| `sprite/idle/anki-tan_idle_0013.png` | `anki-tan/chibi/asleep.png` |
 
 The emoji, stickers and the first idle frame that were masters until
 2026-11-21 are back here under their pack names: poses other than
