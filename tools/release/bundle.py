@@ -6,8 +6,11 @@ Usage: python3 tools/release/bundle.py <tag> <commit> <android-res-dir> <addon-d
 built from. <android-res-dir> and <addon-dir> are what `art-export android`
 and `art-export addon` wrote. <out-dir> receives:
 
-- android-drawables.zip: drawable-nodpi/*.webp
-- addon-art.zip: art/*.png and *_face.png
+- android-drawables.zip: drawable-nodpi/*.webp, and Anki-tan's licence
+  as LICENSE-Anki-tan.md at the root (Android's resource build accepts
+  only pictures in drawable-nodpi/)
+- addon-art.zip: art/*.png and *_face.png, and Anki-tan's licence as
+  art/LICENSE-Anki-tan.md
 - masters.zip: every master manifest.json lists, at its path here, and
   the licences
 - archive.zip: everything under archive/, at its path here
@@ -33,6 +36,13 @@ ROOT = Path(__file__).resolve().parents[2]
 
 # Licence texts that go with the masters.
 LICENCES = ["LICENSE", "anki-tan/LICENSE"]
+
+# Anki-tan's licence (CC BY-SA 4.0), which goes with every copy of her art.
+ANKI_TAN_LICENCE = ROOT / "anki-tan/LICENSE"
+
+# Where each export zip carries it.
+ANDROID_LICENCE = "LICENSE-Anki-tan.md"
+ADDON_LICENCE = "art/LICENSE-Anki-tan.md"
 
 # What the pin file says about itself.
 PIN_ABOUT = (
@@ -111,8 +121,22 @@ def main():
     android, addon, out = (Path(arg) for arg in sys.argv[3:])
     out.mkdir(parents=True, exist_ok=True)
 
-    write_zip(out / "android-drawables.zip", files_under(android))
-    write_zip(out / "addon-art.zip", files_under(addon))
+    # Each export zip carries the licence of the art it holds.
+    write_zip(
+        out / "android-drawables.zip",
+        files_under(android) + [(ANDROID_LICENCE, ANKI_TAN_LICENCE)],
+    )
+    write_zip(
+        out / "addon-art.zip",
+        files_under(addon) + [(ADDON_LICENCE, ANKI_TAN_LICENCE)],
+    )
+    for name, entry in [
+        ("android-drawables.zip", ANDROID_LICENCE),
+        ("addon-art.zip", ADDON_LICENCE),
+    ]:
+        with zipfile.ZipFile(out / name) as archive:
+            if archive.read(entry) != ANKI_TAN_LICENCE.read_bytes():
+                sys.exit(f"{name}: {entry} is not anki-tan/LICENSE")
     write_zip(out / "masters.zip", masters())
     archive = [("archive/" + name, path) for name, path in files_under(ROOT / "archive")]
     write_zip(out / "archive.zip", archive)

@@ -86,15 +86,16 @@ pin to the new release.
 
 | Asset | Holds |
 |---|---|
-| `android-drawables.zip` | `drawable-nodpi/<name>.webp`, as `art-export android` writes them. |
-| `addon-art.zip` | `art/<name>.png` and `<companion>_face.png`, as `art-export addon` writes them. |
+| `android-drawables.zip` | `drawable-nodpi/<name>.webp`, as `art-export android` writes them, and Anki-tan's licence (`anki-tan/LICENSE`, CC BY-SA 4.0) as `LICENSE-Anki-tan.md` at the root, outside `drawable-nodpi/`, which Android's resource build keeps for pictures. |
+| `addon-art.zip` | `art/<name>.png` and `<companion>_face.png`, as `art-export addon` writes them, and Anki-tan's licence as `art/LICENSE-Anki-tan.md`. |
 | `masters.zip` | Every master `manifest.json` lists, at its path here, with `LICENSE` and `anki-tan/LICENSE`: for AnkiQuest-Server's share cards and web pictures. |
 | `archive.zip` | Everything under `archive/` at its path here (pictures, READMEs and licences), for the gallery. |
 | `manifest.json`, `poses.json` | This repository's files; `poses.json` once it exists. |
 | `ankiquest-art.json` | The pin file for this release (below). |
 | `SHA256SUMS` | The SHA-256 of every other asset. |
 
-The release notes name the Art commit and every asset's SHA-256. Each
+Every export zip carries the licence of the art it holds. The release
+notes name the Art commit and every asset's SHA-256. Each
 zip has sorted entries, stored uncompressed with a fixed time and mode and
 no extra metadata, so building the same commit again gives the same
 bytes; the workflow builds every asset twice and compares them before
