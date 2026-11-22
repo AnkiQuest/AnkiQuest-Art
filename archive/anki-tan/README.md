@@ -36,6 +36,6 @@ CC BY-SA 4.0 under [LICENSE](LICENSE).
 cut away by a hand-traced polygon mask (ImageMagick 6.9, 0.6 px blur on
 the mask edge), her hair cut straight where the tile cut it. Record:
 [docs/anki-tan-face-2026-11](../../docs/anki-tan-face-2026-11/README.md).
-Her face is now `anki-tan/icon.png` itself. SHA-256
+Her face is now the chibi's face, `anki-tan/chibi/face.png`. SHA-256
 0e01672d2fb48e4ab47eed5f2c3f01edb0ee2a1d3611e28c865b2d85744d3988.
 CC BY-SA 4.0 under [LICENSE](LICENSE).

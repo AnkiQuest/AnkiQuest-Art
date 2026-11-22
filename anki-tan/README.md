@@ -15,7 +15,7 @@ icons. The masters:
 
 | Pose | Anki-tan | Anki-tan chibi |
 |---|---|---|
-| face | `icon.png`: the pack's app icon, tile and all, also her launcher icon | `chibi/face.png`: pack `emoji/Ankitan_00_smile.png` |
+| face | `chibi/face.png`, the chibi's face | `chibi/face.png`: pack `emoji/Ankitan_00_smile.png` |
 | asleep | generated | `chibi/idle.png` |
 | happy | missing | `chibi/happy.png`: pack `sprite/hello/anki-tan-hello_0006.png` (waving) |
 | streak | missing | `chibi/idle.png` |
@@ -23,7 +23,7 @@ icons. The masters:
 | hopeful | pack `sticker/ankitan_lets_study.png` | `chibi/idle.png` |
 | frozen | generated | `chibi/idle.png` |
 | neglected | generated | `chibi/idle.png` |
-| welcome | falls back | falls back |
+| welcome | `hopeful.png` | falls back |
 | review | falls back | falls back |
 | streak_legend | falls back | `chibi/idle.png` |
 | streak_milestone | falls back | `chibi/idle.png` |
@@ -51,9 +51,10 @@ fallbacks until drawn.
 
 ## Face
 
-Her face is the pack's `icon.png`, the same file as her launcher icon:
-`manifest.json` names it for both poses. The earlier face, the icon with
-the tile cut away, is in
+Her face is the chibi's face, `chibi/face.png` (pack
+`emoji/Ankitan_00_smile.png`): both are Shigeyuki's Anki-tan, and
+`manifest.json` names the file for both companions. The earlier face,
+the pack icon with the tile cut away, is in
 [`../archive/anki-tan/`](../archive/anki-tan/README.md#face-with-the-tile-cut-away).
 Credit: Anki-tan by Shigeyuki (https://www.patreon.com/Shigeyuki).
 
