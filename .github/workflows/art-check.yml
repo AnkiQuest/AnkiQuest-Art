@@ -1,8 +1,8 @@
 # Checks the masters in manifest.json: every picture outside archive/ is
 # used (a pose, a launcher icon or an exported moment picture), and face
 # and launcher icons are headshots while everything else is full body.
-# Builds and tests the exporters the clients run (tools/art-export) and
-# exports every client's art once.
+# Builds and tests the exporters (tools/art-export) and builds the release
+# assets twice to check that they are deterministic.
 name: Art check
 
 on:
@@ -29,14 +29,18 @@ jobs:
 
   art-export:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - name: Test the exporters
         run: cargo test --locked --manifest-path tools/art-export/Cargo.toml
       - name: Lint the exporters
         run: cargo clippy --locked --all-targets --manifest-path tools/art-export/Cargo.toml -- -D warnings
-      - name: Export the Android drawables
-        run: cargo run --locked --release --manifest-path tools/art-export/Cargo.toml -- android "$RUNNER_TEMP/android-res"
-      - name: Export the add-on pictures
-        run: cargo run --locked --release --manifest-path tools/art-export/Cargo.toml -- addon "$RUNNER_TEMP/addon"
+      # What the release workflow publishes, built twice: the bytes must
+      # match. The tag is a stand-in; only the pin file names it.
+      - name: Build the release assets twice
+        run: |
+          tools/release/build.sh art-1 "$GITHUB_SHA" "$RUNNER_TEMP/assets"
+          tools/release/build.sh art-1 "$GITHUB_SHA" "$RUNNER_TEMP/again"
+          diff -r "$RUNNER_TEMP/assets" "$RUNNER_TEMP/again"
+          cat "$RUNNER_TEMP/assets/SHA256SUMS"
