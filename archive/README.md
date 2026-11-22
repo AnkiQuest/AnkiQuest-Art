@@ -5,7 +5,8 @@ pictures nothing uses (hill, 2026-11-21: outside the archive only what
 is used). Nothing here is exported to a client.
 
 - `aki/`, `ankilope/`: earlier versions of Aki's and Ankilope's masters,
-  replaced in AnkiQuest-Server before the split; see their READMEs.
+  replaced in AnkiQuest-Server before the split, and in `addon/` the
+  add-on's hand-made copies from before `export-addon-art`; see their READMEs.
 - `anki-tan/`: Anki-tan's neglected pose before one headband star was
   unlit, and the generated chibi frozen bust; see its README. CC BY-SA 4.0 under its LICENSE.
 - `anki-tan-pack/`: the rest of Shigeyuki's Anki-tan asset pack; see its
