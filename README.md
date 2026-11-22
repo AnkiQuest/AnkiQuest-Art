@@ -20,14 +20,17 @@ time, so no code repository checks in art.
 | `archive/` | Pictures that are no longer masters; never exported ([README](archive/README.md)). |
 | `docs/` | Generation records, prompts, measurements and review sheets. |
 | `manifest.json` | Every master (companion, pose, kind, framing, file, licence, origin and author), the core poses still missing, and what the archive holds. |
+| `poses.json` | The pose names: the core poses, each extension's fallback and the core poses' stopgap fallbacks; checked by `tools/art-check`. |
 | `RENAMES.md` | Where each file of AnkiQuest-Server's `static/` art is now. |
 | `tools/art-check/` | The check of `manifest.json`: every picture outside `archive/` is used, and `face` and launcher icons are headshots while every other master is full body (`cargo run --manifest-path tools/art-check/Cargo.toml -- .`). |
 
 A master is `<companion>/<pose>.png`, a transparent PNG. Pose names and
-their fallbacks come from
-[`tests/fixtures/companion_poses.json`](https://github.com/AnkiQuest/AnkiQuest-Server/blob/master/tests/fixtures/companion_poses.json)
-in AnkiQuest-Server, which the clients pin; this repository does not copy
-it. Files with other names (`achievement.png`, `icon_happy.png`,
+their fallbacks are in [`poses.json`](poses.json), which the server and
+clients read from this submodule. A companion with no master for a pose
+shows a fallback: an extension follows its chain in `extensions` until a
+pose is drawn, reaching a core pose; a core pose with no master shows its
+`core_fallbacks` entry (`happy` and `streak` show `hopeful`). Files
+with other names (`achievement.png`, `icon_happy.png`,
 `place_1.png` and so on) are moment, notification and icon pictures;
 `manifest.json` marks them `picture`. Its `origin` tells Shigeyuki's
 pack files (`shigeyuki`, with their path in the pack) from art AnkiQuest
@@ -70,7 +73,7 @@ companion. Missing drawings are tracked in AnkiQuest-Server:
 [#57](https://github.com/AnkiQuest/AnkiQuest-Server/issues/57) for poses
 and [#116](https://github.com/AnkiQuest/AnkiQuest-Server/issues/116) for
 icons and moment pictures. Until they are drawn, a missing pose shows the
-fallback the fixture gives it.
+fallback `poses.json` gives it.
 
 ## Licences
 

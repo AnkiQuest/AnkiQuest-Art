@@ -1,0 +1,23 @@
+{
+  "_about": "The poses of AnkiQuest's companions, read by the server, the clients and tools/art-check; a pose's master is <companion>/<pose>.png, listed in manifest.json. core lists the poses every live companion needs: a new companion goes live only with all of them drawn. extensions maps each further pose to its fallback, a core pose or another extension that eventually reaches one; a companion with no master for an extension shows its fallback. core_fallbacks maps a core pose to the core pose shown instead, used only while a companion has no master for that core pose (manifest.json lists those under missing). Fallbacks are a stopgap until every live companion has every pose drawn (AnkiQuest/AnkiQuest-Server#57): a core_fallbacks entry goes once every live companion has that pose drawn, and the extension fallbacks go once every extension is drawn too.",
+  "core": ["face", "asleep", "happy", "streak", "sad", "hopeful", "frozen", "neglected"],
+  "extensions": {
+    "streak_hot": "streak",
+    "streak_blazing": "streak_hot",
+    "streak_legend": "streak_blazing",
+    "streak_milestone": "streak_legend",
+    "frozen_2": "frozen",
+    "frozen_3": "frozen_2",
+    "welcome": "happy",
+    "review": "happy",
+    "hurt": "sad",
+    "abandoned": "neglected",
+    "dead": "neglected",
+    "leech_defeated": "happy",
+    "winner": "happy"
+  },
+  "core_fallbacks": {
+    "happy": "hopeful",
+    "streak": "hopeful"
+  }
+}
