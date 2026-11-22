@@ -9,6 +9,19 @@ Every file not listed keeps its path without the `static/` prefix:
 `static/aki/face.png` is `aki/face.png`. Pictures were moved, never
 edited: each one has the same bytes as before.
 
+## Renamed in this repository
+
+A file several poses share is named after its main pose (core, then
+extension, then moment picture); the other poses name the same file in
+`manifest.json`. Same bytes as before.
+
+| Was | Now | Poses |
+|---|---|---|
+| `aki/frozen.png` | `aki/frozen_3.png` | frozen_3 |
+| `aki/freeze.png` | `aki/frozen.png` | frozen, freeze |
+| `aki/freeze_used.png` | `aki/frozen_2.png` | frozen_2, freeze_used |
+| `anki-tan/chibi/idle.png` | `anki-tan/chibi/asleep.png` | asleep and nine other chibi poses |
+
 ## Masters renamed to their pose
 
 | Old path | New path |
@@ -37,11 +50,11 @@ a picture nothing uses is in `archive/`):
 | `anki_tan_streak_milestone` | `static/anki-tan/emoji/Ankitan_48_perfect_streaks.png` | falls back |
 | `anki_tan_hurt` | `static/anki-tan/emoji/Ankitan_28_spiral_eyes.png` | falls back to sad |
 | `anki_tan_dead` | `static/anki-tan/emoji/Ankitan_39_crossed_out_eyes.png` | falls back to neglected |
-| `anki_tan_chibi_frozen` | `static/anki-tan/chibi/frozen.png` | `anki-tan/chibi/idle.png` |
+| `anki_tan_chibi_frozen` | `static/anki-tan/chibi/frozen.png` | `anki-tan/chibi/asleep.png` |
 | `anki_tan_icon_mono` | `static/anki-tan/emoji/Ankitan_00_smile.png` | `anki-tan/chibi/face.png` |
 
 Anki-tan chibi's poses: `face` is `anki-tan/chibi/face.png`, `happy` is
-`anki-tan/chibi/happy.png` and the others are `anki-tan/chibi/idle.png`;
+`anki-tan/chibi/happy.png` and the others are `anki-tan/chibi/asleep.png`;
 `welcome` and `review` fall back to happy.
 
 ## Moved to the archive
@@ -75,7 +88,7 @@ one reads the kept file.
 | Old path | Kept file |
 |---|---|
 | `assets/cards/aki-celebrate.png` | `aki/happy.png` |
-| `assets/cards/aki-freeze.png` | `aki/freeze.png` |
+| `assets/cards/aki-freeze.png` | `aki/frozen.png` |
 | `assets/cards/aki-streak.png` | `aki/streak.png` |
 | `assets/cards/aki-winner.png` | `aki/winner.png` |
 | `assets/cards/ankilope-celebrate.png` | `ankilope/happy.png` |

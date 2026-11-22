@@ -51,7 +51,7 @@ Three rules, checked by `tools/art-check`:
   `manifest.json`.
 
 Where one picture shows several poses, their manifest entries name the
-same file instead of copies: `anki-tan/chibi/idle.png` is ten of Anki-tan
+same file instead of copies: `anki-tan/chibi/asleep.png` is ten of Anki-tan
 chibi's poses.
 
 Nothing here is generated: smaller sizes and other copies are made by the

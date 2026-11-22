@@ -106,7 +106,7 @@
       "pose": "freeze",
       "kind": "picture",
       "framing": "full_body",
-      "file": "aki/freeze.png",
+      "file": "aki/frozen.png",
       "licence": "AGPL-3.0-or-later",
       "origin": "ankiquest",
       "author": "AnkiQuest"
@@ -116,7 +116,7 @@
       "pose": "freeze_used",
       "kind": "picture",
       "framing": "full_body",
-      "file": "aki/freeze_used.png",
+      "file": "aki/frozen_2.png",
       "licence": "AGPL-3.0-or-later",
       "origin": "ankiquest",
       "author": "AnkiQuest"
@@ -386,10 +386,11 @@
       "pose": "face",
       "kind": "core",
       "framing": "headshot",
-      "file": "anki-tan/face.png",
+      "file": "anki-tan/chibi/face.png",
       "licence": "CC-BY-SA-4.0",
-      "origin": "derivative",
-      "author": "AnkiQuest, after Shigeyuki"
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "emoji/Ankitan_00_smile.png"
     },
     {
       "companion": "anki_tan",
@@ -481,7 +482,7 @@
       "pose": "asleep",
       "kind": "core",
       "framing": "full_body",
-      "file": "anki-tan/chibi/idle.png",
+      "file": "anki-tan/chibi/asleep.png",
       "licence": "CC-BY-SA-4.0",
       "origin": "shigeyuki",
       "author": "Shigeyuki",
@@ -492,7 +493,7 @@
       "pose": "dead",
       "kind": "extension",
       "framing": "full_body",
-      "file": "anki-tan/chibi/idle.png",
+      "file": "anki-tan/chibi/asleep.png",
       "licence": "CC-BY-SA-4.0",
       "origin": "shigeyuki",
       "author": "Shigeyuki",
@@ -514,7 +515,7 @@
       "pose": "frozen",
       "kind": "core",
       "framing": "full_body",
-      "file": "anki-tan/chibi/idle.png",
+      "file": "anki-tan/chibi/asleep.png",
       "licence": "CC-BY-SA-4.0",
       "origin": "shigeyuki",
       "author": "Shigeyuki",
@@ -536,7 +537,7 @@
       "pose": "hopeful",
       "kind": "core",
       "framing": "full_body",
-      "file": "anki-tan/chibi/idle.png",
+      "file": "anki-tan/chibi/asleep.png",
       "licence": "CC-BY-SA-4.0",
       "origin": "shigeyuki",
       "author": "Shigeyuki",
@@ -547,7 +548,7 @@
       "pose": "hurt",
       "kind": "extension",
       "framing": "full_body",
-      "file": "anki-tan/chibi/idle.png",
+      "file": "anki-tan/chibi/asleep.png",
       "licence": "CC-BY-SA-4.0",
       "origin": "shigeyuki",
       "author": "Shigeyuki",
@@ -558,7 +559,7 @@
       "pose": "neglected",
       "kind": "core",
       "framing": "full_body",
-      "file": "anki-tan/chibi/idle.png",
+      "file": "anki-tan/chibi/asleep.png",
       "licence": "CC-BY-SA-4.0",
       "origin": "shigeyuki",
       "author": "Shigeyuki",
@@ -569,7 +570,7 @@
       "pose": "sad",
       "kind": "core",
       "framing": "full_body",
-      "file": "anki-tan/chibi/idle.png",
+      "file": "anki-tan/chibi/asleep.png",
       "licence": "CC-BY-SA-4.0",
       "origin": "shigeyuki",
       "author": "Shigeyuki",
@@ -580,7 +581,7 @@
       "pose": "streak",
       "kind": "core",
       "framing": "full_body",
-      "file": "anki-tan/chibi/idle.png",
+      "file": "anki-tan/chibi/asleep.png",
       "licence": "CC-BY-SA-4.0",
       "origin": "shigeyuki",
       "author": "Shigeyuki",
@@ -591,7 +592,7 @@
       "pose": "streak_legend",
       "kind": "extension",
       "framing": "full_body",
-      "file": "anki-tan/chibi/idle.png",
+      "file": "anki-tan/chibi/asleep.png",
       "licence": "CC-BY-SA-4.0",
       "origin": "shigeyuki",
       "author": "Shigeyuki",
@@ -602,7 +603,7 @@
       "pose": "streak_milestone",
       "kind": "extension",
       "framing": "full_body",
-      "file": "anki-tan/chibi/idle.png",
+      "file": "anki-tan/chibi/asleep.png",
       "licence": "CC-BY-SA-4.0",
       "origin": "shigeyuki",
       "author": "Shigeyuki",
@@ -857,6 +858,37 @@
       "licence": "AGPL-3.0-or-later",
       "origin": "ankiquest",
       "author": "AnkiQuest"
+    },
+    {
+      "companion": "aki",
+      "pose": "frozen_2",
+      "kind": "extension",
+      "framing": "full_body",
+      "file": "aki/frozen_2.png",
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
+    },
+    {
+      "companion": "aki",
+      "pose": "frozen_3",
+      "kind": "extension",
+      "framing": "full_body",
+      "file": "aki/frozen_3.png",
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
+    },
+    {
+      "companion": "anki_tan",
+      "pose": "welcome",
+      "kind": "extension",
+      "framing": "full_body",
+      "file": "anki-tan/hopeful.png",
+      "licence": "CC-BY-SA-4.0",
+      "origin": "shigeyuki",
+      "author": "Shigeyuki",
+      "pack": "sticker/ankitan_lets_study.png"
     }
   ],
   "shared": [
@@ -887,6 +919,126 @@
     {
       "companion": "anki_tan",
       "pose": "streak",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "quest_chan",
+      "pose": "face",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "quest_chan",
+      "pose": "asleep",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "quest_chan",
+      "pose": "happy",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "quest_chan",
+      "pose": "streak",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "quest_chan",
+      "pose": "sad",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "quest_chan",
+      "pose": "hopeful",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "quest_chan",
+      "pose": "frozen",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "quest_chan",
+      "pose": "neglected",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "quest_chan_chibi",
+      "pose": "face",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "quest_chan_chibi",
+      "pose": "asleep",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "quest_chan_chibi",
+      "pose": "happy",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "quest_chan_chibi",
+      "pose": "streak",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "quest_chan_chibi",
+      "pose": "sad",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "quest_chan_chibi",
+      "pose": "hopeful",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "quest_chan_chibi",
+      "pose": "frozen",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "quest_chan_chibi",
+      "pose": "neglected",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "leech_kun",
+      "pose": "face",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "leech_kun",
+      "pose": "asleep",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "leech_kun",
+      "pose": "happy",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "leech_kun",
+      "pose": "streak",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "leech_kun",
+      "pose": "sad",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "leech_kun",
+      "pose": "hopeful",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "leech_kun",
+      "pose": "frozen",
+      "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
+    },
+    {
+      "companion": "leech_kun",
+      "pose": "neglected",
       "issue": "https://github.com/AnkiQuest/AnkiQuest-Server/issues/57"
     }
   ],
@@ -970,7 +1122,7 @@
         "companion": "anki_tan_chibi",
         "pose": "frozen",
         "file": "archive/anki-tan/chibi/frozen-bust.png",
-        "replaced_by": "anki-tan/chibi/idle.png",
+        "replaced_by": "anki-tan/chibi/asleep.png",
         "note": "Head and shoulders in a blanket; poses other than face are full body.",
         "origin": "derivative",
         "author": "AnkiQuest, after Shigeyuki",
@@ -1012,7 +1164,7 @@
         "companion": "aki",
         "pose": "freeze",
         "file": "archive/aki/addon/aki_freeze-c3640637.png",
-        "replaced_by": "aki/freeze.png",
+        "replaced_by": "aki/frozen.png",
         "note": "Hand-made add-on copy from before export-addon-art; no master exports to these bytes.",
         "origin": "ankiquest",
         "author": "AnkiQuest",
@@ -1167,6 +1319,16 @@
           "path": "addon/art/ankilope_welcome.png",
           "replaced_in": "587fa3f52e5dc8ba52e02faadb0032010428be75"
         }
+      },
+      {
+        "companion": "anki_tan",
+        "pose": "face",
+        "file": "archive/anki-tan/face-tile-cut.png",
+        "replaced_by": "anki-tan/chibi/face.png",
+        "note": "The pack's app icon with the rounded tile, its frame and the green grid cut away; her face is now the chibi's face.",
+        "origin": "derivative",
+        "author": "AnkiQuest, after Shigeyuki",
+        "licence": "CC-BY-SA-4.0"
       }
     ],
     "pack": {

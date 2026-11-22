@@ -27,7 +27,7 @@ Commits are AnkiQuest-Desktop's.
 |---|---|---|---|---|---|
 | `addon/aki_celebrate-5017d3a0.png` | `addon/art/aki_celebrate.png` | ea524bd | 587fa3f | `aki/happy.png` | 5017d3a09a2201cc28c7d536a2deefea8e1ad25842ccd543fdaef4fb0b670adc |
 | `addon/aki_face-e7ab7876.png` | `addon/aki_face.png` | ecfe880 | 587fa3f | `aki/face.png` | e7ab78764473d086c78020e8e72c89f54dec23287d00e01c95a7efb649f41ffd |
-| `addon/aki_freeze-c3640637.png` | `addon/art/aki_freeze.png` | ea524bd | 587fa3f | `aki/freeze.png` | c36406373d19bcb91b34ccb2dc6d4f56235fe4ff3dd0b533c102406650245ab6 |
+| `addon/aki_freeze-c3640637.png` | `addon/art/aki_freeze.png` | ea524bd | 587fa3f | `aki/frozen.png` | c36406373d19bcb91b34ccb2dc6d4f56235fe4ff3dd0b533c102406650245ab6 |
 | `addon/aki_hopeful-600724bf.png` | `addon/art/aki_hopeful.png` | ea6ef8d | de91379 | `aki/hopeful.png` | 600724bf34da6ed926bf6980c922e8b6727ee142c2b06188a3100d4bf40ab448 |
 | `addon/aki_review-763f5fa4.png` | `addon/art/aki_review.png` | 8fe3d77 | 587fa3f | `aki/review.png` | 763f5fa48c1b292fc604ba02eda9cde4b751ab1c6d50dcb6e2ef31104770e646 |
 | `addon/aki_streak-bfb9293c.png` | `addon/art/aki_streak.png` | ea524bd | 587fa3f | `aki/streak.png` | bfb9293c0e16ce388bc5340cd7da78a7646a741b9482b653864fae14bd73a727 |
