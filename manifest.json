@@ -975,6 +975,198 @@
         "origin": "derivative",
         "author": "AnkiQuest, after Shigeyuki",
         "licence": "CC-BY-SA-4.0"
+      },
+      {
+        "companion": "aki",
+        "pose": "happy",
+        "file": "archive/aki/addon/aki_celebrate-5017d3a0.png",
+        "replaced_by": "aki/happy.png",
+        "note": "Hand-made add-on copy from before export-addon-art; no master exports to these bytes.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Desktop",
+          "commit": "ea524bd7adb1740863a9a3d5f10038d6d451ecb8",
+          "path": "addon/art/aki_celebrate.png",
+          "replaced_in": "587fa3f52e5dc8ba52e02faadb0032010428be75"
+        }
+      },
+      {
+        "companion": "aki",
+        "pose": "face",
+        "file": "archive/aki/addon/aki_face-e7ab7876.png",
+        "replaced_by": "aki/face.png",
+        "note": "Hand-made add-on copy from before export-addon-art; no master exports to these bytes.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Desktop",
+          "commit": "ecfe8806a1e2a8e3807eeea06bbd49c69b3ad4b0",
+          "path": "addon/aki_face.png",
+          "replaced_in": "587fa3f52e5dc8ba52e02faadb0032010428be75"
+        }
+      },
+      {
+        "companion": "aki",
+        "pose": "freeze",
+        "file": "archive/aki/addon/aki_freeze-c3640637.png",
+        "replaced_by": "aki/freeze.png",
+        "note": "Hand-made add-on copy from before export-addon-art; no master exports to these bytes.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Desktop",
+          "commit": "ea524bd7adb1740863a9a3d5f10038d6d451ecb8",
+          "path": "addon/art/aki_freeze.png",
+          "replaced_in": "587fa3f52e5dc8ba52e02faadb0032010428be75"
+        }
+      },
+      {
+        "companion": "aki",
+        "pose": "hopeful",
+        "file": "archive/aki/addon/aki_hopeful-600724bf.png",
+        "replaced_by": "aki/hopeful.png",
+        "note": "Hand-made add-on copy from before export-addon-art; no master exports to these bytes.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Desktop",
+          "commit": "ea6ef8df29b5845a1432981e663807d2e24efe39",
+          "path": "addon/art/aki_hopeful.png",
+          "replaced_in": "de913797ec65bef454eb940a00aaa695e76aef71"
+        }
+      },
+      {
+        "companion": "aki",
+        "pose": "review",
+        "file": "archive/aki/addon/aki_review-763f5fa4.png",
+        "replaced_by": "aki/review.png",
+        "note": "Hand-made add-on copy from before export-addon-art; no master exports to these bytes.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Desktop",
+          "commit": "8fe3d77790db90b69675d4266cfd8eeb9240a02a",
+          "path": "addon/art/aki_review.png",
+          "replaced_in": "587fa3f52e5dc8ba52e02faadb0032010428be75"
+        }
+      },
+      {
+        "companion": "aki",
+        "pose": "streak",
+        "file": "archive/aki/addon/aki_streak-bfb9293c.png",
+        "replaced_by": "aki/streak.png",
+        "note": "Hand-made add-on copy from before export-addon-art; no master exports to these bytes.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Desktop",
+          "commit": "ea524bd7adb1740863a9a3d5f10038d6d451ecb8",
+          "path": "addon/art/aki_streak.png",
+          "replaced_in": "587fa3f52e5dc8ba52e02faadb0032010428be75"
+        }
+      },
+      {
+        "companion": "aki",
+        "pose": "welcome",
+        "file": "archive/aki/addon/aki_welcome-6eedf264.png",
+        "replaced_by": "aki/welcome.png",
+        "note": "Hand-made add-on copy from before export-addon-art; no master exports to these bytes.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Desktop",
+          "commit": "8fe3d77790db90b69675d4266cfd8eeb9240a02a",
+          "path": "addon/art/aki_welcome.png",
+          "replaced_in": "587fa3f52e5dc8ba52e02faadb0032010428be75"
+        }
+      },
+      {
+        "companion": "aki",
+        "pose": "winner",
+        "file": "archive/aki/addon/aki_winner-354b5519.png",
+        "replaced_by": "aki/winner.png",
+        "note": "Hand-made add-on copy from before export-addon-art; no master exports to these bytes.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Desktop",
+          "commit": "ea524bd7adb1740863a9a3d5f10038d6d451ecb8",
+          "path": "addon/art/aki_winner.png",
+          "replaced_in": "587fa3f52e5dc8ba52e02faadb0032010428be75"
+        }
+      },
+      {
+        "companion": "ankilope",
+        "pose": "happy",
+        "file": "archive/ankilope/addon/ankilope_celebrate-fc3ddf49.png",
+        "replaced_by": "ankilope/happy.png",
+        "note": "Hand-made add-on copy from before export-addon-art; no master exports to these bytes.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Desktop",
+          "commit": "10f8c020519ca6a1aba52742f9d205d34ac18590",
+          "path": "addon/art/ankilope_celebrate.png",
+          "replaced_in": "587fa3f52e5dc8ba52e02faadb0032010428be75"
+        }
+      },
+      {
+        "companion": "ankilope",
+        "pose": "face",
+        "file": "archive/ankilope/addon/ankilope_face-9d4dbb66.png",
+        "replaced_by": "ankilope/face.png",
+        "note": "Hand-made add-on copy from before export-addon-art; no master exports to these bytes.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Desktop",
+          "commit": "ecfe8806a1e2a8e3807eeea06bbd49c69b3ad4b0",
+          "path": "addon/ankilope_face.png",
+          "replaced_in": "587fa3f52e5dc8ba52e02faadb0032010428be75"
+        }
+      },
+      {
+        "companion": "ankilope",
+        "pose": "study",
+        "file": "archive/ankilope/addon/ankilope_study-277abb2e.png",
+        "replaced_by": "ankilope/study.png",
+        "note": "Hand-made add-on copy from before export-addon-art; no master exports to these bytes.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Desktop",
+          "commit": "ea524bd7adb1740863a9a3d5f10038d6d451ecb8",
+          "path": "addon/art/ankilope_study.png",
+          "replaced_in": "587fa3f52e5dc8ba52e02faadb0032010428be75"
+        }
+      },
+      {
+        "companion": "ankilope",
+        "pose": "welcome",
+        "file": "archive/ankilope/addon/ankilope_welcome-2fe2d900.png",
+        "replaced_by": "ankilope/welcome.png",
+        "note": "Hand-made add-on copy from before export-addon-art; no master exports to these bytes.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Desktop",
+          "commit": "ea524bd7adb1740863a9a3d5f10038d6d451ecb8",
+          "path": "addon/art/ankilope_welcome.png",
+          "replaced_in": "587fa3f52e5dc8ba52e02faadb0032010428be75"
+        }
       }
     ],
     "pack": {
