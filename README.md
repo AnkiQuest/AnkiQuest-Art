@@ -22,6 +22,7 @@ time, so no code repository checks in art.
 | `manifest.json` | Every master (companion, pose, kind, framing, file, licence, origin and author), the core poses still missing, and what the archive holds. |
 | `RENAMES.md` | Where each file of AnkiQuest-Server's `static/` art is now. |
 | `tools/art-check/` | The check of `manifest.json`: every picture outside `archive/` is used, and `face` and launcher icons are headshots while every other master is full body (`cargo run --manifest-path tools/art-check/Cargo.toml -- .`). |
+| `tools/art-export/` | The exporter the clients' builds run: Android drawables and the desktop add-on's pictures, made from the masters `manifest.json` names ([Exports](#exports)). |
 
 A master is `<companion>/<pose>.png`, a transparent PNG. Pose names and
 their fallbacks come from
@@ -48,8 +49,9 @@ Where one picture shows several poses, their manifest entries name the
 same file instead of copies: `anki-tan/chibi/idle.png` is ten of Anki-tan
 chibi's poses.
 
-Nothing here is generated: smaller sizes and other copies are made by the
-code repositories' exporters and are not committed here.
+Nothing here is generated: smaller sizes and other copies are made at
+build time ([Exports](#exports)) and are not committed here or in the
+clients.
 
 ## Use as a submodule
 
@@ -61,6 +63,24 @@ The exporters read `art/manifest.json` to find each pose's file; most
 are `art/<companion>/<pose>.png`. A new or changed master lands here
 first; a code repository picks it up by moving its submodule to the new
 commit.
+
+## Exports
+
+`tools/art-export` writes each client's copies of the masters into a
+folder its build passes. Every copy names a manifest entry (companion and
+pose, or a shared picture), never a path, and nothing in `archive/` is
+exported; its tests fail when an entry is renamed or retired.
+
+| Client | Command | Writes |
+|---|---|---|
+| AnkiQuest-Android | `cargo run --locked --release --manifest-path art/tools/art-export/Cargo.toml -- android <res-dir>` | `<res-dir>/drawable-nodpi/<name>.webp`: square lossy WebPs (alpha quality 100), Lanczos-downscaled to 1024 px for the streak widget's poses, 432 px for launcher icons and 336 or 168 px for moment pictures, never upscaled; the themed icons' monochrome layers are the master's line art. |
+| AnkiQuest-Desktop | `cargo run --locked --release --manifest-path art/tools/art-export/Cargo.toml -- addon <addon-dir>` | `<addon-dir>/art/<name>.png` (the poses) and `<addon-dir>/<companion>_face.png` (the share card's and toolbar's faces): 256 px, 256-colour palette PNGs. |
+
+The tables of what each client gets are in
+[`android.rs`](tools/art-export/src/android.rs) and
+[`addon.rs`](tools/art-export/src/addon.rs). The same master gives the
+same bytes on every run. Linux builds are canonical: another platform or
+C compiler can encode a few pixels differently.
 
 ## The matrix
 

@@ -1,6 +1,8 @@
 # Checks the masters in manifest.json: every picture outside archive/ is
 # used (a pose, a launcher icon or an exported moment picture), and face
 # and launcher icons are headshots while everything else is full body.
+# Builds and tests the exporters the clients run (tools/art-export) and
+# exports every client's art once.
 name: Art check
 
 on:
@@ -24,3 +26,17 @@ jobs:
         run: cargo test --manifest-path tools/art-check/Cargo.toml
       - name: Check the masters
         run: cargo run --manifest-path tools/art-check/Cargo.toml -- .
+
+  art-export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test the exporters
+        run: cargo test --locked --manifest-path tools/art-export/Cargo.toml
+      - name: Lint the exporters
+        run: cargo clippy --locked --all-targets --manifest-path tools/art-export/Cargo.toml -- -D warnings
+      - name: Export the Android drawables
+        run: cargo run --locked --release --manifest-path tools/art-export/Cargo.toml -- android "$RUNNER_TEMP/android-res"
+      - name: Export the add-on pictures
+        run: cargo run --locked --release --manifest-path tools/art-export/Cargo.toml -- addon "$RUNNER_TEMP/addon"

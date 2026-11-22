@@ -11,7 +11,7 @@
 //! Usage: `cargo run --manifest-path tools/art-check/Cargo.toml -- .`
 //! (the argument is the repository root).
 
-use serde::Deserialize;
+use art_check::{Framing, Kind, Manifest};
 use std::path::{Path, PathBuf};
 use std::process::ExitCode;
 
@@ -44,8 +44,8 @@ const EXTENSIONS: &[&str] = &[
     "winner",
 ];
 
-/// Launcher icons, as AnkiQuest-Server's exporter names them
-/// (`crates/xtask/src/art.rs`: `<companion>_icon*`, used by
+/// Launcher icons, as the Android exporter names them
+/// (`tools/art-export/src/android.rs`: `<companion>_icon*`, used by
 /// AnkiQuest-Android's launcher).
 const LAUNCHER_ICONS: &[&str] = &[
     "icon",
@@ -56,9 +56,8 @@ const LAUNCHER_ICONS: &[&str] = &[
     "icon_sleepy",
 ];
 
-/// Moment, notification and leaderboard pictures AnkiQuest-Server's
-/// exporter exports (`crates/xtask/src/art.rs`) for the add-on and the
-/// Android app.
+/// Moment, notification and leaderboard pictures the exporters
+/// (`tools/art-export`) export for the add-on and the Android app.
 const MOMENTS: &[&str] = &[
     "achievement",
     "at_risk",
@@ -83,27 +82,6 @@ const MOMENTS: &[&str] = &[
 /// Folders whose pictures are not masters: the archive and the records.
 const NOT_MASTERS: &[&str] = &["archive", "docs", "tools", ".git", ".github"];
 
-/// How much of the companion a picture shows.
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize)]
-#[serde(rename_all = "snake_case")]
-enum Framing {
-    /// The whole body, head to feet.
-    FullBody,
-    /// Head and shoulders, or down to the waist.
-    Bust,
-    /// The head only.
-    Headshot,
-}
-
-/// `kind` in the manifest.
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize)]
-#[serde(rename_all = "snake_case")]
-enum Kind {
-    Core,
-    Extension,
-    Picture,
-}
-
 /// What uses a master, worked out from its name.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 enum Use {
@@ -112,27 +90,6 @@ enum Use {
     LauncherIcon,
     Moment,
     Unused,
-}
-
-#[derive(Deserialize)]
-struct Master {
-    companion: String,
-    pose: String,
-    kind: Kind,
-    file: String,
-    framing: Framing,
-}
-
-#[derive(Deserialize)]
-struct Shared {
-    file: String,
-    framing: Framing,
-}
-
-#[derive(Deserialize)]
-struct Manifest {
-    masters: Vec<Master>,
-    shared: Vec<Shared>,
 }
 
 /// What uses a picture with this name.
@@ -253,14 +210,10 @@ fn stray(root: &Path, manifest: &Manifest) -> std::io::Result<Vec<String>> {
 
 fn main() -> ExitCode {
     let root = PathBuf::from(std::env::args().nth(1).unwrap_or_else(|| ".".into()));
-    let path = root.join("manifest.json");
-    let manifest: Manifest = match std::fs::read_to_string(&path)
-        .map_err(|e| e.to_string())
-        .and_then(|text| serde_json::from_str(&text).map_err(|e| e.to_string()))
-    {
+    let manifest = match Manifest::read(&root) {
         Ok(manifest) => manifest,
         Err(e) => {
-            eprintln!("{}: {e}", path.display());
+            eprintln!("{e}");
             return ExitCode::FAILURE;
         }
     };
