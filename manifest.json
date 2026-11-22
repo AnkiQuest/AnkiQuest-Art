@@ -1,5 +1,5 @@
 {
-  "_about": "Every master in this repository: one entry per companion and pose; several poses may name the same file. A picture is outside archive/ only if something uses it: a pose, a launcher icon or an exported moment picture (hill, 2026-11-21). kind is core or extension for poses in poses.json, picture for other per-companion art (moment, notification and icon pictures). origin is shigeyuki for a file of Shigeyuki's Anki-tan asset pack v1.0, unchanged (pack is its path in the pack), derivative for art AnkiQuest made from his Anki-tan, ankiquest for AnkiQuest's own companions; author is who to credit. framing is full_body, bust (head and shoulders or waist up) or headshot (the head only); face and the launcher icons are headshots and every other master is full_body (AGENTS.md, Companion art), checked with use by tools/art-check. shared lists pictures of more than one companion. missing lists the core poses a companion has no master for yet, tracked in AnkiQuest-Server#57; extensions without a master show their fallback and are not listed. archive lists what archive/ holds, which is never exported: retired pictures one by one, with the master that replaced them and, where known, the source commit and path they came from, and the rest of Shigeyuki's pack by folder.",
+  "_about": "Every master in this repository: one entry per companion and pose; several poses may name the same file. A picture is outside archive/ only if something uses it: a pose, a launcher icon or an exported moment picture. kind is core or extension for poses in poses.json, picture for other per-companion art (moment, notification and icon pictures). origin is shigeyuki for a file of Shigeyuki's Anki-tan asset pack v1.0, unchanged (pack is its path in the pack), derivative for art AnkiQuest made from his Anki-tan, ankiquest for AnkiQuest's own companions; author is who to credit. framing is full_body, bust (head and shoulders or waist up) or headshot (the head only); face and the launcher icons are headshots and every other master is full_body (AGENTS.md, Companion art), checked with use by tools/art-check. shared lists pictures of more than one companion. missing lists the core poses a companion has no master for yet, tracked in AnkiQuest-Server#57; extensions without a master show their fallback and are not listed. archive lists what archive/ holds, which is never exported: retired pictures one by one, with the master that replaced them and, where known, the source commit and path they came from, and the rest of Shigeyuki's pack by folder.",
   "masters": [
     {
       "companion": "aki",
@@ -971,7 +971,7 @@
         "pose": "frozen",
         "file": "archive/anki-tan/chibi/frozen-bust.png",
         "replaced_by": "anki-tan/chibi/idle.png",
-        "note": "Head and shoulders in a blanket; poses other than face are full body (hill, 2026-11-21).",
+        "note": "Head and shoulders in a blanket; poses other than face are full body.",
         "origin": "derivative",
         "author": "AnkiQuest, after Shigeyuki",
         "licence": "CC-BY-SA-4.0"

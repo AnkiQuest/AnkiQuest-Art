@@ -10,8 +10,8 @@ Generated with OpenAI image_gen; its model identifier was not exposed.
 
 The original path was relative to AnkiQuest-Server's `static/anki-tan/`.
 This neglected pose has all three blue headband stars lit; the current
-master `anki-tan/neglected.png` has one unlit star, requested by hill and
-approved by Aldana.
+master `anki-tan/neglected.png` has one unlit star, approved by
+Aldana.
 
 [Aldana Belen Rodriguez approved this archive](https://github.com/AnkiQuest/AnkiQuest-Desktop/issues/88#issuecomment-6918911105).
 Generation and cleanup records are in
@@ -25,6 +25,6 @@ The copies that were here before are listed in
 `static/anki-tan/generated/frozen-chibi.png`), generated with OpenAI
 `image_gen` (model identifier not exposed); record in
 [the core poses documentation](../../docs/core-poses-2026-11/README.md).
-It shows head and shoulders, and poses other than `face` are full body
-(hill, 2026-11-21), so chibi frozen is now `anki-tan/chibi/idle.png`.
+It shows head and shoulders, and poses other than `face` are full body,
+so chibi frozen is now `anki-tan/chibi/idle.png`.
 CC BY-SA 4.0 under [LICENSE](LICENSE).
