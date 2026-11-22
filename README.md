@@ -37,7 +37,7 @@ pack files (`shigeyuki`, with their path in the pack) from art AnkiQuest
 made: derivatives of his Anki-tan (`derivative`) and AnkiQuest's own
 companions (`ankiquest`).
 
-Two rules (hill, 2026-11-21), checked by `tools/art-check`:
+Three rules, checked by `tools/art-check`:
 
 - A picture is outside `archive/` only if something uses it: it is a
   pose master, a launcher icon or a moment picture an exporter exports.
@@ -46,6 +46,9 @@ Two rules (hill, 2026-11-21), checked by `tools/art-check`:
   `icon_worried`, `icon_frozen`, `icon_sleepy`) are headshots of the
   face; every other master shows the full body. `framing` in the
   manifest records it.
+- No two pictures outside `docs/` and `tools/`, `archive/` included,
+  have the same bytes: poses that share a picture name one file in
+  `manifest.json`.
 
 Where one picture shows several poses, their manifest entries name the
 same file instead of copies: `anki-tan/chibi/idle.png` is ten of Anki-tan

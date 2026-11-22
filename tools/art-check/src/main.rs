@@ -10,7 +10,8 @@
 //!
 //! It also checks `poses.json` itself: every fallback names a known pose
 //! and none forms a cycle, and `missing` in the manifest lists only core
-//! poses.
+//! poses. And no two pictures outside `docs/` and `tools/` have the same
+//! bytes: poses that share a picture name one file in the manifest.
 //!
 //! Usage: `cargo run --manifest-path tools/art-check/Cargo.toml -- .`
 //! (the argument is the repository root).
@@ -55,6 +56,12 @@ const MOMENTS: &[&str] = &[
     "place_3",
     "study",
 ];
+
+/// Picture file extensions the duplicate check compares.
+const PICTURE_EXTENSIONS: &[&str] = &["png", "webp", "jpg", "jpeg", "gif"];
+
+/// Folders the duplicate check skips: git's own and the records.
+const NOT_COMPARED: &[&str] = &[".git", "docs", "tools"];
 
 /// Folders whose pictures are not masters: the archive and the records.
 const NOT_MASTERS: &[&str] = &["archive", "docs", "tools", ".git", ".github"];
@@ -329,6 +336,85 @@ fn stray(root: &Path, manifest: &Manifest) -> std::io::Result<Vec<String>> {
     Ok(out)
 }
 
+/// Every picture under `dir`, skipping `NOT_COMPARED` at the top.
+fn all_pictures(root: &Path, dir: &Path, out: &mut Vec<PathBuf>) -> std::io::Result<()> {
+    for entry in std::fs::read_dir(dir)? {
+        let path = entry?.path();
+        if path.is_dir() {
+            let rel = path.strip_prefix(root).unwrap_or(&path);
+            let top = rel.components().next();
+            let skip =
+                top.is_some_and(|c| NOT_COMPARED.contains(&&*c.as_os_str().to_string_lossy()));
+            if !skip {
+                all_pictures(root, &path, out)?;
+            }
+            continue;
+        }
+        let ext = path
+            .extension()
+            .map(|e| e.to_string_lossy().to_ascii_lowercase())
+            .unwrap_or_default();
+        if PICTURE_EXTENSIONS.contains(&ext.as_str()) {
+            out.push(path);
+        }
+    }
+    Ok(())
+}
+
+/// One line per pair of pictures with identical bytes: grouped by length,
+/// then by hash, then compared byte for byte.
+fn duplicates(root: &Path) -> std::io::Result<Vec<String>> {
+    use std::collections::HashMap;
+    use std::hash::{DefaultHasher, Hash, Hasher};
+
+    let mut found = Vec::new();
+    all_pictures(root, root, &mut found)?;
+    found.sort();
+
+    let mut by_len: BTreeMap<u64, Vec<PathBuf>> = BTreeMap::new();
+    for path in found {
+        by_len
+            .entry(std::fs::metadata(&path)?.len())
+            .or_default()
+            .push(path);
+    }
+
+    let rel = |p: &Path| {
+        p.strip_prefix(root)
+            .unwrap_or(p)
+            .to_string_lossy()
+            .replace('\\', "/")
+    };
+    let mut out = Vec::new();
+    for paths in by_len.into_values().filter(|p| p.len() > 1) {
+        let mut by_hash: HashMap<u64, Vec<(PathBuf, Vec<u8>)>> = HashMap::new();
+        for path in paths {
+            let bytes = std::fs::read(&path)?;
+            let mut hasher = DefaultHasher::new();
+            bytes.hash(&mut hasher);
+            by_hash
+                .entry(hasher.finish())
+                .or_default()
+                .push((path, bytes));
+        }
+        for group in by_hash.values() {
+            for (i, (a, bytes_a)) in group.iter().enumerate() {
+                for (b, bytes_b) in &group[i + 1..] {
+                    if bytes_a == bytes_b {
+                        out.push(format!(
+                            "{} and {}: the same picture; poses that share a picture name one file in manifest.json",
+                            rel(a),
+                            rel(b)
+                        ));
+                    }
+                }
+            }
+        }
+    }
+    out.sort();
+    Ok(out)
+}
+
 fn main() -> ExitCode {
     let root = PathBuf::from(std::env::args().nth(1).unwrap_or_else(|| ".".into()));
     let path = root.join("manifest.json");
@@ -348,7 +434,10 @@ fn main() -> ExitCode {
     let mut found = pose_violations(&poses);
     found.extend(missing_violations(&missing, &poses));
     found.extend(violations(&manifest, &poses));
-    match stray(&root, &manifest) {
+    match stray(&root, &manifest).and_then(|mut lines| {
+        lines.extend(duplicates(&root)?);
+        Ok(lines)
+    }) {
         Ok(lines) => found.extend(lines),
         Err(e) => {
             eprintln!("{}: {e}", root.display());
@@ -492,6 +581,65 @@ mod tests {
         assert!(missing_violations(&missing("streak"), &poses()).is_empty());
         assert_eq!(missing_violations(&missing("jolly"), &poses()).len(), 1);
         assert_eq!(missing_violations(&missing("winner"), &poses()).len(), 1);
+    }
+
+    /// A fresh, empty folder for one test.
+    fn scratch(name: &str) -> PathBuf {
+        let dir = std::env::temp_dir().join(format!("art-check-{name}-{}", std::process::id()));
+        let _ = std::fs::remove_dir_all(&dir);
+        std::fs::create_dir_all(dir.join("aki")).unwrap();
+        dir
+    }
+
+    #[test]
+    fn identical_pictures_are_rejected() {
+        let dir = scratch("dup");
+        std::fs::create_dir_all(dir.join("archive/aki")).unwrap();
+        std::fs::create_dir_all(dir.join("docs")).unwrap();
+        // Master and master, archive and archive.
+        std::fs::write(dir.join("aki/happy.png"), b"happy").unwrap();
+        std::fs::write(dir.join("aki/smile.png"), b"happy").unwrap();
+        std::fs::write(dir.join("archive/aki/a.gif"), b"old").unwrap();
+        std::fs::write(dir.join("archive/aki/b.jpg"), b"old").unwrap();
+        // Different bytes of the same length, and records, pass.
+        std::fs::write(dir.join("aki/sad.png"), b"hapPy").unwrap();
+        std::fs::write(dir.join("docs/happy.png"), b"other").unwrap();
+        std::fs::write(dir.join("docs/copy.png"), b"other").unwrap();
+        let found = duplicates(&dir).unwrap();
+        std::fs::remove_dir_all(&dir).unwrap();
+        assert_eq!(found.len(), 2, "{found:?}");
+        assert!(found[0].contains("aki/happy.png and aki/smile.png"));
+        assert!(found[0].contains("name one file in manifest.json"));
+        assert!(found[1].contains("archive/aki/a.gif and archive/aki/b.jpg"));
+    }
+
+    #[test]
+    fn archive_copies_of_masters_are_rejected() {
+        let dir = scratch("archived");
+        std::fs::create_dir_all(dir.join("archive/aki")).unwrap();
+        std::fs::write(dir.join("aki/happy.png"), b"same bytes").unwrap();
+        std::fs::write(dir.join("archive/aki/old.webp"), b"same bytes").unwrap();
+        let found = duplicates(&dir).unwrap();
+        std::fs::remove_dir_all(&dir).unwrap();
+        assert_eq!(found.len(), 1, "{found:?}");
+        assert!(found[0].contains("aki/happy.png and archive/aki/old.webp"));
+    }
+
+    #[test]
+    fn shared_poses_naming_one_file_pass() {
+        let dir = scratch("shared");
+        std::fs::write(dir.join("aki/idle.png"), b"one picture").unwrap();
+        let json = r#"{"masters": [
+            {"companion": "aki", "pose": "sad", "kind": "core", "file": "aki/idle.png", "framing": "full_body"},
+            {"companion": "aki", "pose": "hopeful", "kind": "core", "file": "aki/idle.png", "framing": "full_body"}
+        ], "shared": []}"#;
+        let shared: Manifest = serde_json::from_str(json).unwrap();
+        let dups = duplicates(&dir).unwrap();
+        let strays = stray(&dir, &shared).unwrap();
+        std::fs::remove_dir_all(&dir).unwrap();
+        assert!(dups.is_empty(), "{dups:?}");
+        assert!(strays.is_empty(), "{strays:?}");
+        assert!(check(&shared).is_empty());
     }
 
     #[test]
