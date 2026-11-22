@@ -1167,6 +1167,110 @@
           "path": "addon/art/ankilope_welcome.png",
           "replaced_in": "587fa3f52e5dc8ba52e02faadb0032010428be75"
         }
+      },
+      {
+        "companion": "aki",
+        "pose": "challenge",
+        "file": "archive/aki/found/dd47bd54-d107-433f-833d-d56ec59a5ff3.png",
+        "replaced_by": "aki/challenge.png",
+        "note": "Unused candidate 11 of the 24 posted in AnkiQuest-Desktop#88: holds up a card, the other paw held out. Not made a master in AnkiQuest-Desktop#126.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "url": "https://github.com/user-attachments/assets/dd47bd54-d107-433f-833d-d56ec59a5ff3"
+        }
+      },
+      {
+        "companion": "aki",
+        "pose": "backlog",
+        "file": "archive/aki/found/bf730fe4-6d14-4df4-9080-06417f9a506b.png",
+        "replaced_by": "aki/backlog.png",
+        "note": "Unused candidate 14 of the 24 posted in AnkiQuest-Desktop#88: sits with a small stack of cards, eyes wide. Not made a master in AnkiQuest-Desktop#126.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "url": "https://github.com/user-attachments/assets/bf730fe4-6d14-4df4-9080-06417f9a506b"
+        }
+      },
+      {
+        "companion": "aki",
+        "pose": "level_up",
+        "file": "archive/aki/found/16d0ce86-b688-44bc-a908-7f2163a67842.png",
+        "replaced_by": "aki/level_up.png",
+        "note": "Unused candidate 15 of the 24 posted in AnkiQuest-Desktop#88: raises a big gold star. Not made a master in AnkiQuest-Desktop#126.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "url": "https://github.com/user-attachments/assets/16d0ce86-b688-44bc-a908-7f2163a67842"
+        }
+      },
+      {
+        "companion": "aki",
+        "pose": "streak_milestone",
+        "file": "archive/aki/found/f5815743-e7e7-485d-863e-eff54a558cbe.png",
+        "replaced_by": "aki/streak_milestone.png",
+        "note": "Unused candidate 17 of the 24 posted in AnkiQuest-Desktop#88: star flag with smaller flames than the master. Not made a master in AnkiQuest-Desktop#126.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "url": "https://github.com/user-attachments/assets/f5815743-e7e7-485d-863e-eff54a558cbe"
+        }
+      },
+      {
+        "companion": "aki",
+        "pose": "icon_frozen",
+        "file": "archive/aki/found/25279d13-88cd-413e-b3ad-9c8d72ff9739.png",
+        "replaced_by": "aki/icon_frozen.png",
+        "note": "Unused candidate 18 of the 24 posted in AnkiQuest-Desktop#88: laughing face with frosted ears. Not made a master in AnkiQuest-Desktop#126.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "url": "https://github.com/user-attachments/assets/25279d13-88cd-413e-b3ad-9c8d72ff9739"
+        }
+      },
+      {
+        "companion": "aki",
+        "pose": "level_up",
+        "file": "archive/aki/found/f2e298ec-2d21-4791-a0b4-b40b0cfed6eb.png",
+        "replaced_by": "aki/level_up.png",
+        "note": "Unused candidate 19 of the 24 posted in AnkiQuest-Desktop#88: steps out of a glowing gold arch with a card. Not made a master in AnkiQuest-Desktop#126.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "url": "https://github.com/user-attachments/assets/f2e298ec-2d21-4791-a0b4-b40b0cfed6eb"
+        }
+      },
+      {
+        "companion": "aki",
+        "pose": "nudge",
+        "file": "archive/aki/found/11c246ae-128d-4470-aeeb-e47a403c1505.png",
+        "replaced_by": "aki/nudge.png",
+        "note": "Unused candidate 20 of the 24 posted in AnkiQuest-Desktop#88: waves while holding a card. Not made a master in AnkiQuest-Desktop#126.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "url": "https://github.com/user-attachments/assets/11c246ae-128d-4470-aeeb-e47a403c1505"
+        }
+      },
+      {
+        "companion": "aki",
+        "pose": "challenge_won",
+        "file": "archive/aki/found/680aaf59-95ae-4d80-b6d0-6469162e4545.png",
+        "replaced_by": "aki/challenge_won.png",
+        "note": "Unused candidate 24 of the 24 posted in AnkiQuest-Desktop#88: purple star flag with confetti; a pale haze covers the canvas. Not made a master in AnkiQuest-Desktop#126.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "url": "https://github.com/user-attachments/assets/680aaf59-95ae-4d80-b6d0-6469162e4545"
+        }
       }
     ],
     "pack": {
