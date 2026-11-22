@@ -8,11 +8,10 @@ Most masters are files from Shigeyuki's Anki-tan asset pack v1.0, moved
 here unchanged. The rest of the pack is in
 [`../archive/anki-tan-pack/`](../archive/anki-tan-pack/README.md).
 
-The two versions share no full-size pose (hill, 2026-11-21). `face` and
-the launcher icons are headshots; every other pose is full body (hill,
-2026-11-21). The pack's emoji are the chibi head design: headshots, so
-they serve only as faces and launcher icons. hill chose these masters on
-2026-11-21:
+The two versions share no full-size pose. `face` and
+the launcher icons are headshots; every other pose is full body.
+The pack's emoji are the chibi head design: headshots, so
+they serve only as faces and launcher icons. The masters are:
 
 | Pose | Anki-tan | Anki-tan chibi |
 |---|---|---|

@@ -1,5 +1,4 @@
-//! Checks the masters in `manifest.json` against two rules (hill,
-//! 2026-11-21):
+//! Checks the masters in `manifest.json` against two rules:
 //!
 //! - Use: a picture is outside `archive/` only if something uses it: it
 //!   is the master of a pose in AnkiQuest-Server's

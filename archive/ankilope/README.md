@@ -19,7 +19,7 @@ history have the same hashes.
 ## Add-on copies
 
 AnkiQuest-Desktop's add-on pictures from before `export-addon-art` wrote
-them: hand-made 256 px copies that no master exports to (hill, 2026-11-21).
+them: hand-made 256 px copies that no master exports to.
 Commits are AnkiQuest-Desktop's.
 
 | File | Original path | Added in | Replaced in | Pose now | SHA-256 |
