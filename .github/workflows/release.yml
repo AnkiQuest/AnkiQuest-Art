@@ -90,5 +90,9 @@ jobs:
           GH_TOKEN: ${{ secrets.FORK_SYNC_TOKEN }}
           TAG: ${{ steps.tag.outputs.tag }}
         run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::warning::FORK_SYNC_TOKEN is not set; the consumers were not notified. AnkiQuest-Sync's art job pins the latest release on its daily run anyway."
+            exit 0
+          fi
           gh api repos/AnkiQuest/AnkiQuest-Sync/dispatches \
             -f event_type=art-released -f "client_payload[tag]=$TAG"
