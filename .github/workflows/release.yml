@@ -1,0 +1,94 @@
+# Publishes an AnkiQuest-Art release when master's art changes: the
+# clients' exports, the masters, the archive, the manifests and the pin
+# file consumers commit (README, Releases). Tags are art-<N>, one more than
+# the highest art-* tag. Then asks AnkiQuest-Sync to update the consumers.
+name: Release
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - aki/**
+      - ankilope/**
+      - cow/**
+      - anki-tan/**
+      - duo/**
+      - archive/**
+      - LICENSE
+      - manifest.json
+      - poses.json
+      - tools/art-check/**
+      - tools/art-export/**
+      - tools/release/**
+      - .github/workflows/release.yml
+  workflow_dispatch:
+
+# Publishing runs one at a time and is never cancelled.
+concurrency:
+  group: art-release
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      # A commit is released once; a rerun after publishing does nothing.
+      - name: Choose the tag
+        id: tag
+        run: |
+          tags=$(git ls-remote --tags --refs origin 'refs/tags/art-*')
+          if printf '%s\n' "$tags" | grep -q "^$GITHUB_SHA"; then
+            echo "$GITHUB_SHA is already released"
+            echo "tag=" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          last=$(printf '%s\n' "$tags" | sed -n 's|.*refs/tags/art-\([0-9][0-9]*\)$|\1|p' | sort -n | tail -n 1)
+          echo "tag=art-$(( ${last:-0} + 1 ))" >> "$GITHUB_OUTPUT"
+
+      # Linux builds are canonical. Two builds must give the same bytes.
+      - name: Build the assets twice
+        if: steps.tag.outputs.tag != ''
+        env:
+          TAG: ${{ steps.tag.outputs.tag }}
+        run: |
+          tools/release/build.sh "$TAG" "$GITHUB_SHA" "$RUNNER_TEMP/assets"
+          tools/release/build.sh "$TAG" "$GITHUB_SHA" "$RUNNER_TEMP/again"
+          diff -r "$RUNNER_TEMP/assets" "$RUNNER_TEMP/again"
+
+      - name: Publish
+        if: steps.tag.outputs.tag != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.tag.outputs.tag }}
+        run: |
+          cd "$RUNNER_TEMP/assets"
+          {
+            echo "Built from AnkiQuest-Art $GITHUB_SHA."
+            echo
+            echo "SHA-256 of each asset:"
+            echo
+            echo '```'
+            cat SHA256SUMS
+            echo '```'
+          } > "$RUNNER_TEMP/notes.md"
+          gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
+            --title "$TAG" --notes-file "$RUNNER_TEMP/notes.md" ./*
+
+      - name: Ask AnkiQuest-Sync to update the consumers
+        if: steps.tag.outputs.tag != ''
+        env:
+          GH_TOKEN: ${{ secrets.FORK_SYNC_TOKEN }}
+          TAG: ${{ steps.tag.outputs.tag }}
+        run: |
+          gh api repos/AnkiQuest/AnkiQuest-Sync/dispatches \
+            -f event_type=art-released -f "client_payload[tag]=$TAG"

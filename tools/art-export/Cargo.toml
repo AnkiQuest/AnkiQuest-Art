@@ -1,0 +1,43 @@
+[package]
+name = "art-export"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+license = "AGPL-3.0-or-later"
+publish = false
+description = "Writes the Android drawables and the desktop add-on pictures from the masters in manifest.json"
+
+[dependencies]
+art-check = { path = "../art-check" }
+color_quant = "2"
+image = { version = "0.25.10", default-features = false, features = ["png"] }
+png = "0.18"
+webp = { version = "0.3", default-features = false }
+
+# Unoptimised resampling, quantising and libwebp take minutes in the tests.
+[profile.dev.package.image]
+opt-level = 3
+
+[profile.dev.package.libwebp-sys]
+opt-level = 3
+
+[profile.dev.package.png]
+opt-level = 3
+
+[profile.dev.package.fdeflate]
+opt-level = 3
+
+[profile.dev.package.miniz_oxide]
+opt-level = 3
+
+[profile.dev.package.adler2]
+opt-level = 3
+
+[profile.dev.package.simd-adler32]
+opt-level = 3
+
+[profile.dev.package.crc32fast]
+opt-level = 3
+
+[profile.dev.package.color_quant]
+opt-level = 3

@@ -1,6 +1,8 @@
 # Checks the masters in manifest.json: every picture outside archive/ is
 # used (a pose, a launcher icon or an exported moment picture), and face
 # and launcher icons are headshots while everything else is full body.
+# Builds and tests the exporters (tools/art-export) and builds the release
+# assets twice to check that they are deterministic.
 name: Art check
 
 on:
@@ -14,8 +16,31 @@ on:
 permissions:
   contents: read
 
+# A newer push to a pull request replaces its run; pushes to master and merge
+# queue entries each keep theirs.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 jobs:
+  # Whether anything besides documentation changed. The check reads
+  # manifest.json and the pictures outside docs/, never the Markdown or
+  # licence texts, so a docs-only change skips it.
+  changes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      pull-requests: read
+    outputs:
+      code: ${{ steps.changed.outputs.code }}
+    steps:
+      - id: changed
+        uses: AnkiQuest/AnkiQuest-Dev/.github/actions/code-changed@5ab685e7013b865630f96530ca8c654344738fa8
+
   art-check:
+    needs: changes
+    if: needs.changes.outputs.code == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -24,3 +49,21 @@ jobs:
         run: cargo test --manifest-path tools/art-check/Cargo.toml
       - name: Check the masters
         run: cargo run --manifest-path tools/art-check/Cargo.toml -- .
+
+  art-export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test the exporters
+        run: cargo test --locked --manifest-path tools/art-export/Cargo.toml
+      - name: Lint the exporters
+        run: cargo clippy --locked --all-targets --manifest-path tools/art-export/Cargo.toml -- -D warnings
+      # What the release workflow publishes, built twice: the bytes must
+      # match. The tag is a stand-in; only the pin file names it.
+      - name: Build the release assets twice
+        run: |
+          tools/release/build.sh art-1 "$GITHUB_SHA" "$RUNNER_TEMP/assets"
+          tools/release/build.sh art-1 "$GITHUB_SHA" "$RUNNER_TEMP/again"
+          diff -r "$RUNNER_TEMP/assets" "$RUNNER_TEMP/again"
+          cat "$RUNNER_TEMP/assets/SHA256SUMS"
