@@ -22,6 +22,23 @@ extension, then moment picture); the other poses name the same file in
 | `aki/freeze_used.png` | `aki/frozen_2.png` | frozen_2, freeze_used |
 | `anki-tan/chibi/idle.png` | `anki-tan/chibi/asleep.png` | asleep and nine other chibi poses |
 
+## Archive normalized
+
+Picture moves (same bytes, new paths) giving every
+companion folder one layout: `retired/` for replaced masters, `addon/`
+for pre-export add-on copies, `found/` for candidates never made
+masters.
+
+| Was | Now |
+|---|---|
+| `archive/aki/welcome-shadow.png` | `archive/aki/retired/welcome-shadow.png` |
+| `archive/aki/review-before-pose-fix.png` | `archive/aki/retired/review-before-pose-fix.png` |
+| `archive/aki/at_risk-small-hourglass.png` | `archive/aki/retired/at_risk-small-hourglass.png` |
+| `archive/ankilope/happy-tight-framing.png` | `archive/ankilope/retired/happy-tight-framing.png` |
+| `archive/anki-tan/neglected-three-blue-stars.png` | `archive/anki-tan/retired/neglected-three-blue-stars.png` |
+| `archive/anki-tan/face-tile-cut.png` | `archive/anki-tan/retired/face-tile-cut.png` |
+| `archive/anki-tan/chibi/frozen-bust.png` | `archive/anki-tan/retired/chibi-frozen-bust.png` |
+
 ## Masters renamed to their pose
 
 | Old path | New path |
@@ -62,8 +79,8 @@ Anki-tan chibi's poses: `face` is `anki-tan/chibi/face.png`, `happy` is
 | Old path | New path |
 |---|---|
 | `static/anki-tan/archive/README.md` | `archive/anki-tan/README.md` |
-| `static/anki-tan/archive/neglected-full.png` | `archive/anki-tan/neglected-three-blue-stars.png` |
-| `static/anki-tan/chibi/frozen.png` | `archive/anki-tan/chibi/frozen-bust.png` |
+| `static/anki-tan/archive/neglected-full.png` | `archive/anki-tan/retired/neglected-three-blue-stars.png` |
+| `static/anki-tan/chibi/frozen.png` | `archive/anki-tan/retired/chibi-frozen-bust.png` |
 | `static/anki-tan/emoji/Ankitan_06_pleading.png` | `archive/anki-tan-pack/emoji/Ankitan_06_pleading.png` |
 | `static/anki-tan/emoji/Ankitan_10_party.png` | `archive/anki-tan-pack/emoji/Ankitan_10_party.png` |
 | `static/anki-tan/emoji/Ankitan_21_saluting.png` | `archive/anki-tan-pack/emoji/Ankitan_21_saluting.png` |
@@ -92,11 +109,11 @@ one reads the kept file.
 | `assets/cards/aki-streak.png` | `aki/streak.png` |
 | `assets/cards/aki-winner.png` | `aki/winner.png` |
 | `assets/cards/ankilope-celebrate.png` | `ankilope/happy.png` |
-| `static/anki-tan/archive/addon/anki_tan_neglected-three-blue-stars.png` | `archive/anki-tan/neglected-three-blue-stars.png` |
+| `static/anki-tan/archive/addon/anki_tan_neglected-three-blue-stars.png` | `archive/anki-tan/retired/neglected-three-blue-stars.png` |
 | `static/anki-tan/archive/addon/anki_tan_sleeping.png` | `anki-tan/asleep.png` |
 | `static/anki-tan/archive/asleep-full.png` | `anki-tan/asleep.png` |
 | `static/anki-tan/archive/sad-full.png` | `anki-tan/sad.png` |
-| `static/anki-tan/generated/frozen-chibi.png` | `archive/anki-tan/chibi/frozen-bust.png` |
+| `static/anki-tan/generated/frozen-chibi.png` | `archive/anki-tan/retired/chibi-frozen-bust.png` |
 | `static/anki-tan/generated/frozen-full.png` | `anki-tan/frozen.png` |
 | `static/cow/archive/addon/bluma_celebrate.png` | `cow/happy.png` |
 | `static/cow/archive/addon/bluma_sleeping.png` | `cow/asleep.png` |

@@ -6,7 +6,7 @@ Generated with OpenAI image_gen; its model identifier was not exposed.
 
 | File | Original path | SHA-256 |
 |---|---|---|
-| neglected-three-blue-stars.png | generated/neglected-full.png | 77d1ea121bd4eef6b9b1b5578d7c0651e781c77468587b4b0df10b00d1032e4a |
+| `retired/neglected-three-blue-stars.png` | `generated/neglected-full.png` | 77d1ea121bd4eef6b9b1b5578d7c0651e781c77468587b4b0df10b00d1032e4a |
 
 The original path was relative to AnkiQuest-Server's `static/anki-tan/`.
 This neglected pose has all three blue headband stars lit; the current
@@ -21,7 +21,7 @@ The copies that were here before are listed in
 
 ## Chibi frozen bust
 
-`chibi/frozen-bust.png` was `anki-tan/chibi/frozen.png` (AnkiQuest-Server
+`retired/chibi-frozen-bust.png` was `anki-tan/chibi/frozen.png` (AnkiQuest-Server
 `static/anki-tan/generated/frozen-chibi.png`), generated with OpenAI
 `image_gen` (model identifier not exposed); record in
 [the core poses documentation](../../docs/core-poses-2026-11/README.md).
@@ -31,7 +31,7 @@ CC BY-SA 4.0 under [LICENSE](LICENSE).
 
 ## Face with the tile cut away
 
-`face-tile-cut.png` was `anki-tan/face.png`: the pack's `icon.png`
+`retired/face-tile-cut.png` was `anki-tan/face.png`: the pack's `icon.png`
 (256 px) with the rounded tile, its frame and the green grid behind her
 cut away by a hand-traced polygon mask (ImageMagick 6.9, 0.6 px blur on
 the mask edge), her hair cut straight where the tile cut it. Record:

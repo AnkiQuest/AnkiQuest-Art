@@ -50,7 +50,7 @@ is one unlit headband star for neglected, two for abandoned and three for dead.
 Aldana approved the revised neglected image. Only neglected
 changes here; the other two poses remain future work. The earlier neglected
 master stays byte for byte in `static/anki-tan/archive/neglected-full.png`,
-now `archive/anki-tan/neglected-three-blue-stars.png` in AnkiQuest-Art.
+now `archive/anki-tan/retired/neglected-three-blue-stars.png` in AnkiQuest-Art.
 [The edit record](neglected-revision.json) contains the prompt, model
 disclosure, hashes and cleanup measurements. The new master was inspected
 at full size and 64 px on light and dark backgrounds. Canonical

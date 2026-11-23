@@ -4,11 +4,19 @@ Pictures that are no longer masters and are not a copy of one, and
 pictures nothing uses (outside the archive is only what is
 used). Nothing here is exported to a client.
 
-- `aki/`, `ankilope/`: earlier versions of Aki's and Ankilope's masters,
-  replaced in AnkiQuest-Server before the split, and in `addon/` the
-  add-on's hand-made copies from before `export-addon-art`; see their READMEs.
-- `anki-tan/`: Anki-tan's neglected pose before one headband star was
-  unlit, and the generated chibi frozen bust; see its README. CC BY-SA 4.0 under its LICENSE.
+Every companion folder follows one layout: `retired/` for pictures that
+were masters and were replaced, `addon/` (when the companion has them)
+for the add-on's hand-made copies from before `export-addon-art`, and
+`found/` (Aki only, so far) for posted candidates that never became
+masters.
+
+- `aki/`, `ankilope/`: in `retired/` earlier versions of Aki's and
+  Ankilope's masters, replaced in AnkiQuest-Server before the split; in
+  `aki/found/` candidates that never became masters; see their READMEs.
+- `anki-tan/`: in `retired/` Anki-tan's neglected pose before one
+  headband star was unlit, her face with the tile cut away, and the
+  generated chibi frozen bust; see its README. CC BY-SA 4.0 under its
+  LICENSE.
 - `anki-tan-pack/`: the rest of Shigeyuki's Anki-tan asset pack; see its
   README. CC BY-SA 4.0 under its LICENSE.
 
@@ -50,10 +58,10 @@ files are in this repository's history.
 | `anki-tan/generated/frozen-full.png` | `anki-tan/frozen.png` | same bytes |
 | `anki-tan/generated/frozen-chibi.png` | `anki-tan/chibi/frozen.png` | same bytes |
 | `anki-tan/addon/anki_tan_sleeping.png` | `anki-tan/asleep.png` | 256 px copy |
-| `anki-tan/addon/anki_tan_neglected-three-blue-stars.png` | `archive/anki-tan/neglected-three-blue-stars.png` | 256 px copy |
+| `anki-tan/addon/anki_tan_neglected-three-blue-stars.png` | `archive/anki-tan/retired/neglected-three-blue-stars.png` | 256 px copy |
 
 Removed paths are relative to `archive/`; kept paths to the repository.
-`archive/anki-tan/neglected-three-blue-stars.png` was
+`archive/anki-tan/retired/neglected-three-blue-stars.png` was
 `archive/anki-tan/neglected-full.png`; it took the more descriptive name
 of its removed copy. It stays: all three headband stars are lit, while
 `anki-tan/neglected.png` has one unlit star.

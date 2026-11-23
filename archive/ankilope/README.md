@@ -6,7 +6,7 @@ repository licence applies.
 
 | File | Original path | Added in | Replaced in | Replaced by | SHA-256 |
 |---|---|---|---|---|---|
-| `happy-tight-framing.png` | `static/ankilope/celebrate.png` | 9ebe1eb | 10f8c02 ("Improve Ankilope celebration framing") | `ankilope/happy.png` | f972861dc9371b2e52f30d47605fc04af49c378b06781200d09eb3c4f23f3faa |
+| `retired/happy-tight-framing.png` | `static/ankilope/celebrate.png` | 9ebe1eb | 10f8c02 ("Improve Ankilope celebration framing") | `ankilope/happy.png` | f972861dc9371b2e52f30d47605fc04af49c378b06781200d09eb3c4f23f3faa |
 
 The ears and feet touch the edge of the picture. It was the input of the
 generated reframing (OpenAI `image_gen`, model identifier not exposed)
