@@ -16,6 +16,7 @@
 //! Usage: `cargo run --manifest-path tools/art-check/Cargo.toml -- .`
 //! (the argument is the repository root).
 
+use art_check::{Framing, Kind, Manifest};
 use serde::Deserialize;
 use std::collections::BTreeMap;
 use std::path::{Path, PathBuf};
@@ -39,27 +40,6 @@ const NOT_COMPARED: &[&str] = &[".git", "docs", "tools"];
 /// Folders whose pictures are not masters: the archive and the records.
 const NOT_MASTERS: &[&str] = &["archive", "docs", "tools", ".git", ".github"];
 
-/// How much of the companion a picture shows.
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize)]
-#[serde(rename_all = "snake_case")]
-enum Framing {
-    /// The whole body, head to feet.
-    FullBody,
-    /// Head and shoulders, or down to the waist.
-    Bust,
-    /// The head only.
-    Headshot,
-}
-
-/// `kind` in the manifest.
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize)]
-#[serde(rename_all = "snake_case")]
-enum Kind {
-    Core,
-    Extension,
-    Picture,
-}
-
 /// What uses a master, worked out from its name.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 enum Use {
@@ -68,27 +48,6 @@ enum Use {
     LauncherIcon,
     Moment,
     Unused,
-}
-
-#[derive(Deserialize)]
-struct Master {
-    companion: String,
-    pose: String,
-    kind: Kind,
-    file: String,
-    framing: Framing,
-}
-
-#[derive(Deserialize)]
-struct Shared {
-    file: String,
-    framing: Framing,
-}
-
-#[derive(Deserialize)]
-struct Manifest {
-    masters: Vec<Master>,
-    shared: Vec<Shared>,
 }
 
 /// `poses.json`: the pose names and their fallbacks.
@@ -135,7 +94,6 @@ struct Missing {
     #[serde(default)]
     missing: Vec<MissingPose>,
 }
-
 /// What uses a picture with this name.
 fn use_of(name: &str, poses: &Poses) -> Use {
     if poses.core.iter().any(|p| p == name) {
@@ -425,12 +383,17 @@ fn duplicates(root: &Path) -> std::io::Result<Vec<String>> {
 fn main() -> ExitCode {
     let root = PathBuf::from(std::env::args().nth(1).unwrap_or_else(|| ".".into()));
     let path = root.join("manifest.json");
-    let read = read_json::<Manifest>(&path).and_then(|manifest| {
-        let missing = read_json::<Missing>(&path)?;
-        let poses = read_json::<Poses>(&root.join("poses.json"))?;
-        Ok((manifest, missing, poses))
+    let manifest = match Manifest::read(&root) {
+        Ok(manifest) => manifest,
+        Err(e) => {
+            eprintln!("{e}");
+            return ExitCode::FAILURE;
+        }
+    };
+    let read = read_json::<Missing>(&path).and_then(|missing| {
+        read_json::<Poses>(&root.join("poses.json")).map(|poses| (missing, poses))
     });
-    let (manifest, missing, poses) = match read {
+    let (missing, poses) = match read {
         Ok(read) => read,
         Err(e) => {
             eprintln!("{e}");
