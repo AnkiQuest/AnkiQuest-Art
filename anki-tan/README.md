@@ -8,30 +8,29 @@ Most masters are files from Shigeyuki's Anki-tan asset pack v1.0, moved
 here unchanged. The rest of the pack is in
 [`../archive/anki-tan-pack/`](../archive/anki-tan-pack/README.md).
 
-The two versions share no full-size pose (hill, 2026-11-21). `face` and
-the launcher icons are headshots; every other pose is full body (hill,
-2026-11-21). The pack's emoji are the chibi head design: headshots, so
-they serve only as faces and launcher icons. hill chose these masters on
-2026-11-21:
+The two versions share no full-size pose. `face` and the launcher icons
+are headshots; every other pose is full body. The pack's emoji are the
+chibi head design: headshots, so they serve only as faces and launcher
+icons. The masters:
 
 | Pose | Anki-tan | Anki-tan chibi |
 |---|---|---|
-| face | `face.png`: pack `icon.png` with the app tile cut away (derivative) | `chibi/face.png`: pack `emoji/Ankitan_00_smile.png` |
-| asleep | generated | `chibi/idle.png` |
+| face | `chibi/face.png`, the chibi's face | `chibi/face.png`: pack `emoji/Ankitan_00_smile.png` |
+| asleep | generated | `chibi/asleep.png` |
 | happy | missing | `chibi/happy.png`: pack `sprite/hello/anki-tan-hello_0006.png` (waving) |
-| streak | missing | `chibi/idle.png` |
-| sad | generated | `chibi/idle.png` |
-| hopeful | pack `sticker/ankitan_lets_study.png` | `chibi/idle.png` |
-| frozen | generated | `chibi/idle.png` |
-| neglected | generated | `chibi/idle.png` |
-| welcome | falls back | falls back |
+| streak | missing | `chibi/asleep.png` |
+| sad | generated | `chibi/asleep.png` |
+| hopeful | pack `sticker/ankitan_lets_study.png` | `chibi/asleep.png` |
+| frozen | generated | `chibi/asleep.png` |
+| neglected | generated | `chibi/asleep.png` |
+| welcome | `hopeful.png` | falls back |
 | review | falls back | falls back |
-| streak_legend | falls back | `chibi/idle.png` |
-| streak_milestone | falls back | `chibi/idle.png` |
-| hurt | falls back | `chibi/idle.png` |
-| dead | falls back | `chibi/idle.png` |
+| streak_legend | falls back | `chibi/asleep.png` |
+| streak_milestone | falls back | `chibi/asleep.png` |
+| hurt | falls back | `chibi/asleep.png` |
+| dead | falls back | `chibi/asleep.png` |
 
-`chibi/idle.png` is pack `sprite/idle/anki-tan_idle_0013.png`, the
+`chibi/asleep.png` is pack `sprite/idle/anki-tan_idle_0013.png`, the
 neutral standing chibi; `manifest.json` names it for each of those poses.
 
 Anki-tan's launcher icons (AnkiQuest-Server exports them as
@@ -52,12 +51,12 @@ fallbacks until drawn.
 
 ## Face
 
-`face.png` is the pack's `icon.png` (256 px) with the rounded tile, its
-frame and the green grid behind her cut away by a hand-traced polygon
-mask (ImageMagick 6.9, 0.6 px blur on the mask edge). Her hair is cut
-straight where the tile cut it. Record: [docs/anki-tan-face-2026-11](../docs/anki-tan-face-2026-11/README.md).
-CC BY-SA 4.0 under [LICENSE](LICENSE). Credit: Anki-tan by Shigeyuki
-(https://www.patreon.com/Shigeyuki).
+Her face is the chibi's face, `chibi/face.png` (pack
+`emoji/Ankitan_00_smile.png`): both are Shigeyuki's Anki-tan, and
+`manifest.json` names the file for both companions. The earlier face,
+the pack icon with the tile cut away, is in
+[`../archive/anki-tan/`](../archive/anki-tan/README.md#face-with-the-tile-cut-away).
+Credit: Anki-tan by Shigeyuki (https://www.patreon.com/Shigeyuki).
 
 ## Generated masters
 
