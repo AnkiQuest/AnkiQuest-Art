@@ -810,6 +810,36 @@
       "author": "AnkiQuest"
     },
     {
+      "companion": "ankilope",
+      "pose": "icon_happy",
+      "kind": "picture",
+      "framing": "headshot",
+      "file": "ankilope/icon_happy.png",
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
+    },
+    {
+      "companion": "ankilope",
+      "pose": "icon_sleepy",
+      "kind": "picture",
+      "framing": "headshot",
+      "file": "ankilope/icon_sleepy.png",
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
+    },
+    {
+      "companion": "ankilope",
+      "pose": "icon_worried",
+      "kind": "picture",
+      "framing": "headshot",
+      "file": "ankilope/icon_worried.png",
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
+    },
+    {
       "companion": "cow",
       "pose": "asleep",
       "kind": "core",
@@ -885,6 +915,36 @@
       "kind": "core",
       "framing": "full_body",
       "file": "cow/streak.png",
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
+    },
+    {
+      "companion": "cow",
+      "pose": "icon_happy",
+      "kind": "picture",
+      "framing": "headshot",
+      "file": "cow/icon_happy.png",
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
+    },
+    {
+      "companion": "cow",
+      "pose": "icon_sleepy",
+      "kind": "picture",
+      "framing": "headshot",
+      "file": "cow/icon_sleepy.png",
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
+    },
+    {
+      "companion": "cow",
+      "pose": "icon_worried",
+      "kind": "picture",
+      "framing": "headshot",
+      "file": "cow/icon_worried.png",
       "licence": "AGPL-3.0-or-later",
       "origin": "ankiquest",
       "author": "AnkiQuest"

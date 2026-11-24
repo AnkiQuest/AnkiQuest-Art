@@ -207,12 +207,20 @@ pub const ART: &[Art] = &[
     ),
     art("anki_tan_icon_sleepy", pose("anki_tan", "icon_sleepy"), 432),
     outline("anki_tan_icon_mono", pose("anki_tan_chibi", "face"), 432),
-    // Ankilope and Bluma have no mood faces yet; the app shows the face for
-    // every mood.
     art("ankilope_icon", pose("ankilope", "face"), 432),
     bold_outline("ankilope_icon_mono", pose("ankilope", "face"), 432),
     art("cow_icon", pose("cow", "face"), 432),
     bold_outline("cow_icon_mono", pose("cow", "face"), 432),
+    art("ankilope_icon_happy", pose("ankilope", "icon_happy"), 432),
+    art("ankilope_icon_sleepy", pose("ankilope", "icon_sleepy"), 432),
+    art(
+        "ankilope_icon_worried",
+        pose("ankilope", "icon_worried"),
+        432,
+    ),
+    art("cow_icon_happy", pose("cow", "icon_happy"), 432),
+    art("cow_icon_sleepy", pose("cow", "icon_sleepy"), 432),
+    art("cow_icon_worried", pose("cow", "icon_worried"), 432),
 ];
 
 /// Writes every drawable into `res/drawable-nodpi`.

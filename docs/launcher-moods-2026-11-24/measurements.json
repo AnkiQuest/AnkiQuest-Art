@@ -1,0 +1,104 @@
+[
+  {
+    "file": "ankilope/icon_happy.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "visibleBounds": [
+      77,
+      97,
+      1178,
+      1133
+    ],
+    "lowAlphaPixelsCleared": 12783,
+    "pixelsAboveAlpha4Changed": 0,
+    "sourceSha256": "e86c2ce1db3b3cbf16b6f6935d73cde1d3dbb403975bc5b2fc29bb21f7949119",
+    "masterSha256": "15dc92455e47038ff6d546462fa01387bcc403bc50ccbb143ddd83cc1cd9d35e"
+  },
+  {
+    "file": "ankilope/icon_worried.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "visibleBounds": [
+      89,
+      90,
+      1155,
+      1131
+    ],
+    "lowAlphaPixelsCleared": 12295,
+    "pixelsAboveAlpha4Changed": 0,
+    "sourceSha256": "64156a1710c8a430cc04df923dc612ebc352913c10cd8b6cbb9d1770db19350f",
+    "masterSha256": "c18d452357af5d0b7bb80624d79241148041496fe1f2c3532005e0b9140fedeb"
+  },
+  {
+    "file": "ankilope/icon_sleepy.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "visibleBounds": [
+      67,
+      126,
+      1185,
+      1117
+    ],
+    "lowAlphaPixelsCleared": 9468,
+    "pixelsAboveAlpha4Changed": 0,
+    "sourceSha256": "5cfd741083af94263c848da486b256c019ff6eaf27e7a8317fb16bf4f1b954a6",
+    "masterSha256": "e149334232864723d5998f010add9f0be6ae93f315f45243b00d722920e09839"
+  },
+  {
+    "file": "cow/icon_happy.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "visibleBounds": [
+      82,
+      182,
+      1170,
+      1109
+    ],
+    "lowAlphaPixelsCleared": 9201,
+    "pixelsAboveAlpha4Changed": 0,
+    "sourceSha256": "8ca0421f7ecec0823eece6f634ee96f6aaccf65df3a8dcabc5a2b286d9504791",
+    "masterSha256": "0f0d4f3410a581246b0b62cd095a7cbe25e9f53b8ed6ffc2633963dde60bef20"
+  },
+  {
+    "file": "cow/icon_worried.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "visibleBounds": [
+      101,
+      202,
+      1153,
+      1084
+    ],
+    "lowAlphaPixelsCleared": 9761,
+    "pixelsAboveAlpha4Changed": 0,
+    "sourceSha256": "0284ba98fd9a2283ed744ba897b655a007ee0d4d8b6ec6fc4f2f39405c10ba4a",
+    "masterSha256": "e5b18eb8be8a97e1271cae9d258b0df612b4c3ce1de26eda55edf869765432ab"
+  },
+  {
+    "file": "cow/icon_sleepy.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "visibleBounds": [
+      84,
+      190,
+      1124,
+      1081
+    ],
+    "lowAlphaPixelsCleared": 7910,
+    "pixelsAboveAlpha4Changed": 0,
+    "sourceSha256": "c297ebff80eeec0a8b2efb5c6dca937b88ce668f85f2c985d575c3d4f03c658d",
+    "masterSha256": "8782257e456f955c2716e71e4ebbcbf571dadbfd8bc671dcc6d0b5156729183b"
+  }
+]
