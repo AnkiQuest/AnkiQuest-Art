@@ -30,6 +30,7 @@ Commits are AnkiQuest-Desktop's.
 | `addon/aki_freeze-c3640637.png` | `addon/art/aki_freeze.png` | ea524bd | 587fa3f | `aki/frozen.png` | c36406373d19bcb91b34ccb2dc6d4f56235fe4ff3dd0b533c102406650245ab6 |
 | `addon/aki_hopeful-600724bf.png` | `addon/art/aki_hopeful.png` | ea6ef8d | de91379 | `aki/hopeful.png` | 600724bf34da6ed926bf6980c922e8b6727ee142c2b06188a3100d4bf40ab448 |
 | `addon/aki_review-763f5fa4.png` | `addon/art/aki_review.png` | 8fe3d77 | 587fa3f | `aki/review.png` | 763f5fa48c1b292fc604ba02eda9cde4b751ab1c6d50dcb6e2ef31104770e646 |
+| `addon/aki_sleeping-0e33f204.png` | `addon/art/aki_sleeping.png` | 861fb68 | — | `aki/asleep.png` | 0e33f204926d992b79e85394c44f9ce6931b67685616716d1db83357348682da |
 | `addon/aki_streak-bfb9293c.png` | `addon/art/aki_streak.png` | ea524bd | 587fa3f | `aki/streak.png` | bfb9293c0e16ce388bc5340cd7da78a7646a741b9482b653864fae14bd73a727 |
 | `addon/aki_welcome-6eedf264.png` | `addon/art/aki_welcome.png` | 8fe3d77 | 587fa3f | `aki/welcome.png` | 6eedf264ffb0ffb46c23f9b3dc187c9e0040ce7a058f26b58bb8c6f85443f3ea |
 | `addon/aki_winner-354b5519.png` | `addon/art/aki_winner.png` | ea524bd | 587fa3f | `aki/winner.png` | 354b5519ca143f0bd5be5116a356a8b3dc127896643a6e63acec6fda5f957675 |

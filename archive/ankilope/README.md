@@ -26,6 +26,7 @@ Commits are AnkiQuest-Desktop's.
 |---|---|---|---|---|---|
 | `addon/ankilope_celebrate-fc3ddf49.png` | `addon/art/ankilope_celebrate.png` | 10f8c02 | 587fa3f | `ankilope/happy.png` | fc3ddf49d828f8a5a4d4cc2d482dee87aea2ded3e692d59bb139ebfd43d41c02 |
 | `addon/ankilope_face-9d4dbb66.png` | `addon/ankilope_face.png` | ecfe880 | 587fa3f | `ankilope/face.png` | 9d4dbb6658aeabcc8441a7c4ccfb073caf80493eafd1b745159a016b3444d08d |
+| `addon/ankilope_sleeping-b22abcc4.png` | `addon/art/ankilope_sleeping.png` | 861fb68 | — | `ankilope/asleep.png` | b22abcc439c7bd634400b5881ea862d18c07b325a29ccfab800441c3a281d250 |
 | `addon/ankilope_study-277abb2e.png` | `addon/art/ankilope_study.png` | ea524bd | 587fa3f | `ankilope/study.png` | 277abb2e255e7660ca3287a3117bd0db8328e680c97a6372cf9a67d0293e603d |
 | `addon/ankilope_welcome-2fe2d900.png` | `addon/art/ankilope_welcome.png` | ea524bd | 587fa3f | `ankilope/welcome.png` | 2fe2d9000f5681477ab53c07c66a418a7b77fd033f4e6c81549b08f7b7924e14 |
 

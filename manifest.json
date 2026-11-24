@@ -1568,6 +1568,36 @@
           "commit": "bc3acc9402ba9384b55da23eab3c848b00a3db04",
           "path": "assets/cards/aki-winner.png"
         }
+      },
+      {
+        "companion": "aki",
+        "pose": "asleep",
+        "file": "archive/aki/addon/aki_sleeping-0e33f204.png",
+        "replaced_by": "aki/asleep.png",
+        "note": "Hand-made add-on copy from before export-addon-art; no master exports to these bytes.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Desktop",
+          "commit": "9b200320d0636b9372529f24d41adc95f02bb2be",
+          "path": "assets/retired/addon/art/aki_sleeping-0e33f204.png"
+        }
+      },
+      {
+        "companion": "ankilope",
+        "pose": "asleep",
+        "file": "archive/ankilope/addon/ankilope_sleeping-b22abcc4.png",
+        "replaced_by": "ankilope/asleep.png",
+        "note": "Hand-made add-on copy from before export-addon-art; no master exports to these bytes.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Desktop",
+          "commit": "9b200320d0636b9372529f24d41adc95f02bb2be",
+          "path": "assets/retired/addon/art/ankilope_sleeping-b22abcc4.png"
+        }
       }
     ],
     "pack": {
