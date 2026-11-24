@@ -1,0 +1,178 @@
+{
+  "tool": "OpenAI built-in image generation",
+  "model": "Identifier unavailable from the tool",
+  "transparentBackground": true,
+  "frozenReferenceCommit": "6bec752096224cfd2c2be5106359c8367222f3a6",
+  "selected": {
+    "ankilope/icon_happy.png": "ankilope-icon-happy-c",
+    "ankilope/icon_worried.png": "ankilope-icon-worried-b",
+    "ankilope/icon_sleepy.png": "ankilope-icon-sleepy-a",
+    "cow/icon_happy.png": "bluma-icon-happy-b",
+    "cow/icon_worried.png": "bluma-icon-worried-c",
+    "cow/icon_sleepy.png": "bluma-icon-sleepy-b"
+  },
+  "candidates": [
+    {
+      "id": "ankilope-icon-happy-a",
+      "references": [
+        "ankilope/icon_frozen.png",
+        "ankilope/happy.png",
+        "aki/icon_happy.png"
+      ],
+      "prompt": "Use case: illustration-story, one new happy launcher icon for AnkiQuest's Ankilope. Reference 1 is this character's approved frozen launcher headshot, for its face identity, large silhouette, line weight and scarf. Reference 2 is the same character's existing full-body happy master for expression and hues only. Reference 3 is Aki's existing launcher icon for readable size and composition only. Golden tan antelope, light cream brows and muzzle, brown eyes, large brown-edged ears, two ribbed dark brown horns, and a small indigo scarf knot at the lower edge. Show a broad natural open smile, both bright eyes looking directly at the viewer, with the ears lifted. Keep it a balanced straight-on headshot. Remove the ice, snow, shield and flame from the frozen pose. Draw the head and just its scarf, with clean outer lines at 48 dp, matching the painterly style of references 1 and 2. No torso, paws, props, cards, flames, words, letters, sparkles, background or ground shadow. A single transparent RGBA PNG with a centered uncut head and scarf, requested 1254 × 1254 px, generous transparent margins around both ears and horns."
+    },
+    {
+      "id": "bluma-icon-happy-a",
+      "references": [
+        "cow/icon_frozen.png",
+        "cow/happy.png",
+        "aki/icon_happy.png"
+      ],
+      "prompt": "Use case: illustration-story, one new happy launcher icon for AnkiQuest's Bluma. Reference 1 is this character's approved frozen launcher headshot, for its face identity, large silhouette, line weight and scarf. Reference 2 is the same character's existing full-body happy master for expression and hues only. Reference 3 is Aki's existing launcher icon for readable size and composition only. Purple cow, with a lilac forelock, beige muzzle, two cream cow horns, large mauve ears, warm dark brown eyes, and a small indigo scarf knot at the lower edge. Show a broad natural open smile, both bright eyes looking directly at the viewer, with the ears lifted. Keep it a balanced straight-on headshot. Remove the ice, snow, shield and flame from the frozen pose. Draw the head and just its scarf, with clean outer lines at 48 dp, matching the painterly style of references 1 and 2. No torso, paws, props, cards, flames, words, letters, sparkles, background or ground shadow. A single transparent RGBA PNG with a centered uncut head and scarf, requested 1254 × 1254 px, generous transparent margins around both ears and horns."
+    },
+    {
+      "id": "ankilope-icon-happy-b",
+      "references": [
+        "ankilope/icon_frozen.png",
+        "ankilope/happy.png",
+        "aki/icon_happy.png"
+      ],
+      "prompt": "Use case: illustration-story, one new happy launcher icon for AnkiQuest's Ankilope. Reference 1 is this character's approved frozen launcher headshot, for its face identity, large silhouette, line weight and scarf. Reference 2 is the same character's existing full-body happy master for expression and hues only. Reference 3 is Aki's existing launcher icon for readable size and composition only. Golden tan antelope, light cream brows and muzzle, brown eyes, large brown-edged ears, two ribbed dark brown horns, and a small indigo scarf knot at the lower edge. Use a very slight three-quarter turn with an enthusiastic smile, both eyes open and visible. Keep the nose and face near the center of the canvas, and give the ears breathing room. Remove the ice, snow, shield and flame from the frozen pose. Draw the head and just its scarf, with clean outer lines at 48 dp, matching the painterly style of references 1 and 2. No torso, paws, props, cards, flames, words, letters, sparkles, background or ground shadow. A single transparent RGBA PNG with a centered uncut head and scarf, requested 1254 × 1254 px, generous transparent margins around both ears and horns."
+    },
+    {
+      "id": "bluma-icon-happy-b",
+      "references": [
+        "cow/icon_frozen.png",
+        "cow/happy.png",
+        "aki/icon_happy.png"
+      ],
+      "prompt": "Use case: illustration-story, one new happy launcher icon for AnkiQuest's Bluma. Reference 1 is this character's approved frozen launcher headshot, for its face identity, large silhouette, line weight and scarf. Reference 2 is the same character's existing full-body happy master for expression and hues only. Reference 3 is Aki's existing launcher icon for readable size and composition only. Purple cow, with a lilac forelock, beige muzzle, two cream cow horns, large mauve ears, warm dark brown eyes, and a small indigo scarf knot at the lower edge. Use a very slight three-quarter turn with an enthusiastic smile, both eyes open and visible. Keep the nose and face near the center of the canvas, and give the ears breathing room. Remove the ice, snow, shield and flame from the frozen pose. Draw the head and just its scarf, with clean outer lines at 48 dp, matching the painterly style of references 1 and 2. No torso, paws, props, cards, flames, words, letters, sparkles, background or ground shadow. A single transparent RGBA PNG with a centered uncut head and scarf, requested 1254 × 1254 px, generous transparent margins around both ears and horns."
+    },
+    {
+      "id": "ankilope-icon-happy-c",
+      "references": [
+        "ankilope/icon_frozen.png",
+        "ankilope/happy.png",
+        "aki/icon_happy.png"
+      ],
+      "prompt": "Use case: illustration-story, one new happy launcher icon for AnkiQuest's Ankilope. Reference 1 is this character's approved frozen launcher headshot, for its face identity, large silhouette, line weight and scarf. Reference 2 is the same character's existing full-body happy master for expression and hues only. Reference 3 is Aki's existing launcher icon for readable size and composition only. Golden tan antelope, light cream brows and muzzle, brown eyes, large brown-edged ears, two ribbed dark brown horns, and a small indigo scarf knot at the lower edge. Give a delighted grin with warm eyes slightly narrowed in a smile and softly lifted brows. Keep the smile expressive and the portrait close to front-facing. Remove the ice, snow, shield and flame from the frozen pose. Draw the head and just its scarf, with clean outer lines at 48 dp, matching the painterly style of references 1 and 2. No torso, paws, props, cards, flames, words, letters, sparkles, background or ground shadow. A single transparent RGBA PNG with a centered uncut head and scarf, requested 1254 × 1254 px, generous transparent margins around both ears and horns."
+    },
+    {
+      "id": "bluma-icon-happy-c",
+      "references": [
+        "cow/icon_frozen.png",
+        "cow/happy.png",
+        "aki/icon_happy.png"
+      ],
+      "prompt": "Use case: illustration-story, one new happy launcher icon for AnkiQuest's Bluma. Reference 1 is this character's approved frozen launcher headshot, for its face identity, large silhouette, line weight and scarf. Reference 2 is the same character's existing full-body happy master for expression and hues only. Reference 3 is Aki's existing launcher icon for readable size and composition only. Purple cow, with a lilac forelock, beige muzzle, two cream cow horns, large mauve ears, warm dark brown eyes, and a small indigo scarf knot at the lower edge. Give a delighted grin with warm eyes slightly narrowed in a smile and softly lifted brows. Keep the smile expressive and the portrait close to front-facing. Remove the ice, snow, shield and flame from the frozen pose. Draw the head and just its scarf, with clean outer lines at 48 dp, matching the painterly style of references 1 and 2. No torso, paws, props, cards, flames, words, letters, sparkles, background or ground shadow. A single transparent RGBA PNG with a centered uncut head and scarf, requested 1254 × 1254 px, generous transparent margins around both ears and horns."
+    },
+    {
+      "id": "ankilope-icon-worried-a",
+      "references": [
+        "ankilope/icon_frozen.png",
+        "ankilope/sad.png",
+        "aki/icon_worried.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one transparent worried launcher icon for AnkiQuest's Ankilope. Reference 1 is the approved frozen headshot for the same companion's anatomy, painterly edges, scarf and readable face proportions. Reference 2 is their existing full-body mood drawing for the expression only. Reference 3 is Aki's corresponding icon for a clean silhouette and readability at 48 dp. A golden tan antelope with cream brows and muzzle, large brown eyes, big brown-edged ears, two dark brown ridged horns, and a small indigo scarf knot. Show a quiet worried expression. Draw both inner brows tilting up, wide eyes, the ends of the mouth curving gently down, and both ears a little low. Remove the ice, snow and emblem completely. Keep only the head and snug scarf, no arms, hands, torso or props. No tears, letters, Zs, extra symbols, outline frame, drop shadow, or background. Match the reference colors and style. Center the complete silhouette with at least 10 percent transparent margin around the ears and horn tips. A single square RGBA PNG, 1254 × 1254 pixels requested."
+    },
+    {
+      "id": "bluma-icon-worried-a",
+      "references": [
+        "cow/icon_frozen.png",
+        "cow/sad.png",
+        "aki/icon_worried.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one transparent worried launcher icon for AnkiQuest's Bluma. Reference 1 is the approved frozen headshot for the same companion's anatomy, painterly edges, scarf and readable face proportions. Reference 2 is their existing full-body mood drawing for the expression only. Reference 3 is Aki's corresponding icon for a clean silhouette and readability at 48 dp. A purple cow with a lilac forelock, cream muzzle, short cream cow horns, large mauve ears, warm brown eyes, and a small indigo scarf knot. Show a quiet worried expression. Draw both inner brows tilting up, wide eyes, the ends of the mouth curving gently down, and both ears a little low. Remove the ice, snow and emblem completely. Keep only the head and snug scarf, no arms, hands, torso or props. No tears, letters, Zs, extra symbols, outline frame, drop shadow, or background. Match the reference colors and style. Center the complete silhouette with at least 10 percent transparent margin around the ears and horn tips. A single square RGBA PNG, 1254 × 1254 pixels requested."
+    },
+    {
+      "id": "ankilope-icon-sleepy-a",
+      "references": [
+        "ankilope/icon_frozen.png",
+        "ankilope/asleep.png",
+        "aki/icon_sleepy.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one transparent sleepy launcher icon for AnkiQuest's Ankilope. Reference 1 is the approved frozen headshot for the same companion's anatomy, painterly edges, scarf and readable face proportions. Reference 2 is their existing full-body mood drawing for the expression only. Reference 3 is Aki's corresponding icon for a clean silhouette and readability at 48 dp. A golden tan antelope with cream brows and muzzle, large brown eyes, big brown-edged ears, two dark brown ridged horns, and a small indigo scarf knot. Show a peacefully sleepy expression. Drop both ears slightly, close both eyes with dark curved outlines, relax the brows, and draw a gently smiling closed mouth. Remove the ice, snow and emblem completely. Keep only the head and snug scarf, no arms, hands, torso or props. No tears, letters, Zs, extra symbols, outline frame, drop shadow, or background. Match the reference colors and style. Center the complete silhouette with at least 10 percent transparent margin around the ears and horn tips. A single square RGBA PNG, 1254 × 1254 pixels requested."
+    },
+    {
+      "id": "bluma-icon-sleepy-a",
+      "references": [
+        "cow/icon_frozen.png",
+        "cow/asleep.png",
+        "aki/icon_sleepy.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one transparent sleepy launcher icon for AnkiQuest's Bluma. Reference 1 is the approved frozen headshot for the same companion's anatomy, painterly edges, scarf and readable face proportions. Reference 2 is their existing full-body mood drawing for the expression only. Reference 3 is Aki's corresponding icon for a clean silhouette and readability at 48 dp. A purple cow with a lilac forelock, cream muzzle, short cream cow horns, large mauve ears, warm brown eyes, and a small indigo scarf knot. Show a peacefully sleepy expression. Drop both ears slightly, close both eyes with dark curved outlines, relax the brows, and draw a gently smiling closed mouth. Remove the ice, snow and emblem completely. Keep only the head and snug scarf, no arms, hands, torso or props. No tears, letters, Zs, extra symbols, outline frame, drop shadow, or background. Match the reference colors and style. Center the complete silhouette with at least 10 percent transparent margin around the ears and horn tips. A single square RGBA PNG, 1254 × 1254 pixels requested."
+    },
+    {
+      "id": "ankilope-icon-worried-b",
+      "references": [
+        "ankilope/icon_frozen.png",
+        "ankilope/sad.png",
+        "aki/icon_worried.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one transparent worried launcher icon for AnkiQuest's Ankilope. Reference 1 is the approved frozen headshot for the same companion's anatomy, painterly edges, scarf and readable face proportions. Reference 2 is their existing full-body mood drawing for the expression only. Reference 3 is Aki's corresponding icon for a clean silhouette and readability at 48 dp. A golden tan antelope with cream brows and muzzle, large brown eyes, big brown-edged ears, two dark brown ridged horns, and a small indigo scarf knot. Show a quiet worried expression. Draw a very slight three-quarter turn, eyes glancing subtly upward with clear pupils, furrowed inner brows and one ear slightly low. A small close-mouthed worried frown. Remove the ice, snow and emblem completely. Keep only the head and snug scarf, no arms, hands, torso or props. No tears, letters, Zs, extra symbols, outline frame, drop shadow, or background. Match the reference colors and style. Center the complete silhouette with at least 10 percent transparent margin around the ears and horn tips. A single square RGBA PNG, 1254 × 1254 pixels requested."
+    },
+    {
+      "id": "bluma-icon-worried-b",
+      "references": [
+        "cow/icon_frozen.png",
+        "cow/sad.png",
+        "aki/icon_worried.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one transparent worried launcher icon for AnkiQuest's Bluma. Reference 1 is the approved frozen headshot for the same companion's anatomy, painterly edges, scarf and readable face proportions. Reference 2 is their existing full-body mood drawing for the expression only. Reference 3 is Aki's corresponding icon for a clean silhouette and readability at 48 dp. A purple cow with a lilac forelock, cream muzzle, short cream cow horns, large mauve ears, warm brown eyes, and a small indigo scarf knot. Show a quiet worried expression. Draw a very slight three-quarter turn, eyes glancing subtly upward with clear pupils, furrowed inner brows and one ear slightly low. A small close-mouthed worried frown. Remove the ice, snow and emblem completely. Keep only the head and snug scarf, no arms, hands, torso or props. No tears, letters, Zs, extra symbols, outline frame, drop shadow, or background. Match the reference colors and style. Center the complete silhouette with at least 10 percent transparent margin around the ears and horn tips. A single square RGBA PNG, 1254 × 1254 pixels requested."
+    },
+    {
+      "id": "ankilope-icon-sleepy-b",
+      "references": [
+        "ankilope/icon_frozen.png",
+        "ankilope/asleep.png",
+        "aki/icon_sleepy.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one transparent sleepy launcher icon for AnkiQuest's Ankilope. Reference 1 is the approved frozen headshot for the same companion's anatomy, painterly edges, scarf and readable face proportions. Reference 2 is their existing full-body mood drawing for the expression only. Reference 3 is Aki's corresponding icon for a clean silhouette and readability at 48 dp. A golden tan antelope with cream brows and muzzle, large brown eyes, big brown-edged ears, two dark brown ridged horns, and a small indigo scarf knot. Show a peacefully sleepy expression. Tip the head a little to the side as if nodding off, with both eyes fully closed and readable at small size and a small relaxed closed mouth. Let one ear droop. Remove the ice, snow and emblem completely. Keep only the head and snug scarf, no arms, hands, torso or props. No tears, letters, Zs, extra symbols, outline frame, drop shadow, or background. Match the reference colors and style. Center the complete silhouette with at least 10 percent transparent margin around the ears and horn tips. A single square RGBA PNG, 1254 × 1254 pixels requested."
+    },
+    {
+      "id": "bluma-icon-sleepy-b",
+      "references": [
+        "cow/icon_frozen.png",
+        "cow/asleep.png",
+        "aki/icon_sleepy.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one transparent sleepy launcher icon for AnkiQuest's Bluma. Reference 1 is the approved frozen headshot for the same companion's anatomy, painterly edges, scarf and readable face proportions. Reference 2 is their existing full-body mood drawing for the expression only. Reference 3 is Aki's corresponding icon for a clean silhouette and readability at 48 dp. A purple cow with a lilac forelock, cream muzzle, short cream cow horns, large mauve ears, warm brown eyes, and a small indigo scarf knot. Show a peacefully sleepy expression. Tip the head a little to the side as if nodding off, with both eyes fully closed and readable at small size and a small relaxed closed mouth. Let one ear droop. Remove the ice, snow and emblem completely. Keep only the head and snug scarf, no arms, hands, torso or props. No tears, letters, Zs, extra symbols, outline frame, drop shadow, or background. Match the reference colors and style. Center the complete silhouette with at least 10 percent transparent margin around the ears and horn tips. A single square RGBA PNG, 1254 × 1254 pixels requested."
+    },
+    {
+      "id": "ankilope-icon-worried-c",
+      "references": [
+        "ankilope/icon_frozen.png",
+        "ankilope/sad.png",
+        "aki/icon_worried.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one transparent worried launcher icon for AnkiQuest's Ankilope. Reference 1 is the approved frozen headshot for the same companion's anatomy, painterly edges, scarf and readable face proportions. Reference 2 is their existing full-body mood drawing for the expression only. Reference 3 is Aki's corresponding icon for a clean silhouette and readability at 48 dp. A golden tan antelope with cream brows and muzzle, large brown eyes, big brown-edged ears, two dark brown ridged horns, and a small indigo scarf knot. Show a quiet worried expression. Draw a nearly straight-on face, ears lowered outward in a softer silhouette, brows unevenly raised and a small curved frown that reads at a tiny size. Remove the ice, snow and emblem completely. Keep only the head and snug scarf, no arms, hands, torso or props. No tears, letters, Zs, extra symbols, outline frame, drop shadow, or background. Match the reference colors and style. Center the complete silhouette with at least 10 percent transparent margin around the ears and horn tips. A single square RGBA PNG, 1254 × 1254 pixels requested."
+    },
+    {
+      "id": "bluma-icon-worried-c",
+      "references": [
+        "cow/icon_frozen.png",
+        "cow/sad.png",
+        "aki/icon_worried.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one transparent worried launcher icon for AnkiQuest's Bluma. Reference 1 is the approved frozen headshot for the same companion's anatomy, painterly edges, scarf and readable face proportions. Reference 2 is their existing full-body mood drawing for the expression only. Reference 3 is Aki's corresponding icon for a clean silhouette and readability at 48 dp. A purple cow with a lilac forelock, cream muzzle, short cream cow horns, large mauve ears, warm brown eyes, and a small indigo scarf knot. Show a quiet worried expression. Draw a nearly straight-on face, ears lowered outward in a softer silhouette, brows unevenly raised and a small curved frown that reads at a tiny size. Remove the ice, snow and emblem completely. Keep only the head and snug scarf, no arms, hands, torso or props. No tears, letters, Zs, extra symbols, outline frame, drop shadow, or background. Match the reference colors and style. Center the complete silhouette with at least 10 percent transparent margin around the ears and horn tips. A single square RGBA PNG, 1254 × 1254 pixels requested."
+    },
+    {
+      "id": "ankilope-icon-sleepy-c",
+      "references": [
+        "ankilope/icon_frozen.png",
+        "ankilope/asleep.png",
+        "aki/icon_sleepy.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one transparent sleepy launcher icon for AnkiQuest's Ankilope. Reference 1 is the approved frozen headshot for the same companion's anatomy, painterly edges, scarf and readable face proportions. Reference 2 is their existing full-body mood drawing for the expression only. Reference 3 is Aki's corresponding icon for a clean silhouette and readability at 48 dp. A golden tan antelope with cream brows and muzzle, large brown eyes, big brown-edged ears, two dark brown ridged horns, and a small indigo scarf knot. Show a peacefully sleepy expression. Bow the face only slightly into the scarf and let the ears drop, with both eyes closed in gentle arcs, and a little contented smile. Maintain a straight-on readable face. Remove the ice, snow and emblem completely. Keep only the head and snug scarf, no arms, hands, torso or props. No tears, letters, Zs, extra symbols, outline frame, drop shadow, or background. Match the reference colors and style. Center the complete silhouette with at least 10 percent transparent margin around the ears and horn tips. A single square RGBA PNG, 1254 × 1254 pixels requested."
+    },
+    {
+      "id": "bluma-icon-sleepy-c",
+      "references": [
+        "cow/icon_frozen.png",
+        "cow/asleep.png",
+        "aki/icon_sleepy.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one transparent sleepy launcher icon for AnkiQuest's Bluma. Reference 1 is the approved frozen headshot for the same companion's anatomy, painterly edges, scarf and readable face proportions. Reference 2 is their existing full-body mood drawing for the expression only. Reference 3 is Aki's corresponding icon for a clean silhouette and readability at 48 dp. A purple cow with a lilac forelock, cream muzzle, short cream cow horns, large mauve ears, warm brown eyes, and a small indigo scarf knot. Show a peacefully sleepy expression. Bow the face only slightly into the scarf and let the ears drop, with both eyes closed in gentle arcs, and a little contented smile. Maintain a straight-on readable face. Remove the ice, snow and emblem completely. Keep only the head and snug scarf, no arms, hands, torso or props. No tears, letters, Zs, extra symbols, outline frame, drop shadow, or background. Match the reference colors and style. Center the complete silhouette with at least 10 percent transparent margin around the ears and horn tips. A single square RGBA PNG, 1254 × 1254 pixels requested."
+    }
+  ]
+}
