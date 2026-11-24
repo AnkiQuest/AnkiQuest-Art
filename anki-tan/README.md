@@ -17,8 +17,8 @@ icons. The masters:
 |---|---|---|
 | face | `chibi/face.png`, the chibi's face | `chibi/face.png`: pack `emoji/Ankitan_00_smile.png` |
 | asleep | generated | `chibi/asleep.png` |
-| happy | missing | `chibi/happy.png`: pack `sprite/hello/anki-tan-hello_0006.png` (waving) |
-| streak | missing | `chibi/asleep.png` |
+| happy | generated | `chibi/happy.png`: pack `sprite/hello/anki-tan-hello_0006.png` (waving) |
+| streak | generated | `chibi/asleep.png` |
 | sad | generated | `chibi/asleep.png` |
 | hopeful | pack `sticker/ankitan_lets_study.png` | `chibi/asleep.png` |
 | frozen | generated | `chibi/asleep.png` |
@@ -33,21 +33,20 @@ icons. The masters:
 `chibi/asleep.png` is pack `sprite/idle/anki-tan_idle_0013.png`, the
 neutral standing chibi; `manifest.json` names it for each of those poses.
 
-Anki-tan's launcher icons (AnkiQuest-Server exports them as
+Anki-tan's launcher icons (AnkiQuest-Art exports them as
 `anki_tan_icon*`):
 
 | Icon | Source |
 |---|---|
 | `icon.png` | pack app icon, the launcher icon |
+| `icon_frozen.png` | generated |
 | `icon_happy.png` | pack `emoji/Ankitan_09_fire_eyes.png`, the icon while today counts |
 | `icon_sleepy.png` | pack `emoji/Ankitan_35_sleeping.png` |
 | `icon_worried.png` | pack `emoji/Ankitan_02_cry.png` |
 
 The monochrome launcher icon is made from `chibi/face.png`.
 
-Anki-tan's `happy` and `streak` need drawing (AnkiQuest-Server#57);
-`manifest.json` lists them under `missing`. Her extensions show their
-fallbacks until drawn.
+Anki-tan's extensions show their fallbacks until drawn.
 
 ## Face
 
@@ -60,11 +59,15 @@ Credit: Anki-tan by Shigeyuki (https://www.patreon.com/Shigeyuki).
 
 ## Generated masters
 
-`asleep.png`, `sad.png`, `neglected.png` and `frozen.png` are derivatives
-of the pack, generated with OpenAI `image_gen` (model identifier not
-exposed). They are CC BY-SA 4.0 under [LICENSE](LICENSE). Credit:
-Anki-tan by Shigeyuki (https://www.patreon.com/Shigeyuki). Records:
-[core poses](../docs/core-poses-2026-11/README.md) and
-[full-size additions](../docs/ankitan-full-2026-11/README.md). The
-generated chibi frozen bust is in
+`asleep.png`, `sad.png`, `neglected.png`, `frozen.png`, `happy.png`,
+`streak.png` and `icon_frozen.png` are derivatives of the pack, generated
+with OpenAI `image_gen` (model identifier unavailable). They are
+CC BY-SA 4.0 under [LICENSE](LICENSE).
+Anki-tan by Shigeyuki (https://www.patreon.com/Shigeyuki).
+See the generation records for the
+[core poses](../docs/core-poses-2026-11/README.md),
+[full-size additions](../docs/ankitan-full-2026-11/README.md),
+[happy and streak](../docs/core-poses-2026-11-24/README.md), and
+[frozen launcher icons](../docs/frozen-launcher-icons-2026-11-24/README.md).
+The generated chibi frozen bust is in
 [`../archive/anki-tan/chibi/`](../archive/anki-tan/README.md).

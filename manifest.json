@@ -436,6 +436,16 @@
     },
     {
       "companion": "anki_tan",
+      "pose": "icon_frozen",
+      "kind": "picture",
+      "framing": "headshot",
+      "file": "anki-tan/icon_frozen.png",
+      "licence": "CC-BY-SA-4.0",
+      "origin": "derivative",
+      "author": "AnkiQuest, after Shigeyuki"
+    },
+    {
+      "companion": "anki_tan",
       "pose": "icon_happy",
       "kind": "picture",
       "framing": "headshot",
@@ -721,6 +731,16 @@
     },
     {
       "companion": "ankilope",
+      "pose": "icon_frozen",
+      "kind": "picture",
+      "framing": "headshot",
+      "file": "ankilope/icon_frozen.png",
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
+    },
+    {
+      "companion": "ankilope",
       "pose": "neglected",
       "kind": "core",
       "framing": "full_body",
@@ -855,6 +875,16 @@
       "kind": "core",
       "framing": "full_body",
       "file": "cow/hopeful.png",
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
+    },
+    {
+      "companion": "cow",
+      "pose": "icon_frozen",
+      "kind": "picture",
+      "framing": "headshot",
+      "file": "cow/icon_frozen.png",
       "licence": "AGPL-3.0-or-later",
       "origin": "ankiquest",
       "author": "AnkiQuest"
