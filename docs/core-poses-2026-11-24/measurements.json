@@ -1,0 +1,53 @@
+[
+  {
+    "file": "ankilope/streak.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "visibleBounds": [
+      208,
+      49,
+      1041,
+      1220
+    ],
+    "lowAlphaPixelsCleared": 28351,
+    "pixelsAboveAlpha4Changed": 0,
+    "sourceSha256": "2bd782baa78a8b06518a77dfc793e61f8034090b9277048c0beaa0fa86ab4d34",
+    "masterSha256": "176fb000705a8dd94ffeb3763a2ab3c99e2dfb74abffd19774058dc5567c2125"
+  },
+  {
+    "file": "anki-tan/happy.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "visibleBounds": [
+      328,
+      13,
+      940,
+      1232
+    ],
+    "lowAlphaPixelsCleared": 24495,
+    "pixelsAboveAlpha4Changed": 0,
+    "sourceSha256": "915d76c64317069ee184217a321b84980ec6980917c2d520cac3a03c4a366172",
+    "masterSha256": "fa3a145f945e6bf4dd248d8e1c017ee0b0abc3717075cfc2111234b7b3123f30"
+  },
+  {
+    "file": "anki-tan/streak.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "visibleBounds": [
+      304,
+      24,
+      946,
+      1234
+    ],
+    "lowAlphaPixelsCleared": 23303,
+    "pixelsAboveAlpha4Changed": 0,
+    "sourceSha256": "af5075062f4fb9c8623d8e92cc35b78c2a41466a660a8011fa48c11e7fd2d356",
+    "masterSha256": "18db5ff9b46f4a6d78d029ec32ca3985d475f1d69224434fd27a4dbd5fa3de5c"
+  }
+]
