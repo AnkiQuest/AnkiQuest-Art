@@ -6,9 +6,10 @@ used). Nothing here is exported to a client.
 
 Every companion folder follows one layout: `retired/` for pictures that
 were masters and were replaced, `addon/` (when the companion has them)
-for the add-on's hand-made copies from before `export-addon-art`, and
-`found/` (Aki only, so far) for posted candidates that never became
-masters.
+for the add-on's hand-made copies from before `export-addon-art`,
+`cards/` (Aki and Ankilope) for hand-made share cards from before the
+cards were exported, and `found/` (Aki only, so far) for posted
+candidates that never became masters.
 
 - `aki/`, `ankilope/`: in `retired/` earlier versions of Aki's and
   Ankilope's masters, replaced in AnkiQuest-Server before the split; in
@@ -19,6 +20,11 @@ masters.
   LICENSE.
 - `anki-tan-pack/`: the rest of Shigeyuki's Anki-tan asset pack; see its
   README. CC BY-SA 4.0 under its LICENSE.
+- `cow/`: in `addon/` the add-on's hand-made Bluma copies from before
+  `export-addon-art`; see its README.
+- Aki's and Ankilope's share cards from AnkiQuest-Server's
+  `assets/cards/`, hand-made before the cards were exported, moved to
+  `aki/cards/` and `ankilope/cards/`; see their READMEs.
 
 ## Removed duplicates
 

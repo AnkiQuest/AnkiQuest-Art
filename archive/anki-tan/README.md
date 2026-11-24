@@ -39,3 +39,14 @@ the mask edge), her hair cut straight where the tile cut it. Record:
 Her face is now the chibi's face, `anki-tan/chibi/face.png`. SHA-256
 0e01672d2fb48e4ab47eed5f2c3f01edb0ee2a1d3611e28c865b2d85744d3988.
 CC BY-SA 4.0 under [LICENSE](LICENSE).
+
+## Add-on copies
+
+AnkiQuest-Desktop's add-on pictures from before `export-addon-art` wrote
+them, kept by AnkiQuest-Server's archive; no master exports to these
+bytes. CC BY-SA 4.0 under [LICENSE](LICENSE).
+
+| File | Original path | Pose now | SHA-256 |
+|---|---|---|---|
+| `addon/anki_tan_sleeping.png` | `addon/art/anki_tan_sleeping.png` | `anki-tan/asleep.png` | 384b17d8ba43944d734dda8071553669e6e1afaac43499bc9866eb60578c5769 |
+| `addon/anki_tan_neglected-three-blue-stars.png` | `addon/art/anki_tan_neglected.png` | `anki-tan/neglected.png` | d3a1ec4c5fa784358b04bd7b32a05a0e1040296dfec42a70df4c6eb83c5a4ab1 |
