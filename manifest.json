@@ -1433,6 +1433,141 @@
         "origin": "derivative",
         "author": "AnkiQuest, after Shigeyuki",
         "licence": "CC-BY-SA-4.0"
+      },
+      {
+        "companion": "anki_tan",
+        "pose": "asleep",
+        "file": "archive/anki-tan/addon/anki_tan_sleeping.png",
+        "replaced_by": "anki-tan/asleep.png",
+        "note": "Hand-made add-on copy from before export-addon-art; no master exports to these bytes.",
+        "origin": "derivative",
+        "author": "AnkiQuest, after Shigeyuki",
+        "licence": "CC-BY-SA-4.0",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Server",
+          "commit": "bc3acc9402ba9384b55da23eab3c848b00a3db04",
+          "path": "static/archive/anki-tan/addon/anki_tan_sleeping.png"
+        }
+      },
+      {
+        "companion": "anki_tan",
+        "pose": "neglected",
+        "file": "archive/anki-tan/addon/anki_tan_neglected-three-blue-stars.png",
+        "replaced_by": "anki-tan/neglected.png",
+        "note": "Hand-made add-on copy from before export-addon-art; no master exports to these bytes.",
+        "origin": "derivative",
+        "author": "AnkiQuest, after Shigeyuki",
+        "licence": "CC-BY-SA-4.0",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Server",
+          "commit": "bc3acc9402ba9384b55da23eab3c848b00a3db04",
+          "path": "static/archive/anki-tan/addon/anki_tan_neglected-three-blue-stars.png"
+        }
+      },
+      {
+        "companion": "cow",
+        "pose": "happy",
+        "file": "archive/cow/addon/bluma_celebrate.png",
+        "replaced_by": "cow/happy.png",
+        "note": "Hand-made add-on copy from before export-addon-art; no master exports to these bytes.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Server",
+          "commit": "bc3acc9402ba9384b55da23eab3c848b00a3db04",
+          "path": "static/archive/cow/addon/bluma_celebrate.png"
+        }
+      },
+      {
+        "companion": "cow",
+        "pose": "asleep",
+        "file": "archive/cow/addon/bluma_sleeping.png",
+        "replaced_by": "cow/asleep.png",
+        "note": "Hand-made add-on copy from before export-addon-art; no master exports to these bytes.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Server",
+          "commit": "bc3acc9402ba9384b55da23eab3c848b00a3db04",
+          "path": "static/archive/cow/addon/bluma_sleeping.png"
+        }
+      },
+      {
+        "companion": "ankilope",
+        "pose": "happy",
+        "file": "archive/ankilope/cards/ankilope-celebrate.png",
+        "replaced_by": "ankilope/happy.png",
+        "note": "Hand-made share card from before the cards were exported; no master exports to these bytes.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Server",
+          "commit": "bc3acc9402ba9384b55da23eab3c848b00a3db04",
+          "path": "assets/cards/ankilope-celebrate.png"
+        }
+      },
+      {
+        "companion": "aki",
+        "pose": "happy",
+        "file": "archive/aki/cards/aki-celebrate.png",
+        "replaced_by": "aki/happy.png",
+        "note": "Hand-made share card from before the cards were exported; no master exports to these bytes.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Server",
+          "commit": "bc3acc9402ba9384b55da23eab3c848b00a3db04",
+          "path": "assets/cards/aki-celebrate.png"
+        }
+      },
+      {
+        "companion": "aki",
+        "pose": "frozen",
+        "file": "archive/aki/cards/aki-freeze.png",
+        "replaced_by": "aki/frozen.png",
+        "note": "Hand-made share card from before the cards were exported; no master exports to these bytes.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Server",
+          "commit": "bc3acc9402ba9384b55da23eab3c848b00a3db04",
+          "path": "assets/cards/aki-freeze.png"
+        }
+      },
+      {
+        "companion": "aki",
+        "pose": "streak",
+        "file": "archive/aki/cards/aki-streak.png",
+        "replaced_by": "aki/streak.png",
+        "note": "Hand-made share card from before the cards were exported; no master exports to these bytes.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Server",
+          "commit": "bc3acc9402ba9384b55da23eab3c848b00a3db04",
+          "path": "assets/cards/aki-streak.png"
+        }
+      },
+      {
+        "companion": "aki",
+        "pose": "winner",
+        "file": "archive/aki/cards/aki-winner.png",
+        "replaced_by": "aki/winner.png",
+        "note": "Hand-made share card from before the cards were exported; no master exports to these bytes.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Server",
+          "commit": "bc3acc9402ba9384b55da23eab3c848b00a3db04",
+          "path": "assets/cards/aki-winner.png"
+        }
       }
     ],
     "pack": {

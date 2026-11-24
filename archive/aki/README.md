@@ -55,3 +55,16 @@ nothing exports them. The repository licence applies.
 | `found/f2e298ec-2d21-4791-a0b4-b40b0cfed6eb.png` | 19 | steps out of a glowing gold arch with a card | `aki/level_up.png` | 7ecf9779677824fc7bd895eff9f7b2d8e9a823d45782718a195d35b9037f26e8 |
 | `found/11c246ae-128d-4470-aeeb-e47a403c1505.png` | 20 | waves while holding a card | `aki/nudge.png` | 0444ed2c3b3690aa1f3598a12d18b23ff6e05353db2e6956fe12e51d4af05488 |
 | `found/680aaf59-95ae-4d80-b6d0-6469162e4545.png` | 24 | purple star flag with confetti; a pale haze covers the canvas (9% fully transparent) | `aki/challenge_won.png` | df6b5e0bea3ad9b03b82c2c98b688cd2afe76991b74549ce9f64ad034773c6f4 |
+
+## Share cards
+
+Hand-made share cards from before the cards in AnkiQuest-Server's
+`assets/cards/` were exported by an exporter; no master exports to these
+bytes. Commits are AnkiQuest-Server's.
+
+| File | Original path | Pose now | SHA-256 |
+|---|---|---|---|
+| `cards/aki-celebrate.png` | `assets/cards/aki-celebrate.png` | `aki/happy.png` | 40016a45a1d52918c451b61f26c4ab3e81812064ba9e5265ddaa6120394c04a0 |
+| `cards/aki-freeze.png` | `assets/cards/aki-freeze.png` | `aki/frozen.png` | fa6198c3187400304e1b14e39053f4cb3d1ee9f0e652cbf21a8fd66cebd4add2 |
+| `cards/aki-streak.png` | `assets/cards/aki-streak.png` | `aki/streak.png` | 7229fd3013d6875dadf7f34ad9294e19de4ffcfeb52ec082ec5d7fa4ce24447f |
+| `cards/aki-winner.png` | `assets/cards/aki-winner.png` | `aki/winner.png` | 3e22b812d969b0039bb040a6651a9f8fa511e0c8d22c951f5bb1341609d200a3 |
