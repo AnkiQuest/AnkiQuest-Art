@@ -1,0 +1,93 @@
+{
+  "tool": "OpenAI built-in image generation",
+  "model": "Identifier unavailable from the tool",
+  "transparentBackground": true,
+  "selected": {
+    "ankilope/icon_frozen.png": "ankilope-icon-frozen-a",
+    "cow/icon_frozen.png": "bluma-icon-frozen-c",
+    "anki-tan/icon_frozen.png": "ankitan-icon-frozen-c"
+  },
+  "candidates": [
+    {
+      "id": "ankilope-icon-frozen-a",
+      "references": [
+        "ankilope/face.png",
+        "ankilope/frozen.png",
+        "aki/icon_frozen.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw a new, compact frozen launcher icon headshot of AnkiQuest's own Ankilope. Use the first reference for exact Ankilope face and the second for frost on the horn and ear tips. Third reference is Aki's current frozen launcher icon, only an example of sizing and the protective ice shield cue. Ankilope has golden-tan softly brushed fur, cream eyebrows and muzzle, large brown eyes, long brown-edged antelope ears, two curved ribbed dark-brown horns and a little indigo scarf under the chin. Face looks calmly relieved. Draw a single small ice-blue frosted shield with a clearly defined little golden flame centered below her chin at the scarf, and a tiny rim of frost on horn and ear tips. Keep Ankilope's own silhouette and palette. Head, horns and scarf knot only. Compact centered finished cutout within central 70% of 1254×1254 RGBA transparent square, design legible at 48 px. Strong soft outlines, no body, legs, text, enclosing tile, atmospheric halo, ground shadow or any opaque background."
+    },
+    {
+      "id": "bluma-icon-frozen-a",
+      "references": [
+        "cow/face.png",
+        "cow/frozen.png",
+        "aki/icon_frozen.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw the frozen launcher icon for Bluma, the AnkiQuest purple cow, as a new compact headshot. Reference 1 gives exact headshape and colors: violet soft-brushed fur, lavender swoop of hair, broad cream muzzle with two oval nostrils, large warm brown eyes, cream eyebrow spots, short cream horns, wide ears with pale blush interior, deep indigo scarf. Reference 2 gives Bluma's gentle frozen expression and light blue. Reference 3 is only the size and icy streak-protection badge language. Put a small clearly outlined pale-blue ice shield with a warm amber flame just under the chin, and a dusting of sky-blue frost on her short horn tips. Make her smile gently, comfortable and protected. Head and a little scarf only, fully centered with padding similar to Aki. Strong outline and simple shapes legible at 48 px. Transparent 1254×1254 RGBA square with no ground, body, bag, lettering, opaque tile, or atmospheric glow. No red panda or antelope features."
+    },
+    {
+      "id": "ankitan-icon-frozen-a",
+      "references": [
+        "anki-tan/frozen.png",
+        "anki-tan/icon_worried.png",
+        "aki/icon_frozen.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one new frozen launcher icon headshot of Anki-tan by Shigeyuki, derivative CC BY-SA 4.0. First reference gives the approved frozen drawing and identity: light sky-blue bangs and hair, a white band with exactly three bright blue five-point stars (large central and smaller side stars), warm pale face with expressive eyes, gentle soft gray-and-blue palette. Second reference gives the original compact launcher head silhouette. Third reference supplies only an icy streak-protection shield cue and the generous centered padding. Draw a crisp hand-inked and softly pencil-colored head with a reassuring little smile, compact lock of hair on each side; a small pale-blue ice shield with one warm amber flame below the chin and one simple snowflake near it. Keep the headband and face prominent at 48 px. Head and no torso, direct transparent cutout, all details inside a centered safe circular area. Requested 1254×1254 transparent RGBA square. No typography, backdrop, tile, white glow, smoke, text, red panda parts, or cut-off hair."
+    },
+    {
+      "id": "ankilope-icon-frozen-b",
+      "references": [
+        "ankilope/face.png",
+        "ankilope/frozen.png",
+        "aki/icon_frozen.png"
+      ],
+      "prompt": "Use case: illustration-story. New frozen launcher headshot of Ankilope. Use the first two references for her identity and the third only for the visual cue, scale and composition. Copy her golden tan fur texture, broad cream brow patches and muzzle, dark brown eyes with the highlight at upper right, long brown-edged ears, and two curved ribbed brown horns. Her head is turned slightly and tipped a few degrees to one side, with a gentle protected smile. Show the small indigo scarf under the chin, one light-blue frosting highlight on each horn tip and a small outlined ice shield with a warm orange flame at the scarf knot. Give her recognizable ears and intact horn tips some room all the way around. Use clean dark contours and soft painted fill. The icy shield with the orange flame means the streak is protected. It should be a compact secondary symbol; the face is still the focus. Center all artwork in a safe circle within a 1254 × 1254 transparent RGBA square. From head to badge, keep generous invisible padding all around and test readability at 48 px. Headshot with no body or shoulders. Transparent background, no ground shadow, surface, tile, label, words or atmospheric halo."
+    },
+    {
+      "id": "bluma-icon-frozen-b",
+      "references": [
+        "cow/face.png",
+        "cow/frozen.png",
+        "aki/icon_frozen.png"
+      ],
+      "prompt": "Use case: illustration-story. New frozen launcher headshot of Bluma. References 1 and 2 are Bluma's design. Use reference 3 only for the visual cue, scale and centered silhouette. Shape her head in a compact three-quarter view with violet fur and a lavender swoop of hair, short pale cream horns, wide ears with warm pale pink interiors, warm brown eyes and two nostrils on her large cream muzzle. Show a reassuring slightly angled smile. Add frost only to the tops of the two cream horns. The indigo scarf under her chin carries one small blue ice shield with a simple amber flame. Keep the expression readable first, frost and badge second, and give all pieces roomy transparent margins. No antelope horns or other creature features. The icy shield with the orange flame means the streak is protected. It should be a compact secondary symbol; the face is still the focus. Center all artwork in a safe circle within a 1254 × 1254 transparent RGBA square. From head to badge, keep generous invisible padding all around and test readability at 48 px. Headshot with no body or shoulders. Transparent background, no ground shadow, surface, tile, label, words or atmospheric halo."
+    },
+    {
+      "id": "ankitan-icon-frozen-b",
+      "references": [
+        "anki-tan/icon_worried.png",
+        "anki-tan/frozen.png",
+        "aki/icon_frozen.png"
+      ],
+      "prompt": "Use case: illustration-story. New frozen portrait launcher icon of Anki-tan by Shigeyuki, CC BY-SA 4.0 derivative. Reference 1 is the compact original launcher face and contour proportions, reference 2 gives her three-star white headband, light sky-blue hair and the approved pencil work, reference 3 only shows the small protected-streak badge. Make an inked, high-contrast simple anime-head cutout with lightly colored pencil fill. No body. Keep exactly three blue five-pointed stars on the white band with the biggest at center. Face tilted a little, soft relieved smile, clear open eyes, compact bangs and short visible hair silhouette. Give the outline and big pale-blue shapes clarity rather than dense grain. Put one tiny blue ice shield with amber flame below the face, simple enough to read as a badge and no additional surrounding sparkles. The icy shield with the orange flame means the streak is protected. It should be a compact secondary symbol; the face is still the focus. Center all artwork in a safe circle within a 1254 × 1254 transparent RGBA square. From head to badge, keep generous invisible padding all around and test readability at 48 px. Headshot with no body or shoulders. Transparent background, no ground shadow, surface, tile, label, words or atmospheric halo."
+    },
+    {
+      "id": "ankilope-icon-frozen-c",
+      "references": [
+        "ankilope/face.png",
+        "ankilope/frozen.png",
+        "aki/icon_frozen.png"
+      ],
+      "prompt": "Use case: illustration-story. Create a neat full-head frozen launcher icon of the exact Ankilope in references 1 and 2. Use reference 3 only as a model of the ice shield protecting a streak. Warm golden tan fur, cream eyebrows and muzzle, huge brown-edged inner ears, two curved dark ribbed antelope horns and warm dark eyes, all with the familiar brushed fur and soft dark outline. A gently pleased closed smile, tilted a little the other way from a straight-up headshot. Add a short frosted blue cap on each horn and one tiny ice-blue shield with a simple amber flame at the indigo scarf knot. Keep room around tips and badge; no airborne decoration. Place the face at the exact center with blank transparent space all around. The complete character and badge together fit within x=190 to 1064 and y=190 to 1064, with fingers, shoulders and torso absent. A 1254 × 1254 transparent RGBA PNG, readable at 48 px. No tile, rim, shadow, scenery, text, watermark or emission glow."
+    },
+    {
+      "id": "bluma-icon-frozen-c",
+      "references": [
+        "cow/face.png",
+        "cow/frozen.png",
+        "aki/icon_frozen.png"
+      ],
+      "prompt": "Use case: illustration-story. Create a compact drawing of Bluma's frozen launcher head. Use refs 1 and 2 to hold exact identity, not a recolor of Aki or Ankilope. Reference 3 is only for the shared frost-protected streak badge. Head straight on with a slight tilt, with Bluma's violet fur and lavender hair curl, large cream muzzle, warm dark eyes, short ivory horns with frost blue at the tips, wide rounded floppy pink-inside ears and short indigo scarf knot. A quietly pleased smile. One tiny blue shield with the simplest glowing-orange flame shape in its center; ordinary crisp painted edging, no colored haze. Keep ears compact in the center, natural proportions like reference 1, one full head. Place the face at the exact center with blank transparent space all around. The complete character and badge together fit within x=190 to 1064 and y=190 to 1064, with fingers, shoulders and torso absent. A 1254 × 1254 transparent RGBA PNG, readable at 48 px. No tile, rim, shadow, scenery, text, watermark or emission glow."
+    },
+    {
+      "id": "ankitan-icon-frozen-c",
+      "references": [
+        "anki-tan/icon_worried.png",
+        "anki-tan/frozen.png",
+        "aki/icon_frozen.png"
+      ],
+      "prompt": "Use case: illustration-story. New head-only launcher icon of Shigeyuki's Anki-tan for the frozen protected-streak state. CC BY-SA 4.0 derivative. The first reference is the original icon proportions, the second is her approved freeze mood and true three blue stars on a white headband, the third provides just a tiny recognizable ice shield with amber flame. Keep a compact head, cheerful dark eyes and a tiny gentle smile, pastel peach skin, broad lock of sky-blue hair, exactly three blue five-point stars with largest in center. Make the black ink contour simple and readable, with fairly flat but lightly textured color like a clean hand-made anime sticker. Put the compact pale blue ice shield under her chin, unmistakable tiny golden orange flame within it. No snow falling across the face. Place the face at the exact center with blank transparent space all around. The complete character and badge together fit within x=190 to 1064 and y=190 to 1064, with fingers, shoulders and torso absent. A 1254 × 1254 transparent RGBA PNG, readable at 48 px. No tile, rim, shadow, scenery, text, watermark or emission glow."
+    }
+  ]
+}

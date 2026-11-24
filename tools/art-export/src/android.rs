@@ -197,8 +197,9 @@ pub const ART: &[Art] = &[
     widget("anki_tan_neglected", pose("anki_tan", "neglected")),
     widget("anki_tan_chibi_frozen", pose("anki_tan_chibi", "frozen")),
     // Anki-tan's launcher icons (AnkiQuest-Android AnkiquestIcon), CC BY-SA
-    // 4.0. The pack's icons are 256 px and are kept at that size.
+    // 4.0. The 256 px icons from the pack keep their original size.
     art("anki_tan_icon", pose("anki_tan", "icon"), 432),
+    art("anki_tan_icon_frozen", pose("anki_tan", "icon_frozen"), 432),
     art("anki_tan_icon_happy", pose("anki_tan", "icon_happy"), 432),
     art(
         "anki_tan_icon_worried",
@@ -208,8 +209,10 @@ pub const ART: &[Art] = &[
     art("anki_tan_icon_sleepy", pose("anki_tan", "icon_sleepy"), 432),
     outline("anki_tan_icon_mono", pose("anki_tan_chibi", "face"), 432),
     art("ankilope_icon", pose("ankilope", "face"), 432),
+    art("ankilope_icon_frozen", pose("ankilope", "icon_frozen"), 432),
     bold_outline("ankilope_icon_mono", pose("ankilope", "face"), 432),
     art("cow_icon", pose("cow", "face"), 432),
+    art("cow_icon_frozen", pose("cow", "icon_frozen"), 432),
     bold_outline("cow_icon_mono", pose("cow", "face"), 432),
     art("ankilope_icon_happy", pose("ankilope", "icon_happy"), 432),
     art("ankilope_icon_sleepy", pose("ankilope", "icon_sleepy"), 432),

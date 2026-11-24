@@ -1,0 +1,53 @@
+[
+  {
+    "file": "ankilope/icon_frozen.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "visibleBounds": [
+      130,
+      115,
+      1122,
+      1115
+    ],
+    "lowAlphaPixelsCleared": 14858,
+    "pixelsAboveAlpha4Changed": 0,
+    "sourceSha256": "6b36fe41aeab49964dfa74bdaaeafdc81e0519fcb7a256aec86f4e1f4c537c87",
+    "masterSha256": "8d230d988a04fd8c9bd7e2fbeb09af669d547715ba9bd8e71167a552fabea95c"
+  },
+  {
+    "file": "cow/icon_frozen.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "visibleBounds": [
+      131,
+      214,
+      1121,
+      1045
+    ],
+    "lowAlphaPixelsCleared": 15255,
+    "pixelsAboveAlpha4Changed": 0,
+    "sourceSha256": "a48f8c6e9c97d6a70a8d7f2e8cbe33eba48ab178b18a6ea4d68a28615f4d37ce",
+    "masterSha256": "8213d8f442674e1cb496e7e7b79de6d31f04758e384bf74ce8507efcf348074e"
+  },
+  {
+    "file": "anki-tan/icon_frozen.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "visibleBounds": [
+      247,
+      169,
+      1001,
+      1114
+    ],
+    "lowAlphaPixelsCleared": 9766,
+    "pixelsAboveAlpha4Changed": 0,
+    "sourceSha256": "aae45a6e86f0517682ffdbf67620cf2939df9e1e08aab0266c340443438d1553",
+    "masterSha256": "65edbb7a8d6994afd7a598ad03d81df4620e2ea4627c399fcc9691a4cf844e19"
+  }
+]
