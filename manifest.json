@@ -404,6 +404,16 @@
     },
     {
       "companion": "anki_tan",
+      "pose": "happy",
+      "kind": "core",
+      "framing": "full_body",
+      "file": "anki-tan/happy.png",
+      "licence": "CC-BY-SA-4.0",
+      "origin": "derivative",
+      "author": "AnkiQuest, after Shigeyuki"
+    },
+    {
+      "companion": "anki_tan",
       "pose": "hopeful",
       "kind": "core",
       "framing": "full_body",
@@ -473,6 +483,16 @@
       "kind": "core",
       "framing": "full_body",
       "file": "anki-tan/sad.png",
+      "licence": "CC-BY-SA-4.0",
+      "origin": "derivative",
+      "author": "AnkiQuest, after Shigeyuki"
+    },
+    {
+      "companion": "anki_tan",
+      "pose": "streak",
+      "kind": "core",
+      "framing": "full_body",
+      "file": "anki-tan/streak.png",
       "licence": "CC-BY-SA-4.0",
       "origin": "derivative",
       "author": "AnkiQuest, after Shigeyuki"
@@ -761,6 +781,16 @@
     },
     {
       "companion": "ankilope",
+      "pose": "streak",
+      "kind": "core",
+      "framing": "full_body",
+      "file": "ankilope/streak.png",
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
+    },
+    {
+      "companion": "ankilope",
       "pose": "study",
       "kind": "picture",
       "framing": "full_body",
@@ -906,21 +936,6 @@
     }
   ],
   "missing": [
-    {
-      "companion": "ankilope",
-      "pose": "streak",
-      "issue": "https://github.com/AnkiQuest/AnkiQuest-Art/issues/15"
-    },
-    {
-      "companion": "anki_tan",
-      "pose": "happy",
-      "issue": "https://github.com/AnkiQuest/AnkiQuest-Art/issues/15"
-    },
-    {
-      "companion": "anki_tan",
-      "pose": "streak",
-      "issue": "https://github.com/AnkiQuest/AnkiQuest-Art/issues/15"
-    },
     {
       "companion": "quest_chan",
       "pose": "face",

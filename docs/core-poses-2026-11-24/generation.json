@@ -1,0 +1,88 @@
+{
+  "tool": "OpenAI built-in image generation",
+  "model": "Identifier unavailable from the tool",
+  "transparentBackground": true,
+  "selected": {
+    "ankilope/streak.png": "ankilope-streak-b",
+    "anki-tan/happy.png": "ankitan-happy-b",
+    "anki-tan/streak.png": "ankitan-streak-c"
+  },
+  "candidates": [
+    {
+      "id": "ankilope-streak-a",
+      "references": [
+        "ankilope/hopeful.png",
+        "ankilope/happy.png",
+        "cow/streak.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one NEW full-body transparent master of Ankilope for AnkiQuest's ordinary study streak. References 1 and 2 are the exact AnkiQuest-owned Ankilope identity and painterly style. Reference 3 is ONLY the benchmark for the size and golden-orange color of the streak flames; draw no cow features and do not copy its pose. Keep the little golden tan antelope's creamy muzzle, brows and belly, large dark brown eyes, huge brown-edged ears, two ribbed dark brown horns, dark cloven hooves, small brown-tipped tail, indigo scarf and matching indigo satchel with a gold button. Ankilope takes a bouncy forward step with one hind hoof lifted, one front hoof holding up a blank cream flashcard, the other raised in a determined cheer. Use two modest, crisp cartoon flames behind the sides and a small ember beside the card, separate from both eyes and ears. Proud, enthusiastic, unharmed. Match the reference fur texture, edges and proportions. No smoke, diffuse glow, background, ground line, copied confetti, text, symbols or frame. Transparent RGBA square, 1254 × 1254 px requested, center the complete silhouette with safe margins around ears, horns, hooves and tail."
+    },
+    {
+      "id": "ankitan-happy-a",
+      "references": [
+        "archive/anki-tan-pack/illust/anki_tan_main.png",
+        "anki-tan/sad.png"
+      ],
+      "prompt": "Use case: illustration-story. Create one new full-body happy pose for Anki-tan by Shigeyuki, a CC BY-SA 4.0 derivative for the AnkiQuest art matrix. The first image is Shigeyuki's identity and traditional mark-making reference. The second image is the approved full-body proportions, outfit and rendering reference. Match the two Anki-tan references: thin dark hand-drawn contours with visible colored-pencil grain, light sky-blue loose hair, a white band with exactly three blue five-pointed stars (the middle one larger), gray puff sleeves and a pleated gray dress with white frills and a muted blue hem, blue star brooch, gray gloves, knee socks, gray strap shoes. Preserve the full-size proportions and sweet face. No words, watermark or unrelated props. She is happily greeting the learner: beaming open smile, gently curved delighted eyes, one gloved hand waving at shoulder height, holding a single unmarked flashcard in the other, feet close with one slightly lifted in a joyful bounce. Two small blank paper cards and two little blue or gold sparkles are enough. Both shoes, the full skirt, gloves, headband and the hair silhouette are inside the image. No frozen blanket, snow, tears, fire, burst, text, floor, backdrop, border or shadow. Single figure, properly transparent RGBA square, 1254 × 1254 px requested, with breathing room at the edges. Keep her design consistent with the given Anki-tan; create a new composition and expression."
+    },
+    {
+      "id": "ankitan-streak-a",
+      "references": [
+        "archive/anki-tan-pack/illust/anki_tan_main.png",
+        "anki-tan/sad.png",
+        "cow/streak.png"
+      ],
+      "prompt": "Use case: illustration-story. Create one new full-body Anki-tan study streak pose for AnkiQuest. Anki-tan by Shigeyuki, CC BY-SA 4.0 derivative. Image 1 is the original character. Image 2 is the approved full-body colored-pencil master to match. Image 3 only shows the golden-orange magical flame cue for this streak; use her own line art and never include the cow. Match the two Anki-tan references: thin dark hand-drawn contours with visible colored-pencil grain, light sky-blue loose hair, a white band with exactly three blue five-pointed stars (the middle one larger), gray puff sleeves and a pleated gray dress with white frills and a muted blue hem, blue star brooch, gray gloves, knee socks, gray strap shoes. Preserve the full-size proportions and sweet face. No words, watermark or unrelated props. She stands proudly in a lively three-quarter view, eyes open and bright with a determined smile, one gloved hand raising a blank card near her shoulder and the other with a small encouraging fist. Keep the skirt and hair moving just a little, and both booted feet fully visible. One small crisp amber flame beside the card and two short golden-orange magical flame shapes behind her to read as an ordinary streak. Put those accents apart from her blue star band, face, and costume, and keep her body unharmed. No smoke, giant fire halo, extreme blaze, glow, backdrop, writing, lettered cards or cropping. One full figure centered in a truly transparent 1254 × 1254 requested RGBA square."
+    },
+    {
+      "id": "ankilope-streak-b",
+      "references": [
+        "ankilope/hopeful.png",
+        "ankilope/happy.png",
+        "cow/streak.png"
+      ],
+      "prompt": "Use case: illustration-story, square transparent PNG companion master. Draw a new full-body ordinary study streak pose of the exact Ankilope from references 1–2, using reference 3 only for the visual cue of golden-orange magical fire. Make a character-specific stance: Ankilope leans forward proudly with both cloven hind hooves planted apart and a wagging brown-tipped tail, turns the chest slightly, glances fondly at one blank cream flashcard held at chest height in one forehoof, and pumps the free forehoof beside the shoulder. Keep extremely large brown-edged ears, two matching ribbed dark curved horns, warm golden-tan fur, creamy face and belly, soft dark brown eyes, indigo scarf and matching indigo buttoned crossbody satchel. Preserve the approved softness of the silhouette and hand-painted fur. Two clean, modest golden flame tips curl up behind the outer sides beside the hips, with one warm light mark near the card. Cheerful and proud; distinct from the cow reference and from the confetti celebration. No ring of fire, smoke, glow, text, busy debris, ground, drop shadow, frame or solid backdrop. Entire silhouette contained with 7% blank transparent margin at top and bottom, including the horns, tips and hooves; transparent RGBA square 1254 × 1254 requested."
+    },
+    {
+      "id": "ankitan-happy-b",
+      "references": [
+        "archive/anki-tan-pack/illust/anki_tan_main.png",
+        "anki-tan/sad.png"
+      ],
+      "prompt": "Use case: illustration-story. New full-body happy master for Anki-tan by Shigeyuki, CC BY-SA 4.0 derivative. Keep the same non-chibi proportions, long loose light-blue hair, white band with three blue five-point stars (one large middle, two small sides), gray puff-sleeved dress with white front frill, blue star brooch and softly stippled blue hem, gray gloves, matching knee socks and gray strap shoes. Dark lightly textured pencil outlines and visible colored-pencil grain; match the two references. Joyful, open smile and sparkling open eyes slightly turned toward the viewer. She lifts an empty white flashcard diagonally outward at shoulder height, and the other open, gray-gloved hand presents it. Both feet fully visible, one toe playfully pointed outward, legs relaxed and skirt swinging gently. Add two separated mini blank cards and two tiny gold or blue starred sparkle marks near the shoulders, so the happy expression is the focal point. Hold the sleeves, hem, belt, face and exact star band design. Keep it soft and unforced, compact enough to read at 64px. Give every mark including the top star and both shoes a transparent margin of at least 6% from the square image edge. True transparent background, 1254 × 1254 RGBA requested. No tears, fire, ice, background, white sheet, text, heavy effect, floor or frame."
+    },
+    {
+      "id": "ankitan-streak-b",
+      "references": [
+        "archive/anki-tan-pack/illust/anki_tan_main.png",
+        "anki-tan/sad.png",
+        "cow/streak.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw a new full-body ordinary study-streak master of Anki-tan by Shigeyuki, CC BY-SA 4.0 derivative. Use first two images for Anki-tan identity and authentic colored pencil texture. Use image 3 only for golden flame cue at the sides, with her own design and linework. Keep the same non-chibi proportions, long loose light-blue hair, white band with three blue five-point stars (one large middle, two small sides), gray puff-sleeved dress with white front frill, blue star brooch and softly stippled blue hem, gray gloves, matching knee socks and gray strap shoes. Dark lightly textured pencil outlines and visible colored-pencil grain; match the two references. In a lively, balanced stepping stance, she turns slightly to one side and smiles with confident open eyes; one gloved hand holds an unmarked flashcard near the upper chest and the other lifts in a small fist. Her full skirt swings softly as one foot is slightly forward. Two restrained warm, sharp yellow-orange flame shapes at the sides and one small flame mark above the card say study streak. She is happy and unharmed. Face and outfit unobscured. Preserve gray cloth, pale blue hair, and blue stars. No flames drawn touching clothing, no drawn glow, smoke, blaze halo, text, logos, floor or surrounding scenery. True transparent RGBA square 1254 × 1254 requested. Keep a clear 6–8% margin around all marks from the edges, including top star and both shoes."
+    },
+    {
+      "id": "ankilope-streak-c",
+      "references": [
+        "ankilope/happy.png",
+        "ankilope/hopeful.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw a new transparent full-body PNG of Ankilope celebrating an ordinary study streak, same antelope character as the two reference images. Ochre soft brushed fur, cream brow markings, muzzle and belly, dark cloven hooves, huge brown-edged ears, curved dark ribbed horns, short dark-tipped tail, deep violet-blue scarf and matching crossbody satchel with gold clasp. Give her a dynamic shape like a tiny victory hop, one hind hoof reaching down, one bent, face toward the viewer, one forehoof holding a single clean empty cream flashcard close to the cheek, the other raised in a relaxed cheer. Show a clean orange-gold leaf-shaped magical flame floating beside the blank card, with two small bright flame tips lower on the sides. No flames touching fur, props, face or ears. Warm, proud, gentle. Preserve the small antelope silhouette, texture and colors. Nothing in the background; exact cutout on real transparency. Each edge should have broad empty alpha margins around the entire creature and its accents. No rays, diffuse glow, surface, shadow, text, medals or confetti. Requested 1254 × 1254 transparent RGBA square."
+    },
+    {
+      "id": "ankitan-happy-c",
+      "references": [
+        "archive/anki-tan-pack/illust/anki_tan_main.png",
+        "anki-tan/sad.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one NEW happy pose of Anki-tan by Shigeyuki, CC BY-SA 4.0 derivative. Copy the character's identity and style from the references: lightly rough charcoal pencil contours, soft colored-pencil grain, loose light sky-blue hair, the white headband with exactly three bright blue five-point stars and the largest star in the center, gray puff-sleeved pleated dress with white frill and blue-stippled hem, the blue star brooch, gray gloves, gray knee socks and gray double-strap shoes. The full-size body proportions must match the sad drawing. She smiles with closed crescent eyes and a slight blush, leaning one shoulder toward the learner in a happy little bow, one gloved hand holding a blank card beside her heart and the other waving beside her head. Both feet together with one toe just lifted, both shoes completely visible. A couple of separated blank floating cards and two cheerful tiny sky-blue star sparkles. Preserve all three large blue stars on the headband. Character and marks should sit comfortably in the middle 82 percent of the square with true empty alpha space at edges, even above the central headband star. Show the full body. No backdrop, white sticker stroke, smokelike translucent haze, floor, shadow, words, extra fingers, tears, fire, or snow. Transparent RGBA square 1254 × 1254 requested."
+    },
+    {
+      "id": "ankitan-streak-c",
+      "references": [
+        "archive/anki-tan-pack/illust/anki_tan_main.png",
+        "anki-tan/sad.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one NEW full-body streak pose of Anki-tan by Shigeyuki, CC BY-SA 4.0 derivative as part of AnkiQuest. Copy the character's identity and style from the references: lightly rough charcoal pencil contours, soft colored-pencil grain, loose light sky-blue hair, the white headband with exactly three bright blue five-point stars and the largest star in the center, gray puff-sleeved pleated dress with white frill and blue-stippled hem, the blue star brooch, gray gloves, gray knee socks and gray double-strap shoes. The full-size body proportions must match the sad drawing. A confident happy smile with open dark eyes. One gray-gloved hand raises a blank plain cream flashcard higher like a small victory gesture while the other gently fist-pumps at her waist. Standing tall with one foot forward and the other angled out, both shoes and all of the pleated dress visible. Exactly three modest warm crayon shapes to show a streak: two bright yellow-orange flame tongues floating apart at the sides around her skirt and one little flame beside the card. Ink the outline of each flame cleanly like the rest of the hand-drawn cutout. Fully clear alpha between the flame shapes and the figure, and around the whole silhouette. Do not add hazy glow, wash, grey silhouette, white sticker outline, motion cloud, smoke, scorch, text or ground. Do not let any painted element reach a canvas edge. Make the subject occupy roughly the central 82 percent of the square with generous empty invisible margins. Requested 1254 × 1254 genuine transparent RGBA PNG, one figure only."
+    }
+  ]
+}
