@@ -211,8 +211,10 @@ pub const ART: &[Art] = &[
     widget("anki_tan_neglected", pose("anki_tan", "neglected")),
     widget("anki_tan_chibi_frozen", pose("anki_tan_chibi", "frozen")),
     // Anki-tan's launcher icons (AnkiQuest-Android AnkiquestIcon), CC BY-SA
-    // 4.0. The 256 px icons from the pack keep their original size.
-    art("anki_tan_icon", pose("anki_tan", "icon"), 432),
+    // 4.0. The 256 px icons from the pack keep their original size. Her
+    // default icon is her face, since the pack's app icon does not match
+    // the rest of her set.
+    art("anki_tan_icon", pose("anki_tan", "face"), 432),
     art("anki_tan_icon_frozen", pose("anki_tan", "icon_frozen"), 432),
     art("anki_tan_icon_happy", pose("anki_tan", "icon_happy"), 432),
     art(

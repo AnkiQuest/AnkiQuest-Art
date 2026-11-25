@@ -455,17 +455,6 @@
     },
     {
       "companion": "anki_tan",
-      "pose": "icon",
-      "kind": "picture",
-      "framing": "headshot",
-      "file": "anki-tan/icon.png",
-      "licence": "CC-BY-SA-4.0",
-      "origin": "shigeyuki",
-      "author": "Shigeyuki",
-      "pack": "icon.png"
-    },
-    {
-      "companion": "anki_tan",
       "pose": "icon_frozen",
       "kind": "picture",
       "framing": "headshot",
@@ -1793,6 +1782,17 @@
           "commit": "9b200320d0636b9372529f24d41adc95f02bb2be",
           "path": "assets/retired/addon/art/ankilope_sleeping-b22abcc4.png"
         }
+      },
+      {
+        "companion": "anki_tan",
+        "pose": "icon",
+        "file": "archive/anki-tan-pack/icon.png",
+        "replaced_by": "anki-tan/chibi/face.png",
+        "note": "The pack's app icon; its rounded tile and green grid do not match the rest of her set, so her launcher icon shows her face through the icons chain's fallback.",
+        "origin": "shigeyuki",
+        "author": "Shigeyuki",
+        "licence": "CC-BY-SA-4.0",
+        "pack": "icon.png"
       }
     ],
     "pack": {

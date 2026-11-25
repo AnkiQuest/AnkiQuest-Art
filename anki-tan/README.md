@@ -38,7 +38,7 @@ Anki-tan's launcher icons (AnkiQuest-Art exports them as
 
 | Icon | Source |
 |---|---|
-| `icon.png` | pack app icon, the launcher icon |
+| default | `chibi/face.png` through the icons chain: the pack app icon did not match the rest of her set, so its master is retired and `icon` stays empty |
 | `icon_frozen.png` | generated |
 | `icon_happy.png` | pack `emoji/Ankitan_09_fire_eyes.png`, the icon while today counts |
 | `icon_sleepy.png` | pack `emoji/Ankitan_35_sleeping.png` |
