@@ -1,0 +1,104 @@
+[
+  {
+    "file": "ankilope/deck_conquered.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "visibleBounds": [
+      194,
+      74,
+      1075,
+      1182
+    ],
+    "lowAlphaPixelsCleared": 22288,
+    "pixelsAboveAlpha4Changed": 0,
+    "sourceSha256": "cd7112646c8a043b7835bd4ce2b2ee5a9abbc0760d80a4d05da9ed9e365fd512",
+    "masterSha256": "f8a6062b782306dfe044b01e025082f8de9d4e0b8cfc560a3600579d81af3c1f"
+  },
+  {
+    "file": "cow/deck_conquered.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "visibleBounds": [
+      121,
+      116,
+      1106,
+      1134
+    ],
+    "lowAlphaPixelsCleared": 15626,
+    "pixelsAboveAlpha4Changed": 0,
+    "sourceSha256": "f79599cf1a89d0778e4883d5f0ff9d15ef3addbc20161ec42a94004ed3b8fd8d",
+    "masterSha256": "48517e4bc1b00e714363492f050ed9bff9ed10e77c729311e6a0c6d128bb5435"
+  },
+  {
+    "file": "anki-tan/deck_conquered.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "visibleBounds": [
+      302,
+      35,
+      913,
+      1217
+    ],
+    "lowAlphaPixelsCleared": 21544,
+    "pixelsAboveAlpha4Changed": 0,
+    "sourceSha256": "97e55bd74f1e3173d469b380c434f86333dc65a20fc361eac4d15f2ab1f743b7",
+    "masterSha256": "abcf725fd71ee6d12cffb097daaed610cb7216c05d09fba06b22155bf79b748f"
+  },
+  {
+    "file": "ankilope/freeze_used.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "visibleBounds": [
+      167,
+      67,
+      1046,
+      1187
+    ],
+    "lowAlphaPixelsCleared": 32972,
+    "pixelsAboveAlpha4Changed": 0,
+    "sourceSha256": "406a90bb487ebaaa280d9ba7150081853b69436257435ae1c2f85b49432402f1",
+    "masterSha256": "7c2db3d3ae078a5b46dbf85a66f789aaea307e90cfd5b7ad1c6c3bed4b4a8bd6"
+  },
+  {
+    "file": "cow/freeze_used.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "visibleBounds": [
+      123,
+      122,
+      1134,
+      1117
+    ],
+    "lowAlphaPixelsCleared": 34585,
+    "pixelsAboveAlpha4Changed": 0,
+    "sourceSha256": "ae984946e0446eec9926d6b16c1a234abc141c654aa160b4a6ec4f084bbbd98e",
+    "masterSha256": "1e7d0a3d546b34169f090c55619f879e76a970b8301eabbe72f59cc5ba33b80f"
+  },
+  {
+    "file": "anki-tan/freeze_used.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "visibleBounds": [
+      293,
+      20,
+      947,
+      1222
+    ],
+    "lowAlphaPixelsCleared": 23122,
+    "pixelsAboveAlpha4Changed": 0,
+    "sourceSha256": "5f9e81ac993a29246273feb42400058ba13a9080670ef95dfd561d35c5a1cdcb",
+    "masterSha256": "b4754dfb93b0da9fab4686f7f57f4de99c8c98d7a325dc805c1c237152fc9cea"
+  }
+]

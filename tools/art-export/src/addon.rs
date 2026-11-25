@@ -95,6 +95,27 @@ pub const PICTURES: &[Picture] = &[
     picture("art/bluma_hopeful.png", pose("cow", "hopeful")),
     picture("art/bluma_frozen.png", pose("cow", "frozen")),
     picture("art/bluma_neglected.png", pose("cow", "neglected")),
+    picture(
+        "art/ankilope_deck_conquered.png",
+        pose("ankilope", "deck_conquered"),
+    ),
+    picture(
+        "art/ankilope_freeze_used.png",
+        pose("ankilope", "freeze_used"),
+    ),
+    picture(
+        "art/bluma_deck_conquered.png",
+        pose("cow", "deck_conquered"),
+    ),
+    picture("art/bluma_freeze_used.png", pose("cow", "freeze_used")),
+    picture(
+        "art/anki_tan_deck_conquered.png",
+        pose("anki_tan", "deck_conquered"),
+    ),
+    picture(
+        "art/anki_tan_freeze_used.png",
+        pose("anki_tan", "freeze_used"),
+    ),
 ];
 
 /// Writes every picture into `out`.

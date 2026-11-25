@@ -383,6 +383,16 @@
     },
     {
       "companion": "anki_tan",
+      "pose": "deck_conquered",
+      "kind": "picture",
+      "framing": "full_body",
+      "file": "anki-tan/deck_conquered.png",
+      "licence": "CC-BY-SA-4.0",
+      "origin": "derivative",
+      "author": "AnkiQuest, after Shigeyuki"
+    },
+    {
+      "companion": "anki_tan",
       "pose": "face",
       "kind": "core",
       "framing": "headshot",
@@ -391,6 +401,16 @@
       "origin": "shigeyuki",
       "author": "Shigeyuki",
       "pack": "emoji/Ankitan_00_smile.png"
+    },
+    {
+      "companion": "anki_tan",
+      "pose": "freeze_used",
+      "kind": "picture",
+      "framing": "full_body",
+      "file": "anki-tan/freeze_used.png",
+      "licence": "CC-BY-SA-4.0",
+      "origin": "derivative",
+      "author": "AnkiQuest, after Shigeyuki"
     },
     {
       "companion": "anki_tan",
@@ -691,10 +711,30 @@
     },
     {
       "companion": "ankilope",
+      "pose": "deck_conquered",
+      "kind": "picture",
+      "framing": "full_body",
+      "file": "ankilope/deck_conquered.png",
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
+    },
+    {
+      "companion": "ankilope",
       "pose": "face",
       "kind": "core",
       "framing": "headshot",
       "file": "ankilope/face.png",
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
+    },
+    {
+      "companion": "ankilope",
+      "pose": "freeze_used",
+      "kind": "picture",
+      "framing": "full_body",
+      "file": "ankilope/freeze_used.png",
       "licence": "AGPL-3.0-or-later",
       "origin": "ankiquest",
       "author": "AnkiQuest"
@@ -871,10 +911,30 @@
     },
     {
       "companion": "cow",
+      "pose": "deck_conquered",
+      "kind": "picture",
+      "framing": "full_body",
+      "file": "cow/deck_conquered.png",
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
+    },
+    {
+      "companion": "cow",
       "pose": "face",
       "kind": "core",
       "framing": "headshot",
       "file": "cow/face.png",
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
+    },
+    {
+      "companion": "cow",
+      "pose": "freeze_used",
+      "kind": "picture",
+      "framing": "full_body",
+      "file": "cow/freeze_used.png",
       "licence": "AGPL-3.0-or-later",
       "origin": "ankiquest",
       "author": "AnkiQuest"

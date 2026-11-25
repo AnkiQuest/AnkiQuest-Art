@@ -1,0 +1,178 @@
+{
+  "tool": "OpenAI built-in image generation",
+  "model": "Identifier unavailable from the tool",
+  "transparentBackground": true,
+  "referenceCommit": "4b0ea703169334ca4939b02eed8eadff013568b6",
+  "selected": {
+    "ankilope/deck_conquered.png": "ankilope-deck-conquered-b",
+    "cow/deck_conquered.png": "bluma-deck-conquered-c",
+    "anki-tan/deck_conquered.png": "ankitan-deck-conquered-b",
+    "ankilope/freeze_used.png": "ankilope-freeze-used-c",
+    "cow/freeze_used.png": "bluma-freeze-used-c",
+    "anki-tan/freeze_used.png": "ankitan-freeze-used-b"
+  },
+  "candidates": [
+    {
+      "id": "ankilope-deck-conquered-a",
+      "references": [
+        "ankilope/happy.png",
+        "ankilope/streak.png",
+        "aki/deck_conquered.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one new, full-body AnkiQuest deck conquered moment for Ankilope. Reference 1 identifies this companion's existing anatomy, finish, and colours. Reference 2 confirms the companion's identity and design. Reference 3 is Aki's version of this moment, solely to match the storytelling cue and scale; use Ankilope's anatomy and style. Ankilope is a small golden-tan antelope with a creamy muzzle, cream belly, broad dark-edged ears, two dark brown ridged horns, dark cloven hooves, brown-tipped tail, indigo scarf, and a matching indigo satchel with a gold clasp. She plants a tiny golden star pennant beside a knee-high stack of rounded cream flashcards. Show her springing lightly onto one hind hoof with the other lifted, smiling, one front hoof on the flagpole and the other curled in a small cheer. This is a joyful flashcard study accomplishment. The short cream card stack and golden pennant must still read in a small moment tile. No weapon, combat, writing, or letters. Center the complete head-to-toe figure and props on a single truly transparent RGBA square. Requested output 1254 × 1254 pixels with generous margins, no clipped ears, horns, boots, hooves, tails, or props. No scenery, background, ground line, drop shadow, border, or watermark."
+    },
+    {
+      "id": "bluma-deck-conquered-a",
+      "references": [
+        "cow/happy.png",
+        "cow/streak.png",
+        "aki/deck_conquered.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one new, full-body AnkiQuest deck conquered moment for Bluma. Reference 1 identifies this companion's existing anatomy, finish, and colours. Reference 2 confirms the companion's identity and design. Reference 3 is Aki's version of this moment, solely to match the storytelling cue and scale; use Bluma's anatomy and style. Bluma is a purple cow with lilac forelock, beige muzzle and belly, two short cream cow horns, wide pink-lined cow ears, darker cloven hooves, purple tufted tail, indigo scarf and a small brown leather satchel with a gold buckle. Draw her standing confidently next to a stack of completed cream cards. She holds a little golden star pennant at shoulder height with one front hoof and gives a welcoming triumphant palm-up gesture with the other. Keep the cow silhouette sturdy and round. This is a joyful flashcard study accomplishment. The short cream card stack and golden pennant must still read in a small moment tile. No weapon, combat, writing, or letters. Center the complete head-to-toe figure and props on a single truly transparent RGBA square. Requested output 1254 × 1254 pixels with generous margins, no clipped ears, horns, boots, hooves, tails, or props. No scenery, background, ground line, drop shadow, border, or watermark."
+    },
+    {
+      "id": "ankitan-deck-conquered-a",
+      "references": [
+        "anki-tan/happy.png",
+        "archive/anki-tan-pack/illust/anki_tan_main.png",
+        "aki/deck_conquered.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one new, full-body AnkiQuest deck conquered moment for Anki-tan. Reference 1 identifies this companion's existing anatomy, finish, and colours. Reference 2 confirms the companion's identity and design. Reference 3 is Aki's version of this moment, solely to match the storytelling cue and scale; use Anki-tan's anatomy and style. Anki-tan is Shigeyuki's original full-size blue-haired magical girl. Retain exactly three blue stars across the front of her white headband, a blue star brooch, gray gloves, a high-neck graphite and gray pleated dress, and gray short boots. Follow the restrained hand-drawn anime illustration linework of her references and the established full-size proportions. Stand in a slight three-quarter contrapposto, smiling, beside a small knee-high stack of plain cream flashcards, holding a small golden star pennant above the stack and showing one blank card in the other hand. Keep her hands cleanly separated and preserve the original star headband. This is a joyful flashcard study accomplishment. The short cream card stack and golden pennant must still read in a small moment tile. No weapon, combat, writing, or letters. Center the complete head-to-toe figure and props on a single truly transparent RGBA square. Requested output 1254 × 1254 pixels with generous margins, no clipped ears, horns, boots, hooves, tails, or props. No scenery, background, ground line, drop shadow, border, or watermark."
+    },
+    {
+      "id": "ankilope-deck-conquered-b",
+      "references": [
+        "ankilope/happy.png",
+        "ankilope/streak.png",
+        "aki/deck_conquered.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one new, full-body AnkiQuest deck conquered moment for Ankilope. Reference 1 identifies this companion's existing anatomy, finish, and colours. Reference 2 confirms the companion's identity and design. Reference 3 is Aki's version of this moment, solely to match the storytelling cue and scale; use Ankilope's anatomy and style. Ankilope is a small golden-tan antelope with a creamy muzzle, cream belly, broad dark-edged ears, two dark brown ridged horns, dark cloven hooves, brown-tipped tail, indigo scarf, and a matching indigo satchel with a gold clasp. Put a short finished deck of cream cards at her side and set a little yellow star pennant in the stack. She kicks one rear hoof up with both horns and wide ears fully visible and holds one blank card beside her face. A cheerful three-quarter view. This is a joyful flashcard study accomplishment. The short cream card stack and golden pennant must still read in a small moment tile. No weapon, combat, writing, or letters. Center the complete head-to-toe figure and props on a single truly transparent RGBA square. Requested output 1254 × 1254 pixels with generous margins, no clipped ears, horns, boots, hooves, tails, or props. No scenery, background, ground line, drop shadow, border, or watermark. Use a slightly wider framing to leave about 7–9% empty transparent canvas at both the top and the bottom. Render flashcards as study cards, thin ivory sheets with gently rounded edges. Preserve the lightly drawn line weight of the character."
+    },
+    {
+      "id": "bluma-deck-conquered-b",
+      "references": [
+        "cow/happy.png",
+        "cow/streak.png",
+        "aki/deck_conquered.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one new, full-body AnkiQuest deck conquered moment for Bluma. Reference 1 identifies this companion's existing anatomy, finish, and colours. Reference 2 confirms the companion's identity and design. Reference 3 is Aki's version of this moment, solely to match the storytelling cue and scale; use Bluma's anatomy and style. Bluma is a purple cow with lilac forelock, beige muzzle and belly, two short cream cow horns, wide pink-lined cow ears, darker cloven hooves, purple tufted tail, indigo scarf and a small brown leather satchel with a gold buckle. Draw her small celebratory step across the near side of a finished pile of blank flashcards, with a tiny golden star flag planted upright in the pile. She points one hoof toward the flag and beams with visible joy. This is a joyful flashcard study accomplishment. The short cream card stack and golden pennant must still read in a small moment tile. No weapon, combat, writing, or letters. Center the complete head-to-toe figure and props on a single truly transparent RGBA square. Requested output 1254 × 1254 pixels with generous margins, no clipped ears, horns, boots, hooves, tails, or props. No scenery, background, ground line, drop shadow, border, or watermark. Use a slightly wider framing to leave about 7–9% empty transparent canvas at both the top and the bottom. Render flashcards as study cards, thin ivory sheets with gently rounded edges. Preserve the lightly drawn line weight of the character."
+    },
+    {
+      "id": "ankitan-deck-conquered-b",
+      "references": [
+        "anki-tan/happy.png",
+        "archive/anki-tan-pack/illust/anki_tan_main.png",
+        "aki/deck_conquered.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one new, full-body AnkiQuest deck conquered moment for Anki-tan. Reference 1 identifies this companion's existing anatomy, finish, and colours. Reference 2 confirms the companion's identity and design. Reference 3 is Aki's version of this moment, solely to match the storytelling cue and scale; use Anki-tan's anatomy and style. Anki-tan is Shigeyuki's original full-size blue-haired magical girl. Retain exactly three blue stars across the front of her white headband, a blue star brooch, gray gloves, a high-neck graphite and gray pleated dress, and gray short boots. Follow the restrained hand-drawn anime illustration linework of her references and the established full-size proportions. Draw her lifting a small golden star pennant in one gloved hand. In the other she confidently holds the completed deck at waist height, stacked cream with rounded corners. Use gentle flowing hair and dress, her legs and boots unobscured. This is a joyful flashcard study accomplishment. The short cream card stack and golden pennant must still read in a small moment tile. No weapon, combat, writing, or letters. Center the complete head-to-toe figure and props on a single truly transparent RGBA square. Requested output 1254 × 1254 pixels with generous margins, no clipped ears, horns, boots, hooves, tails, or props. No scenery, background, ground line, drop shadow, border, or watermark. Use a slightly wider framing to leave about 7–9% empty transparent canvas at both the top and the bottom. Render flashcards as study cards, thin ivory sheets with gently rounded edges. Preserve the lightly drawn line weight of the character."
+    },
+    {
+      "id": "ankilope-deck-conquered-c",
+      "references": [
+        "ankilope/happy.png",
+        "ankilope/streak.png",
+        "aki/deck_conquered.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one new, full-body AnkiQuest deck conquered moment for Ankilope. Reference 1 identifies this companion's existing anatomy, finish, and colours. Reference 2 confirms the companion's identity and design. Reference 3 is Aki's version of this moment, solely to match the storytelling cue and scale; use Ankilope's anatomy and style. Ankilope is a small golden-tan antelope with a creamy muzzle, cream belly, broad dark-edged ears, two dark brown ridged horns, dark cloven hooves, brown-tipped tail, indigo scarf, and a matching indigo satchel with a gold clasp. Draw an energetic but balanced stance with both feet supported, leaning toward a stack of completed cards and raising a gold star flag in the near hoof. One or two small gold accents close to the flag make the celebratory gesture legible. This is a joyful flashcard study accomplishment. The short cream card stack and golden pennant must still read in a small moment tile. No weapon, combat, writing, or letters. Center the complete head-to-toe figure and props on a single truly transparent RGBA square. Requested output 1254 × 1254 pixels with generous margins, no clipped ears, horns, boots, hooves, tails, or props. No scenery, background, ground line, drop shadow, border, or watermark. Use a slightly wider framing to leave about 7–9% empty transparent canvas at both the top and the bottom. Render flashcards as study cards, thin ivory sheets with gently rounded edges. Preserve the lightly drawn line weight of the character."
+    },
+    {
+      "id": "bluma-deck-conquered-c",
+      "references": [
+        "cow/happy.png",
+        "cow/streak.png",
+        "aki/deck_conquered.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one new, full-body AnkiQuest deck conquered moment for Bluma. Reference 1 identifies this companion's existing anatomy, finish, and colours. Reference 2 confirms the companion's identity and design. Reference 3 is Aki's version of this moment, solely to match the storytelling cue and scale; use Bluma's anatomy and style. Bluma is a purple cow with lilac forelock, beige muzzle and belly, two short cream cow horns, wide pink-lined cow ears, darker cloven hooves, purple tufted tail, indigo scarf and a small brown leather satchel with a gold buckle. Draw Bluma leaning her head proudly toward a completed heap of cream flashcards whose top card carries a clean gold star badge. Raise a little golden star pennant in one hoof, with the other hoof resting near the stack, both feet and her tail plainly visible. This is a joyful flashcard study accomplishment. The short cream card stack and golden pennant must still read in a small moment tile. No weapon, combat, writing, or letters. Center the complete head-to-toe figure and props on a single truly transparent RGBA square. Requested output 1254 × 1254 pixels with generous margins, no clipped ears, horns, boots, hooves, tails, or props. No scenery, background, ground line, drop shadow, border, or watermark. Use a slightly wider framing to leave about 7–9% empty transparent canvas at both the top and the bottom. Render flashcards as study cards, thin ivory sheets with gently rounded edges. Preserve the lightly drawn line weight of the character."
+    },
+    {
+      "id": "ankitan-deck-conquered-c",
+      "references": [
+        "anki-tan/happy.png",
+        "archive/anki-tan-pack/illust/anki_tan_main.png",
+        "aki/deck_conquered.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one new, full-body AnkiQuest deck conquered moment for Anki-tan. Reference 1 identifies this companion's existing anatomy, finish, and colours. Reference 2 confirms the companion's identity and design. Reference 3 is Aki's version of this moment, solely to match the storytelling cue and scale; use Anki-tan's anatomy and style. Anki-tan is Shigeyuki's original full-size blue-haired magical girl. Retain exactly three blue stars across the front of her white headband, a blue star brooch, gray gloves, a high-neck graphite and gray pleated dress, and gray short boots. Follow the restrained hand-drawn anime illustration linework of her references and the established full-size proportions. Set a small golden star flag into a neat stack of cream flashcards by her boots. She gives a little gloved victory gesture while smiling down at it, with one simple golden sparkle beside the deck. Show her full original silhouette, including boots and blue hair. This is a joyful flashcard study accomplishment. The short cream card stack and golden pennant must still read in a small moment tile. No weapon, combat, writing, or letters. Center the complete head-to-toe figure and props on a single truly transparent RGBA square. Requested output 1254 × 1254 pixels with generous margins, no clipped ears, horns, boots, hooves, tails, or props. No scenery, background, ground line, drop shadow, border, or watermark. Use a slightly wider framing to leave about 7–9% empty transparent canvas at both the top and the bottom. Render flashcards as study cards, thin ivory sheets with gently rounded edges. Preserve the lightly drawn line weight of the character."
+    },
+    {
+      "id": "ankilope-freeze-used-a",
+      "references": [
+        "ankilope/frozen.png",
+        "ankilope/happy.png",
+        "aki/frozen_2.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one new, full-body AnkiQuest freeze used moment for Ankilope. Reference 1 identifies this companion's existing anatomy, finish, and colours. Reference 2 confirms the companion's identity and design. Reference 3 is Aki's version of this moment, solely to match the storytelling cue and scale; use Ankilope's anatomy and style. Ankilope is a small golden-tan antelope with a creamy muzzle, cream belly, broad dark-edged ears, two dark brown ridged horns, dark cloven hooves, brown-tipped tail, indigo scarf, and a matching indigo satchel with a gold clasp. She relaxes into a seated, upright pose in a pale icy-blue knitted blanket draped over the shoulders and back. Lower the ears in relief and give her a small, clearly happy smile with eyes softly closed. In front of her hooves is a small thawing pale-blue ice token and one very small amber glint. The streak freeze has been spent successfully. The facial expression conveys relief. Keep the icy accents small and readable, with only one or two cues. No letters, typography or numbers. Center the complete head-to-toe figure and props on a single truly transparent RGBA square. Requested output 1254 × 1254 pixels with generous margins, no clipped ears, horns, boots, hooves, tails, or props. No scenery, background, ground line, drop shadow, border, or watermark."
+    },
+    {
+      "id": "bluma-freeze-used-a",
+      "references": [
+        "cow/frozen.png",
+        "cow/happy.png",
+        "aki/frozen_2.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one new, full-body AnkiQuest freeze used moment for Bluma. Reference 1 identifies this companion's existing anatomy, finish, and colours. Reference 2 confirms the companion's identity and design. Reference 3 is Aki's version of this moment, solely to match the storytelling cue and scale; use Bluma's anatomy and style. Bluma is a purple cow with lilac forelock, beige muzzle and belly, two short cream cow horns, wide pink-lined cow ears, darker cloven hooves, purple tufted tail, indigo scarf and a small brown leather satchel with a gold buckle. Draw her cozy seated full-body, her dark hooves and tufted tail visible under a pale blue knitted blanket. She smiles in relief with eyes closed, holding one small fading icy-blue hexagonal token between her two forehooves. Include a subtle warm amber glint in the ice. The streak freeze has been spent successfully. The facial expression conveys relief. Keep the icy accents small and readable, with only one or two cues. No letters, typography or numbers. Center the complete head-to-toe figure and props on a single truly transparent RGBA square. Requested output 1254 × 1254 pixels with generous margins, no clipped ears, horns, boots, hooves, tails, or props. No scenery, background, ground line, drop shadow, border, or watermark."
+    },
+    {
+      "id": "ankitan-freeze-used-a",
+      "references": [
+        "anki-tan/frozen.png",
+        "archive/anki-tan-pack/illust/anki_tan_main.png",
+        "aki/frozen_2.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one new, full-body AnkiQuest freeze used moment for Anki-tan. Reference 1 identifies this companion's existing anatomy, finish, and colours. Reference 2 confirms the companion's identity and design. Reference 3 is Aki's version of this moment, solely to match the storytelling cue and scale; use Anki-tan's anatomy and style. Anki-tan is Shigeyuki's original full-size blue-haired magical girl. Retain exactly three blue stars across the front of her white headband, a blue star brooch, gray gloves, a high-neck graphite and gray pleated dress, and gray short boots. Follow the restrained hand-drawn anime illustration linework of her references and the established full-size proportions. Give her an eyes-closed relieved smile as she holds the ends of a pale ice-blue shawl around her shoulders over her normal dress. Dress pleats, boots and long blue hair are visible. A small blue ice token thawing near a boot and a tiny warm amber glint suggest the freeze was spent. The streak freeze has been spent successfully. The facial expression conveys relief. Keep the icy accents small and readable, with only one or two cues. No letters, typography or numbers. Center the complete head-to-toe figure and props on a single truly transparent RGBA square. Requested output 1254 × 1254 pixels with generous margins, no clipped ears, horns, boots, hooves, tails, or props. No scenery, background, ground line, drop shadow, border, or watermark."
+    },
+    {
+      "id": "ankilope-freeze-used-b",
+      "references": [
+        "ankilope/frozen.png",
+        "ankilope/happy.png",
+        "aki/frozen_2.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one new, full-body AnkiQuest freeze used moment for Ankilope. Reference 1 identifies this companion's existing anatomy, finish, and colours. Reference 2 confirms the companion's identity and design. Reference 3 is Aki's version of this moment, solely to match the storytelling cue and scale; use Ankilope's anatomy and style. Ankilope is a small golden-tan antelope with a creamy muzzle, cream belly, broad dark-edged ears, two dark brown ridged horns, dark cloven hooves, brown-tipped tail, indigo scarf, and a matching indigo satchel with a gold clasp. Draw a relaxed three-quarter standing pose wrapped in a pale ice-blue shawl. One front hoof holds the shawl snugly and the other presents a tiny pale-blue thawing ice crystal. Show a relieved smile and a small cold breath puff to one side. The streak freeze has been spent successfully. The facial expression conveys relief. Keep the icy accents small and readable, with only one or two cues. No letters, typography or numbers. Center the complete head-to-toe figure and props on a single truly transparent RGBA square. Requested output 1254 × 1254 pixels with generous margins, no clipped ears, horns, boots, hooves, tails, or props. No scenery, background, ground line, drop shadow, border, or watermark. Use a slightly wider framing to leave about 7–9% empty transparent canvas at both the top and the bottom. Render flashcards as study cards, thin ivory sheets with gently rounded edges. Preserve the lightly drawn line weight of the character."
+    },
+    {
+      "id": "bluma-freeze-used-b",
+      "references": [
+        "cow/frozen.png",
+        "cow/happy.png",
+        "aki/frozen_2.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one new, full-body AnkiQuest freeze used moment for Bluma. Reference 1 identifies this companion's existing anatomy, finish, and colours. Reference 2 confirms the companion's identity and design. Reference 3 is Aki's version of this moment, solely to match the storytelling cue and scale; use Bluma's anatomy and style. Bluma is a purple cow with lilac forelock, beige muzzle and belly, two short cream cow horns, wide pink-lined cow ears, darker cloven hooves, purple tufted tail, indigo scarf and a small brown leather satchel with a gold buckle. Draw her standing with legs visible, wrapped in a loose pale ice-blue shoulder blanket and smiling with soft eyes. One hoof holds the blanket together while the other rests near a small melting ice shard at her side. A tiny breath puff makes the chilly air readable. The streak freeze has been spent successfully. The facial expression conveys relief. Keep the icy accents small and readable, with only one or two cues. No letters, typography or numbers. Center the complete head-to-toe figure and props on a single truly transparent RGBA square. Requested output 1254 × 1254 pixels with generous margins, no clipped ears, horns, boots, hooves, tails, or props. No scenery, background, ground line, drop shadow, border, or watermark. Use a slightly wider framing to leave about 7–9% empty transparent canvas at both the top and the bottom. Render flashcards as study cards, thin ivory sheets with gently rounded edges. Preserve the lightly drawn line weight of the character."
+    },
+    {
+      "id": "ankitan-freeze-used-b",
+      "references": [
+        "anki-tan/frozen.png",
+        "archive/anki-tan-pack/illust/anki_tan_main.png",
+        "aki/frozen_2.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one new, full-body AnkiQuest freeze used moment for Anki-tan. Reference 1 identifies this companion's existing anatomy, finish, and colours. Reference 2 confirms the companion's identity and design. Reference 3 is Aki's version of this moment, solely to match the storytelling cue and scale; use Anki-tan's anatomy and style. Anki-tan is Shigeyuki's original full-size blue-haired magical girl. Retain exactly three blue stars across the front of her white headband, a blue star brooch, gray gloves, a high-neck graphite and gray pleated dress, and gray short boots. Follow the restrained hand-drawn anime illustration linework of her references and the established full-size proportions. Draw a three-quarter standing portrait of her entire original body. A pale ice-blue shawl around her shoulders lifts slightly. She smiles softly at a small thawing icy-blue token with a single amber point cupped in two gray gloves, with her boots fully visible below the gray dress. The streak freeze has been spent successfully. The facial expression conveys relief. Keep the icy accents small and readable, with only one or two cues. No letters, typography or numbers. Center the complete head-to-toe figure and props on a single truly transparent RGBA square. Requested output 1254 × 1254 pixels with generous margins, no clipped ears, horns, boots, hooves, tails, or props. No scenery, background, ground line, drop shadow, border, or watermark. Use a slightly wider framing to leave about 7–9% empty transparent canvas at both the top and the bottom. Render flashcards as study cards, thin ivory sheets with gently rounded edges. Preserve the lightly drawn line weight of the character."
+    },
+    {
+      "id": "ankilope-freeze-used-c",
+      "references": [
+        "ankilope/frozen.png",
+        "ankilope/happy.png",
+        "aki/frozen_2.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one new, full-body AnkiQuest freeze used moment for Ankilope. Reference 1 identifies this companion's existing anatomy, finish, and colours. Reference 2 confirms the companion's identity and design. Reference 3 is Aki's version of this moment, solely to match the storytelling cue and scale; use Ankilope's anatomy and style. Ankilope is a small golden-tan antelope with a creamy muzzle, cream belly, broad dark-edged ears, two dark brown ridged horns, dark cloven hooves, brown-tipped tail, indigo scarf, and a matching indigo satchel with a gold clasp. Seat her with both dark hind hooves and her little brown-tipped tail outside a pale blue shawl. She lets out a satisfied breath and smiles toward two small thawing blue ice shards near a hoof. Keep the raised brow and lifted cheeks clearly joyful. The streak freeze has been spent successfully. The facial expression conveys relief. Keep the icy accents small and readable, with only one or two cues. No letters, typography or numbers. Center the complete head-to-toe figure and props on a single truly transparent RGBA square. Requested output 1254 × 1254 pixels with generous margins, no clipped ears, horns, boots, hooves, tails, or props. No scenery, background, ground line, drop shadow, border, or watermark. Use a slightly wider framing to leave about 7–9% empty transparent canvas at both the top and the bottom. Render flashcards as study cards, thin ivory sheets with gently rounded edges. Preserve the lightly drawn line weight of the character."
+    },
+    {
+      "id": "bluma-freeze-used-c",
+      "references": [
+        "cow/frozen.png",
+        "cow/happy.png",
+        "aki/frozen_2.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one new, full-body AnkiQuest freeze used moment for Bluma. Reference 1 identifies this companion's existing anatomy, finish, and colours. Reference 2 confirms the companion's identity and design. Reference 3 is Aki's version of this moment, solely to match the storytelling cue and scale; use Bluma's anatomy and style. Bluma is a purple cow with lilac forelock, beige muzzle and belly, two short cream cow horns, wide pink-lined cow ears, darker cloven hooves, purple tufted tail, indigo scarf and a small brown leather satchel with a gold buckle. Draw her in a three-quarter seated pose, with relaxed ears and a big relieved closed-eye smile. Let the pale blue blanket drape beside her rather than hide her hooves. Two small pieces of ice are melting beside her and one warm amber accent suggests the streak survived. The streak freeze has been spent successfully. The facial expression conveys relief. Keep the icy accents small and readable, with only one or two cues. No letters, typography or numbers. Center the complete head-to-toe figure and props on a single truly transparent RGBA square. Requested output 1254 × 1254 pixels with generous margins, no clipped ears, horns, boots, hooves, tails, or props. No scenery, background, ground line, drop shadow, border, or watermark. Use a slightly wider framing to leave about 7–9% empty transparent canvas at both the top and the bottom. Render flashcards as study cards, thin ivory sheets with gently rounded edges. Preserve the lightly drawn line weight of the character."
+    },
+    {
+      "id": "ankitan-freeze-used-c",
+      "references": [
+        "anki-tan/frozen.png",
+        "archive/anki-tan-pack/illust/anki_tan_main.png",
+        "aki/frozen_2.png"
+      ],
+      "prompt": "Use case: illustration-story. Draw one new, full-body AnkiQuest freeze used moment for Anki-tan. Reference 1 identifies this companion's existing anatomy, finish, and colours. Reference 2 confirms the companion's identity and design. Reference 3 is Aki's version of this moment, solely to match the storytelling cue and scale; use Anki-tan's anatomy and style. Anki-tan is Shigeyuki's original full-size blue-haired magical girl. Retain exactly three blue stars across the front of her white headband, a blue star brooch, gray gloves, a high-neck graphite and gray pleated dress, and gray short boots. Follow the restrained hand-drawn anime illustration linework of her references and the established full-size proportions. Draw a gentle forward step and a relieved glance back at two small melting blue ice shards beside her. One gloved hand holds the pale blue shawl at her star brooch and the other is relaxed at her side. Long blue hair and knee-length gray dress stay true to the supplied original. The streak freeze has been spent successfully. The facial expression conveys relief. Keep the icy accents small and readable, with only one or two cues. No letters, typography or numbers. Center the complete head-to-toe figure and props on a single truly transparent RGBA square. Requested output 1254 × 1254 pixels with generous margins, no clipped ears, horns, boots, hooves, tails, or props. No scenery, background, ground line, drop shadow, border, or watermark. Use a slightly wider framing to leave about 7–9% empty transparent canvas at both the top and the bottom. Render flashcards as study cards, thin ivory sheets with gently rounded edges. Preserve the lightly drawn line weight of the character."
+    }
+  ]
+}
