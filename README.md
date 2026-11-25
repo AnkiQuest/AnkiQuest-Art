@@ -18,11 +18,12 @@ this repository, so no code repository checks in art.
 | `duo/` | Pictures of more than one companion: `friends.png`, Aki and Ankilope. |
 | `archive/` | Pictures that are no longer masters; never exported to a client, released whole for the gallery ([README](archive/README.md)). |
 | `docs/` | Generation records, prompts, measurements and review sheets. |
+| `companions.json` | The companions published as packs, with their names, in the apps' order ([Companion packs](docs/packs.md)). |
 | `manifest.json` | Every master (companion, pose, kind, framing, file, licence, origin and author), the core poses still missing, and what the archive holds. |
 | `poses.json` | Every slot a companion has: the core poses, extensions, moment pictures and launcher icons, each with its fallback, and the core poses' stopgap fallbacks; checked by `tools/art-check`. |
 | `RENAMES.md` | Where each file of AnkiQuest-Server's `static/` art is now. |
 | `tools/art-check/` | The check of `manifest.json`: every picture outside `archive/` is used, and `face` and launcher icons are headshots while every other master is full body (`cargo run --manifest-path tools/art-check/Cargo.toml -- .`). |
-| `tools/art-export/` | The exporter: Android drawables and the desktop add-on's pictures, made from the masters `manifest.json` names ([Exports](#exports)). |
+| `tools/art-export/` | The exporter: companion packs, Android drawables and the desktop add-on's pictures, made from the masters `manifest.json` names ([Exports](#exports)). |
 | `tools/release/` | Builds a release's assets ([Releases](#releases)). |
 
 A master is `<companion>/<pose>.png`, a transparent PNG. Pose names and
@@ -69,6 +70,7 @@ exported; its tests fail when an entry is renamed or retired.
 | Client | Command | Writes |
 |---|---|---|
 | AnkiQuest-Android | `cargo run --locked --release --manifest-path tools/art-export/Cargo.toml -- android <res-dir>` | `<res-dir>/drawable-nodpi/<name>.webp`: square lossy WebPs (alpha quality 100), Lanczos-downscaled to 1024 px for the streak widget's poses, 432 px for launcher icons and 336 or 168 px for moment pictures, never upscaled; the themed icons' monochrome layers are the master's line art. |
+| Both apps, at runtime | `cargo run --locked --release --manifest-path tools/art-export/Cargo.toml -- packs <tag> <commit> <out-dir>` | `<out-dir>/pack-<id>.zip` for each companion in `companions.json` and the index `<out-dir>/packs.json`: lossy WebPs (alpha quality 100) of every master `poses.json` names, 1024 px for poses and moment pictures and 432 px for launcher icons, never upscaled. The format is in [docs/packs.md](docs/packs.md). |
 | AnkiQuest-Desktop | `cargo run --locked --release --manifest-path tools/art-export/Cargo.toml -- addon <addon-dir>` | `<addon-dir>/art/<name>.png` (the poses) and `<addon-dir>/<companion>_face.png` (the share card's and toolbar's faces): 256 px, 256-colour palette PNGs. |
 
 The tables of what each client gets are in
@@ -81,7 +83,8 @@ take the release's copies instead of building the exporter themselves.
 ## Releases
 
 On every push to master that changes the art (a companion folder,
-`duo/`, `archive/`, `LICENSE`), `manifest.json`, `poses.json` or the tools
+`duo/`, `archive/`, `LICENSE`), `companions.json`, `manifest.json`,
+`poses.json` or the tools
 under `tools/`, the [release workflow](.github/workflows/release.yml)
 builds on Linux and publishes a release; it can also be run by hand.
 Tags are `art-<N>`: one more than the highest `art-*` tag, starting at
@@ -92,6 +95,7 @@ pin to the new release.
 
 | Asset | Holds |
 |---|---|
+| `pack-<id>.zip`, `packs.json` | One companion pack per companion in `companions.json` and their index, as `art-export packs` writes them ([docs/packs.md](docs/packs.md)). The apps download these at runtime. |
 | `android-drawables.zip` | `drawable-nodpi/<name>.webp`, as `art-export android` writes them, and Anki-tan's licence (`anki-tan/LICENSE`, CC BY-SA 4.0) as `LICENSE-Anki-tan.md` at the root, outside `drawable-nodpi/`, which Android's resource build keeps for pictures. |
 | `addon-art.zip` | `art/<name>.png` and `<companion>_face.png`, as `art-export addon` writes them, and Anki-tan's licence as `art/LICENSE-Anki-tan.md`. |
 | `masters.zip` | Every master `manifest.json` lists, at its path here, with `LICENSE` and `anki-tan/LICENSE`: for AnkiQuest-Server's share cards and web pictures. |
@@ -124,7 +128,9 @@ edits it by hand.
     "masters.zip": "<sha256 hex>",
     "archive.zip": "<sha256 hex>",
     "manifest.json": "<sha256 hex>",
-    "poses.json": "<sha256 hex>"
+    "poses.json": "<sha256 hex>",
+    "packs.json": "<sha256 hex>",
+    "pack-aki.zip": "<sha256 hex>"
   }
 }
 ```

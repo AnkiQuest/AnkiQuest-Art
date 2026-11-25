@@ -16,7 +16,9 @@ and `art-export addon` wrote. <out-dir> receives:
 - archive.zip: everything under archive/, at its path here
 - manifest.json, and poses.json when this repository has one
 - ankiquest-art.json: the pin file consumers commit, naming the tag, the
-  commit and the SHA-256 of every asset above
+  commit and the SHA-256 of every asset above and of the companion packs
+  (packs.json and pack-<id>.zip, which `art-export packs` wrote to
+  <out-dir> before)
 - SHA256SUMS: the SHA-256 of every other asset
 
 The same input gives the same bytes: entries are sorted, stored
@@ -105,7 +107,9 @@ def sha256(path):
 
 def pin(out, tag, commit):
     """The pin file's text for the assets in `out`."""
-    assets = {name: sha256(out / name) for name in PINNED if (out / name).is_file()}
+    packs = ["packs.json"] + sorted(path.name for path in out.glob("pack-*.zip"))
+    names = [name for name in PINNED + packs if (out / name).is_file()]
+    assets = {name: sha256(out / name) for name in names}
     value = {"_about": PIN_ABOUT, "tag": tag, "commit": commit, "assets": assets}
     return json.dumps(value, indent=2) + "\n"
 
