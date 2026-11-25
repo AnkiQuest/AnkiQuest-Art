@@ -109,7 +109,8 @@ pose.
 
 | Source | How | Replaces |
 |---|---|---|
-| Bundled | The full APK carries the packs and `packs.json` of the Art release it pins (`ankiquest-art.json`), checked against the pin's SHA-256 at build time. The slim APK carries none. | Nothing. |
+| Bundled | The full APK carries the packs and `packs.json` of the Art release it pins (`ankiquest-art.json`), checked against the pin's SHA-256 at build time. | Nothing. |
+| Pinned | The slim APK carries no packs, only the pinned tag and the SHA-256 of that release's `packs.json`. On start it downloads that `packs.json` from `https://github.com/AnkiQuest/AnkiQuest-Art/releases/download/<tag>/packs.json`, refuses it unless the SHA-256 and tag match, then fetches each pack and checks it like a download. | Nothing; it fills an empty slim install. |
 | Downloaded | "Download companions" fetches `https://github.com/AnkiQuest/AnkiQuest-Art/releases/latest/download/packs.json`, then each pack from `https://github.com/AnkiQuest/AnkiQuest-Art/releases/download/<tag>/<file>`. Only HTTPS to `github.com` and GitHub's release download hosts, redirects included. Each pack must match the `size` and `sha256` in the index before it is read. | An installed pack of the same id with a lower `version`. |
 | Imported | The player picks a zip. | Nothing official: an imported pack may not use the id of a companion in `packs.json`. It replaces an imported pack with the same id. |
 
