@@ -106,7 +106,7 @@
       "pose": "freeze",
       "kind": "picture",
       "framing": "full_body",
-      "file": "aki/frozen.png",
+      "file": "aki/freeze.png",
       "licence": "AGPL-3.0-or-later",
       "origin": "ankiquest",
       "author": "AnkiQuest"
@@ -116,7 +116,7 @@
       "pose": "freeze_used",
       "kind": "picture",
       "framing": "full_body",
-      "file": "aki/frozen_2.png",
+      "file": "aki/frozen.png",
       "licence": "AGPL-3.0-or-later",
       "origin": "ankiquest",
       "author": "AnkiQuest"
@@ -401,6 +401,16 @@
       "origin": "shigeyuki",
       "author": "Shigeyuki",
       "pack": "emoji/Ankitan_00_smile.png"
+    },
+    {
+      "companion": "anki_tan",
+      "pose": "freeze",
+      "kind": "picture",
+      "framing": "full_body",
+      "file": "anki-tan/freeze.png",
+      "licence": "CC-BY-SA-4.0",
+      "origin": "derivative",
+      "author": "AnkiQuest, after Shigeyuki"
     },
     {
       "companion": "anki_tan",
@@ -731,6 +741,16 @@
     },
     {
       "companion": "ankilope",
+      "pose": "freeze",
+      "kind": "picture",
+      "framing": "full_body",
+      "file": "ankilope/freeze.png",
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
+    },
+    {
+      "companion": "ankilope",
       "pose": "freeze_used",
       "kind": "picture",
       "framing": "full_body",
@@ -925,6 +945,16 @@
       "kind": "core",
       "framing": "headshot",
       "file": "cow/face.png",
+      "licence": "AGPL-3.0-or-later",
+      "origin": "ankiquest",
+      "author": "AnkiQuest"
+    },
+    {
+      "companion": "cow",
+      "pose": "freeze",
+      "kind": "picture",
+      "framing": "full_body",
+      "file": "cow/freeze.png",
       "licence": "AGPL-3.0-or-later",
       "origin": "ankiquest",
       "author": "AnkiQuest"

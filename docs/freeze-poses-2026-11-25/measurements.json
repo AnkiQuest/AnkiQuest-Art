@@ -1,0 +1,26 @@
+[
+  {
+    "file": "ankilope/freeze.png",
+    "alpha_bounds_before_and_after": "201,77 849x1113 -> 229,107 796x1041",
+    "generated_sha256": "71a540b93200b4c2c0a6242c5da7ab9424d5bb93ee6af53b7fa984bb8f4ce166",
+    "master_sha256": "ae11dc1d63847ee420fd282d365a080bc80053e722fd69890fa08c633c24be52"
+  },
+  {
+    "file": "cow/freeze.png",
+    "alpha_bounds_before_and_after": "206,86 837x1083 -> 224,107 807x1041",
+    "generated_sha256": "5eda92593b7d5e49c9719c8a0c40da4f2dedfe3824207d2964c48df620e2daf8",
+    "master_sha256": "abe30e8cc69bb4088bbbcf3839844a68f9eb3fdba6983797f74d1e9f4a248961"
+  },
+  {
+    "file": "anki-tan/freeze.png",
+    "alpha_bounds_before_and_after": "330,12 561x1217 -> 387,105 480x1043",
+    "generated_sha256": "b75e531b106df790b85bee0f362b33bbc99af74a9fb0876e6f8f64211efb1ed4",
+    "master_sha256": "21cf738df2ad2bc46a08ae411a39e4e25c55a2444872160ac4823aac8fa20f26"
+  },
+  {
+    "file": "aki/frozen_2.png",
+    "alpha_bounds_before_and_after": "109,119 961x1037 -> 147,109 961x1036",
+    "generated_sha256": "154df130bdef563a7ad1df6fd5ca674cb3b9b577182bb3d914ea297898d4c483",
+    "master_sha256": "9e6439bc72b375e8355ace489939d39c599c0a09f790b3de4f54c64ecb111abe"
+  }
+]
