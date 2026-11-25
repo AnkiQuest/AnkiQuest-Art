@@ -4,6 +4,9 @@
 //!   `<res-dir>/drawable-nodpi/<name>.webp`.
 //! - `addon <addon-dir>`: AnkiQuest-Desktop's add-on pictures, as
 //!   `<addon-dir>/art/<name>.png` and `<addon-dir>/<companion>_face.png`.
+//! - `packs <tag> <commit> <out-dir>`: the companion packs of release
+//!   `<tag>`, as `<out-dir>/pack-<id>.zip` and `<out-dir>/packs.json`
+//!   (`docs/packs.md`).
 //!
 //! Every export names a manifest entry (companion and pose, or a shared
 //! picture), so a renamed or retired master fails the tests instead of
@@ -12,31 +15,35 @@
 //! platform or compiler may encode a few pixels differently.
 //!
 //! Usage: `cargo run --locked --release --manifest-path
-//! tools/art-export/Cargo.toml -- android|addon <out-dir>`.
+//! tools/art-export/Cargo.toml -- android|addon <out-dir>` or `-- packs
+//! <tag> <commit> <out-dir>`.
 
 mod addon;
 mod android;
 mod masters;
+mod packs;
 mod resample;
+mod zip;
 
 use std::path::PathBuf;
 use std::process::ExitCode;
 
 use art_check::Manifest;
 
-const USAGE: &str = "usage: art-export android <res-dir>\n       art-export addon <addon-dir>";
+const USAGE: &str = "usage: art-export android <res-dir>\n       art-export addon <addon-dir>\n       art-export packs <tag> <commit> <out-dir>";
 
 fn main() -> ExitCode {
     let args: Vec<String> = std::env::args().skip(1).collect();
-    let [client, out] = args.as_slice() else {
-        eprintln!("{USAGE}");
-        return ExitCode::FAILURE;
-    };
-    let out = PathBuf::from(out);
-    let result = Manifest::read(&masters::root()).and_then(|manifest| match client.as_str() {
-        "android" => android::export(&manifest, &out),
-        "addon" => addon::export(&manifest, &out),
-        _ => Err(USAGE.to_string()),
+    let result = Manifest::read(&masters::root()).and_then(|manifest| {
+        let args: Vec<&str> = args.iter().map(String::as_str).collect();
+        match args.as_slice() {
+            ["android", out] => android::export(&manifest, &PathBuf::from(out)),
+            ["addon", out] => addon::export(&manifest, &PathBuf::from(out)),
+            ["packs", tag, commit, out] => {
+                packs::export(&manifest, tag, commit, &PathBuf::from(out))
+            }
+            _ => Err(USAGE.to_string()),
+        }
     });
     match result {
         Ok(()) => ExitCode::SUCCESS,

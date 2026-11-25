@@ -1,7 +1,8 @@
 # Publishes an AnkiQuest-Art release when master's art changes: the
-# clients' exports, the masters, the archive, the manifests and the pin
-# file consumers commit (README, Releases). Tags are art-<N>, one more than
-# the highest art-* tag. Then asks AnkiQuest-Sync to update the consumers.
+# companion packs (docs/packs.md), the clients' exports, the masters, the
+# archive, the manifests and the pin file consumers commit (README,
+# Releases). Tags are art-<N>, one more than the highest art-* tag. Then
+# asks AnkiQuest-Sync to update the consumers.
 name: Release
 
 on:
@@ -16,6 +17,7 @@ on:
       - duo/**
       - archive/**
       - LICENSE
+      - companions.json
       - manifest.json
       - poses.json
       - tools/art-check/**

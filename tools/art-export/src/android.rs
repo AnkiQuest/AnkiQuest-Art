@@ -323,7 +323,7 @@ fn widen(lines: &RgbaImage, spread: u32, axis: Axis) -> RgbaImage {
 }
 
 /// Encodes lossy WebP with full-quality alpha.
-fn encode(image: &RgbaImage, quality: f32) -> Result<Vec<u8>, String> {
+pub fn encode(image: &RgbaImage, quality: f32) -> Result<Vec<u8>, String> {
     let mut config = webp::WebPConfig::new().map_err(|()| "libwebp config failed")?;
     config.lossless = 0;
     config.quality = quality;

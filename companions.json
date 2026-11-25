@@ -1,0 +1,9 @@
+{
+  "_about": "The companions a release publishes as packs (docs/packs.md), in the order the apps list them. id is the companion id in manifest.json and on the server; name is shown in the apps and is not translated; notice is a licence text the pack carries, for art whose licence asks for it. A companion is listed only when it has a master for every core pose in poses.json; tools/art-export fails the release otherwise.",
+  "companions": [
+    { "id": "aki", "name": "Aki" },
+    { "id": "ankilope", "name": "Ankilope" },
+    { "id": "cow", "name": "Bluma" },
+    { "id": "anki_tan", "name": "Anki-tan", "notice": "anki-tan/LICENSE" }
+  ]
+}

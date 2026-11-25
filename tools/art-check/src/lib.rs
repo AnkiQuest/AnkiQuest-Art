@@ -2,6 +2,7 @@
 //! the exporters in `tools/art-export`.
 
 use serde::Deserialize;
+use std::collections::BTreeMap;
 use std::path::Path;
 
 /// How much of the companion a picture shows.
@@ -33,6 +34,12 @@ pub struct Master {
     pub kind: Kind,
     pub file: String,
     pub framing: Framing,
+    /// SPDX licence of the picture.
+    #[serde(default)]
+    pub licence: Option<String>,
+    /// Who to credit for the picture.
+    #[serde(default)]
+    pub author: Option<String>,
 }
 
 /// A picture of more than one companion.
@@ -79,5 +86,45 @@ impl Manifest {
             .iter()
             .find(|s| s.name == name)
             .map(|s| s.file.as_str())
+    }
+}
+
+/// `poses.json`: the pose names and their fallbacks.
+#[derive(Deserialize)]
+pub struct Poses {
+    pub core: Vec<String>,
+    pub extensions: BTreeMap<String, String>,
+    pub pictures: BTreeMap<String, String>,
+    pub icons: BTreeMap<String, String>,
+    #[serde(default)]
+    pub core_fallbacks: BTreeMap<String, String>,
+}
+
+impl Poses {
+    /// Reads `poses.json` in the repository at `root`.
+    pub fn read(root: &Path) -> Result<Poses, String> {
+        let path = root.join("poses.json");
+        std::fs::read_to_string(&path)
+            .map_err(|e| e.to_string())
+            .and_then(|text| serde_json::from_str(&text).map_err(|e| e.to_string()))
+            .map_err(|e| format!("{}: {e}", path.display()))
+    }
+
+    /// The groups that map each name to its fallback, with their names.
+    pub fn groups(&self) -> [(&'static str, &BTreeMap<String, String>); 3] {
+        [
+            ("extension", &self.extensions),
+            ("picture", &self.pictures),
+            ("icon", &self.icons),
+        ]
+    }
+
+    /// The pose, picture or icon a companion without `name` shows.
+    pub fn fallback(&self, name: &str) -> Option<&String> {
+        self.extensions
+            .get(name)
+            .or(self.pictures.get(name))
+            .or(self.icons.get(name))
+            .or(self.core_fallbacks.get(name))
     }
 }

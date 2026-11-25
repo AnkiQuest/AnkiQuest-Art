@@ -16,7 +16,7 @@
 //! Usage: `cargo run --manifest-path tools/art-check/Cargo.toml -- .`
 //! (the argument is the repository root).
 
-use art_check::{Framing, Kind, Manifest};
+use art_check::{Framing, Kind, Manifest, Poses};
 use serde::Deserialize;
 use std::collections::BTreeMap;
 use std::path::{Path, PathBuf};
@@ -48,37 +48,6 @@ enum Use {
     LauncherIcon,
     Moment,
     Unused,
-}
-
-/// `poses.json`: the pose names and their fallbacks.
-#[derive(Deserialize)]
-struct Poses {
-    core: Vec<String>,
-    extensions: BTreeMap<String, String>,
-    pictures: BTreeMap<String, String>,
-    icons: BTreeMap<String, String>,
-    #[serde(default)]
-    core_fallbacks: BTreeMap<String, String>,
-}
-
-impl Poses {
-    /// The groups that map each name to its fallback, with their names.
-    fn groups(&self) -> [(&'static str, &BTreeMap<String, String>); 3] {
-        [
-            ("extension", &self.extensions),
-            ("picture", &self.pictures),
-            ("icon", &self.icons),
-        ]
-    }
-
-    /// The pose, picture or icon a companion without `name` shows.
-    fn fallback(&self, name: &str) -> Option<&String> {
-        self.extensions
-            .get(name)
-            .or(self.pictures.get(name))
-            .or(self.icons.get(name))
-            .or(self.core_fallbacks.get(name))
-    }
 }
 
 /// An entry of `missing` in the manifest.

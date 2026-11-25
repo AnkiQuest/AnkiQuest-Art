@@ -29,14 +29,31 @@ pub fn root() -> PathBuf {
 /// The master file of `source`, relative to the repository root. A master
 /// in `archive/` is refused.
 pub fn file(manifest: &Manifest, source: Source) -> Result<&str, String> {
-    let file = match source {
-        Source::Pose(companion, pose) => manifest
-            .master(companion, pose)
-            .ok_or(format!("manifest.json has no {companion} {pose}"))?,
-        Source::Shared(name) => manifest
-            .shared(name)
-            .ok_or(format!("manifest.json has no shared picture {name}"))?,
-    };
+    match source {
+        Source::Pose(companion, pose) => pose_file(manifest, companion, pose),
+        Source::Shared(name) => {
+            let file = manifest
+                .shared(name)
+                .ok_or(format!("manifest.json has no shared picture {name}"))?;
+            exportable(file)
+        }
+    }
+}
+
+/// The master file of `companion`'s `pose`, as [`file`] finds it.
+pub fn pose_file<'a>(
+    manifest: &'a Manifest,
+    companion: &str,
+    pose: &str,
+) -> Result<&'a str, String> {
+    let file = manifest
+        .master(companion, pose)
+        .ok_or(format!("manifest.json has no {companion} {pose}"))?;
+    exportable(file)
+}
+
+/// `file`, unless it is in the archive.
+fn exportable(file: &str) -> Result<&str, String> {
     if file.starts_with(ARCHIVE) {
         return Err(format!("{file} is retired; archive/ is never exported"));
     }
