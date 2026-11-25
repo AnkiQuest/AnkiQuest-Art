@@ -10,5 +10,5 @@ duplicates ([archive README](../archive/README.md#removed-duplicates)).
 OpenAI `image_gen` generated the original images; the model identifier
 was not exposed. [Provenance and prompts](../docs/bluma-core-2026-11/README.md).
 The repository licence applies.
-[hill approved the appearance](https://github.com/AnkiQuest/AnkiQuest-Desktop/pull/322#pullrequestreview-5919330018).
+The appearance was approved in [the reviewed pull request](https://github.com/AnkiQuest/AnkiQuest-Desktop/pull/322#pullrequestreview-5919330018).
 The other contributor owns pose selection and unlock activation.
