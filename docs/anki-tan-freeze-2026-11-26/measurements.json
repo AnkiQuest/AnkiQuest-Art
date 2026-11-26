@@ -1,0 +1,14 @@
+[
+  {
+    "file": "anki-tan/frozen_2.png",
+    "alpha_bounds_before_and_after": "287,23 668x1211 -> 341,105 573x1043",
+    "generated_sha256": "f3dc6b86c8b036d1fad9190088507b5a2b9a688c38be21cd25d06566f7456c26",
+    "master_sha256": "10e4d0271142f8cd950dfc6e0b19b1f02d85d666dcf02e8692691dfb37e2b17d"
+  },
+  {
+    "file": "anki-tan/frozen_3.png",
+    "alpha_bounds_before_and_after": "299,28 630x1197 -> 354,106 547x1042",
+    "generated_sha256": "d1ca5b61aeff4cd91ace936294044960faac84a9590a91aca981ac2624712aa3",
+    "master_sha256": "0c322421806ae71fa5a84d1af148c77c6ed76c7525fa5af86a6c90b65185ca71"
+  }
+]

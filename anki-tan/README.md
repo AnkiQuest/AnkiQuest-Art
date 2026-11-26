@@ -22,6 +22,8 @@ icons. The masters:
 | sad | generated | `chibi/asleep.png` |
 | hopeful | pack `sticker/ankitan_lets_study.png` | `chibi/asleep.png` |
 | frozen | generated | `chibi/asleep.png` |
+| frozen_2 | [generated](../docs/anki-tan-freeze-2026-11-26/README.md) | falls back |
+| frozen_3 | [generated](../docs/anki-tan-freeze-2026-11-26/README.md) | falls back |
 | neglected | generated | `chibi/asleep.png` |
 | welcome | `hopeful.png` | falls back |
 | review | falls back | falls back |
