@@ -14,5 +14,5 @@ hashes and the [alpha cleanup](../alpha-cleanup/README.md).
 
 Anki-tan by Shigeyuki (https://www.patreon.com/Shigeyuki).
 Her two derivatives are CC BY-SA 4.0 under
-[her licence](../../anki-tan/LICENSE). Ankilope and Bluma are
+[her licence](../../../anki-tan/LICENSE). Ankilope and Bluma are
 AGPL-3.0-or-later.

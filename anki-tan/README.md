@@ -70,9 +70,9 @@ with OpenAI `image_gen` (model identifier unavailable). They are
 CC BY-SA 4.0 under [LICENSE](LICENSE).
 Anki-tan by Shigeyuki (https://www.patreon.com/Shigeyuki).
 See the generation records for the
-[core poses](../docs/core-poses-2026-11/README.md),
-[full-size additions](../docs/ankitan-full-2026-11/README.md),
-[happy and streak](../docs/core-poses-2026-11-24/README.md), and
-[frozen launcher icons](../docs/frozen-launcher-icons-2026-11-24/README.md).
+[core poses](../archive/docs/core-poses-2026-11/README.md),
+[full-size additions](../archive/docs/ankitan-full-2026-11/README.md),
+[happy and streak](../archive/docs/core-poses-2026-11-24/README.md), and
+[frozen launcher icons](../archive/docs/frozen-launcher-icons-2026-11-24/README.md).
 The generated chibi frozen bust is in
 [`../archive/anki-tan/chibi/`](../archive/anki-tan/README.md).

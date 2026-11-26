@@ -32,4 +32,4 @@ straight. The left star behind her head is left out. A drawn face would
 replace this one.
 
 Anki-tan by Shigeyuki (https://www.patreon.com/Shigeyuki). CC BY-SA 4.0
-under [her LICENSE](../../anki-tan/LICENSE).
+under [her LICENSE](../../../anki-tan/LICENSE).

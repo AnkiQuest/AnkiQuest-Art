@@ -10,7 +10,7 @@ repository licence applies.
 
 The ears and feet touch the edge of the picture. It was the input of the
 generated reframing (OpenAI `image_gen`, model identifier not exposed)
-recorded in [the review](../../docs/ankilope-celebrate-review/README.md);
+recorded in [the review](../../archive/docs/ankilope-celebrate-review/README.md);
 the master is a new drawing, not a rescale.
 
 Commits are AnkiQuest-Server's; AnkiQuest-Desktop and this repository's

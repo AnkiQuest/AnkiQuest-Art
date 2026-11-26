@@ -22,5 +22,5 @@ record the bounding boxes and SHA-256 hashes. The poses were compared with
 their neighbors at 64 px on light and dark backgrounds.
 
 Anki-tan by Shigeyuki (https://www.patreon.com/Shigeyuki). The new derivative
-is CC BY-SA 4.0 under [her licence](../../anki-tan/LICENSE). The Aki,
+is CC BY-SA 4.0 under [her licence](../../../anki-tan/LICENSE). The Aki,
 Ankilope and Bluma masters are AGPL-3.0-or-later.

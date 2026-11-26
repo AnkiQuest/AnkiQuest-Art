@@ -7,15 +7,15 @@ the other contributor owns pose selection and unlock activation.
 
 | Aki reference | Ankilope reference | Bluma face | Bluma happy |
 |---|---|---|---|
-| ![Aki](../../aki/face.png) | ![Ankilope](../../ankilope/face.png) | ![Face](../../cow/face.png) | ![Happy](../../cow/happy.png) |
+| ![Aki](../../../aki/face.png) | ![Ankilope](../../../ankilope/face.png) | ![Face](../../../cow/face.png) | ![Happy](../../../cow/happy.png) |
 
 | Asleep | Streak | Sad |
 |---|---|---|
-| ![Asleep](../../cow/asleep.png) | ![Streak](../../cow/streak.png) | ![Sad](../../cow/sad.png) |
+| ![Asleep](../../../cow/asleep.png) | ![Streak](../../../cow/streak.png) | ![Sad](../../../cow/sad.png) |
 
 | Hopeful | Frozen | Neglected |
 |---|---|---|
-| ![Hopeful](../../cow/hopeful.png) | ![Frozen](../../cow/frozen.png) | ![Neglected](../../cow/neglected.png) |
+| ![Hopeful](../../../cow/hopeful.png) | ![Frozen](../../../cow/frozen.png) | ![Neglected](../../../cow/neglected.png) |
 
 OpenAI `image_gen` generated three candidates per pose on 2026-11-16;
 its model identifier was not exposed. [Generation records](generation.json)
@@ -41,7 +41,7 @@ masters and the `celebrate`/`sleeping` exports remain byte-identical in
 are marked retired in the export manifest. The canonical
 paths contain exact copies of the same generated art, without processing.
 AnkiQuest-Art later removed those archived copies as duplicates of the
-masters ([archive README](../../archive/README.md#removed-duplicates)).
+masters ([archive README](../../../archive/README.md#removed-duplicates)).
 
 The existing Rust exporters produced canonical 256 px add-on PNGs and
 1024 px Android WebPs on Linux in
