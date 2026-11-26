@@ -85,14 +85,14 @@ yet: they are not embedded in the server binary and are not public paths.
 The four social poses (`nudge`, `challenge`, `challenge_won`, `challenge_lost`)
 also have matching PNGs in `ankilope/`, exported under the same names
 with the `ankilope_` prefix. Both mascots stay encouraging after a loss.
-The [review sheet](social-poses-review.png) shows each at 128 and 64 pixels
+The [review sheet](archive/docs/social-poses-review.png) shows each at 128 and 64 pixels
 on light and dark backgrounds. All eight transparent masters were also
 reviewed at native resolution. They were generated with the built-in
 `image_gen` tool; the prompt record includes the nudge cutout refinement.
 
 The backlog pose also has a matching `ankilope/backlog.png`, exported
 as `ankilope_backlog`. Both show a calm companion sorting blank flashcards.
-The [backlog review sheet](backlog-review.png) shows each at 128 and 64 pixels
+The [backlog review sheet](archive/docs/backlog-review.png) shows each at 128 and 64 pixels
 on light and dark backgrounds. Both transparent masters were also reviewed
 at native resolution on both backgrounds. Prompts and references are recorded
 in `aki-prompts.json`. These assets are ready for backlog-specific surfaces;
@@ -100,7 +100,7 @@ adding them does not change study goals or the current general study artwork.
 
 The three podium poses have matching `ankilope/place_1..3.png` masters
 and `ankilope_place_1..3` Android exports. Gold, silver and bronze medals use
-distinct positive poses. The [podium review sheet](podium-review.png) shows
+distinct positive poses. The [podium review sheet](archive/docs/podium-review.png) shows
 all six at 128 and 64 pixels on light and dark backgrounds. Each 1254px
 transparent master was also reviewed at native size on both backgrounds.
 Exact generation prompts and references are recorded in `aki-prompts.json`.

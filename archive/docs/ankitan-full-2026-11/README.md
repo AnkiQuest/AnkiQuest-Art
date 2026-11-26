@@ -7,7 +7,7 @@ other agent owns pose selection and unlock activation.
 
 | Original reference | Existing frozen | Asleep | Sad | Neglected |
 |---|---|---|---|---|
-| ![Original](../../archive/anki-tan-pack/illust/anki_tan_main.png) | ![Frozen](../../anki-tan/frozen.png) | ![Asleep](../../anki-tan/asleep.png) | ![Sad](../../anki-tan/sad.png) | ![Neglected](../../anki-tan/neglected.png) |
+| ![Original](../../../archive/anki-tan-pack/illust/anki_tan_main.png) | ![Frozen](../../../anki-tan/frozen.png) | ![Asleep](../../../anki-tan/asleep.png) | ![Sad](../../../anki-tan/sad.png) | ![Neglected](../../../anki-tan/neglected.png) |
 
 Aldana approved these three images. Three candidates
 were generated per pose using OpenAI's `image_gen` tool; its model
@@ -24,7 +24,7 @@ and 128 px previews. Original art is preserved.
 
 Anki-tan by Shigeyuki (https://www.patreon.com/Shigeyuki).
 These derivatives and their exports are licensed CC BY-SA 4.0 under
-[her LICENSE](../../anki-tan/LICENSE).
+[her LICENSE](../../../anki-tan/LICENSE).
 
 Canonical exports use `export-addon-art` and `export-android-art` on
 Linux. [Run 43789530883](https://github.com/AnkiQuest/AnkiQuest-Desktop/actions/runs/43789530883)
@@ -64,7 +64,7 @@ Linux export formerly named `anki_tan_sleeping`, which is preserved under
 It is excluded from the app package. No existing artwork was overwritten.
 AnkiQuest-Art later removed both archived add-on exports and the
 byte-identical asleep and sad copies as duplicates
-([archive README](../../archive/README.md#removed-duplicates)).
+([archive README](../../../archive/README.md#removed-duplicates)).
 
 The inventory uses canonical paths, without an exporter-registration
 fallback. Its regression still checks the same full-size poses and chibi

@@ -26,7 +26,7 @@ scarf and satchel. The owner has final approval of their appearance.
 Anki-tan by Shigeyuki (https://www.patreon.com/Shigeyuki). Both new Anki-tan poses,
 their exports and her portions of this comparison are derivatives licensed
 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), under
-[her LICENSE](../../anki-tan/LICENSE). Her original files are unchanged.
+[her LICENSE](../../../anki-tan/LICENSE). Her original files are unchanged.
 
 All masters are 1254 x 1254 RGBA PNGs without text. The established
 [alpha cleanup](../alpha-cleanup/README.md) removes pixels with alpha 1-4, plus
