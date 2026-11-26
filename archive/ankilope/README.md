@@ -39,3 +39,20 @@ bytes. Commits are AnkiQuest-Server's.
 | File | Original path | Pose now | SHA-256 |
 |---|---|---|---|
 | `cards/ankilope-celebrate.png` | `assets/cards/ankilope-celebrate.png` | `ankilope/happy.png` | 8bec8fffe46e79f501c726d761a59f4926048bf910b11178c6b9fe188cd82672 |
+
+## Android review sheets
+
+A review sheet AnkiQuest-Android committed under
+`docs/development/ankiquest-ui/`: its WebP export at 128 and 64 px on
+light and dark. It shows the same pose as
+[the review](../../docs/ankilope-celebrate-review/README.md) here,
+rendered from the Android WebP instead of the PNG, so its pixels differ.
+Nothing exports it. The commit is AnkiQuest-Android's. The repository
+licence applies.
+
+| File | Original path | Added in | Shows | SHA-256 |
+|---|---|---|---|---|
+| `reviews/celebrate-android.png` | `docs/development/ankiquest-ui/ankilope-celebrate/review.png` | 7f10950 | the celebrate pose before and after the reframing | fc1d9e876198c28c583384db0f6ebfc6f1e0726c57660ab7b81252c16059f99f |
+
+Aki's and Ankilope's social review sheet from AnkiQuest-Android is in
+[../aki/README.md](../aki/README.md#android-review-sheets).

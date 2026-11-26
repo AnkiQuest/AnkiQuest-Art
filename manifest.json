@@ -1843,6 +1843,51 @@
         "author": "Shigeyuki",
         "licence": "CC-BY-SA-4.0",
         "pack": "icon.png"
+      },
+      {
+        "companion": "aki",
+        "pose": "streak_hot",
+        "file": "archive/aki/reviews/alpha-cleanup-android.png",
+        "replaced_by": "aki/streak_hot.png",
+        "note": "Review sheet of the Android exports before and after the alpha cleanup of comeback, freeze_used, streak_hot, streak_blazing and streak_legend, at 128 and 64 px on light and dark.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Android",
+          "commit": "7fa1b25156d93ca8595618912b696aafa64fe034",
+          "path": "docs/development/ankiquest-ui/alpha-cleanup/review.png"
+        }
+      },
+      {
+        "companion": "aki",
+        "pose": "nudge",
+        "file": "archive/aki/reviews/social-android.png",
+        "replaced_by": "aki/nudge.png",
+        "note": "Review sheet of Aki's and Ankilope's Android exports for nudge, challenge, challenge_won and challenge_lost, at 128 and 64 px on light and dark.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Android",
+          "commit": "6ba69a1fba1ef05807c8a4944ca0299d58657c64",
+          "path": "docs/development/ankiquest-ui/social-art/review.png"
+        }
+      },
+      {
+        "companion": "ankilope",
+        "pose": "happy",
+        "file": "archive/ankilope/reviews/celebrate-android.png",
+        "replaced_by": "ankilope/happy.png",
+        "note": "Review sheet of the Android export of the celebrate pose before and after the reframing, at 128 and 64 px on light and dark.",
+        "origin": "ankiquest",
+        "author": "AnkiQuest",
+        "licence": "AGPL-3.0-or-later",
+        "source": {
+          "repo": "AnkiQuest/AnkiQuest-Android",
+          "commit": "7f10950c5ffd69dacbff99c3876dee44f9551f2d",
+          "path": "docs/development/ankiquest-ui/ankilope-celebrate/review.png"
+        }
       }
     ],
     "pack": {

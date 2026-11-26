@@ -69,3 +69,17 @@ bytes. Commits are AnkiQuest-Server's.
 | `cards/aki-freeze.png` | `assets/cards/aki-freeze.png` | `aki/frozen.png` | fa6198c3187400304e1b14e39053f4cb3d1ee9f0e652cbf21a8fd66cebd4add2 |
 | `cards/aki-streak.png` | `assets/cards/aki-streak.png` | `aki/streak.png` | 7229fd3013d6875dadf7f34ad9294e19de4ffcfeb52ec082ec5d7fa4ce24447f |
 | `cards/aki-winner.png` | `assets/cards/aki-winner.png` | `aki/winner.png` | 3e22b812d969b0039bb040a6651a9f8fa511e0c8d22c951f5bb1341609d200a3 |
+
+## Android review sheets
+
+Review sheets AnkiQuest-Android committed under
+`docs/development/ankiquest-ui/`: its WebP exports at 128 and 64 px on
+light and dark. They show the same poses as this repository's own review
+sheets in `docs/`, rendered from the Android WebPs instead of the PNGs,
+so their pixels differ. Nothing exports them. Commits are
+AnkiQuest-Android's. The repository licence applies.
+
+| File | Original path | Added in | Shows | SHA-256 |
+|---|---|---|---|---|
+| `reviews/alpha-cleanup-android.png` | `docs/development/ankiquest-ui/alpha-cleanup/review.png` | 7fa1b25 | Aki's comeback, freeze_used, streak_hot, streak_blazing and streak_legend before and after the alpha cleanup ([docs/alpha-cleanup](../../docs/alpha-cleanup/README.md)) | dcef565aa0d74f2f30c32959869385935095e1b91ad96aa3a12e517f9dcb80b6 |
+| `reviews/social-android.png` | `docs/development/ankiquest-ui/social-art/review.png` | 6ba69a1 | Aki's and Ankilope's nudge, challenge, challenge_won and challenge_lost ([docs/social-poses-review.png](../../docs/social-poses-review.png)) | f59fb54fc0a973260ec5abf8f527eb220cbdbf3b797053bed7a97aeea041d856 |

@@ -8,8 +8,9 @@ Every companion folder follows one layout: `retired/` for pictures that
 were masters and were replaced, `addon/` (when the companion has them)
 for the add-on's hand-made copies from before `export-addon-art`,
 `cards/` (Aki and Ankilope) for hand-made share cards from before the
-cards were exported, and `found/` (Aki only, so far) for posted
-candidates that never became masters.
+cards were exported, `found/` (Aki only, so far) for posted
+candidates that never became masters, and `reviews/` (Aki and Ankilope)
+for review sheets other repositories committed.
 
 - `aki/`, `ankilope/`: in `retired/` earlier versions of Aki's and
   Ankilope's masters, replaced in AnkiQuest-Server before the split; in
@@ -97,3 +98,17 @@ The files were added under `AnkiDroid/src/main/res/drawable-nodpi/` and
 moved to `docs/art-archive/` in
 99532b8affa4929e4f72d85a99812a1e2e86ba59; they stay in AnkiQuest-Android's
 history.
+
+## AnkiQuest-Android's review sheets
+
+AnkiQuest-Android also removes five review sheets from
+`docs/development/ankiquest-ui/`. Three differ from every picture here
+and moved to `aki/reviews/` and `ankilope/reviews/`; see
+[aki/README.md](aki/README.md#android-review-sheets) and
+[ankilope/README.md](ankilope/README.md#android-review-sheets). Two have
+the same bytes as review sheets this repository keeps:
+
+| AnkiQuest-Android file | Added in | SHA-256 | Same bytes as |
+|---|---|---|---|
+| `backlog-art/review.png` | 37d0930b5b0ac09a8bb99e10a641eab09157d20a | a2a5530737002428ff9f69dcdedbd2e1bf5a9e73e0453d1c6358fa5472765ac4 | `docs/backlog-art/review.png` |
+| `podium-art/podium-review.png` | f3f1b0a5f0f6a646ef429f4c76774657faf13768 | d8f805d12349673c0da5b5878ab9a57d24811c06432cf4964c39f531c2ad844c | `docs/podium-review.png` |
