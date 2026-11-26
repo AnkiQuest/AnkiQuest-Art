@@ -444,6 +444,26 @@
     },
     {
       "companion": "anki_tan",
+      "pose": "frozen_2",
+      "kind": "extension",
+      "framing": "full_body",
+      "file": "anki-tan/frozen_2.png",
+      "licence": "CC-BY-SA-4.0",
+      "origin": "derivative",
+      "author": "AnkiQuest, after Shigeyuki"
+    },
+    {
+      "companion": "anki_tan",
+      "pose": "frozen_3",
+      "kind": "extension",
+      "framing": "full_body",
+      "file": "anki-tan/frozen_3.png",
+      "licence": "CC-BY-SA-4.0",
+      "origin": "derivative",
+      "author": "AnkiQuest, after Shigeyuki"
+    },
+    {
+      "companion": "anki_tan",
       "pose": "happy",
       "kind": "core",
       "framing": "full_body",
