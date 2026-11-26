@@ -537,6 +537,26 @@
       "author": "AnkiQuest, after Shigeyuki"
     },
     {
+      "companion": "anki_tan",
+      "pose": "streak_blazing",
+      "kind": "extension",
+      "framing": "full_body",
+      "file": "anki-tan/streak_blazing.png",
+      "licence": "CC-BY-SA-4.0",
+      "origin": "derivative",
+      "author": "AnkiQuest, after Shigeyuki"
+    },
+    {
+      "companion": "anki_tan",
+      "pose": "streak_hot",
+      "kind": "extension",
+      "framing": "full_body",
+      "file": "anki-tan/streak_hot.png",
+      "licence": "CC-BY-SA-4.0",
+      "origin": "derivative",
+      "author": "AnkiQuest, after Shigeyuki"
+    },
+    {
       "companion": "anki_tan_chibi",
       "pose": "asleep",
       "kind": "core",
