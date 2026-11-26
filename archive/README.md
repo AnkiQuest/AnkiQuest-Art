@@ -77,3 +77,23 @@ expression (`Ankitan_23_savoring` and `Ankitan_26_smiling`,
 `Ankitan_37_tear` and `Ankitan_00_smile`), and the pack's animation
 frames, which play in sequence (the last frames of `sprite/hello` and
 `sprite/idle` are nearly the same rest pose).
+
+## AnkiQuest-Android's exported copies
+
+AnkiQuest-Android kept four superseded drawables in `docs/art-archive/`.
+They are not archived here: `art-export android` writes each one again,
+byte for byte, from a file this repository keeps. The first three are
+the current drawables; the fourth comes from the retired master when it
+is exported in place of `anki-tan/neglected.png`.
+
+| AnkiQuest-Android file | Added in | SHA-256 | Exported from |
+|---|---|---|---|
+| `anki-tan/anki_tan_sleeping.webp` | d584c942c5707bcf4f46c4f780b78ccc7fcda437 | 3c9876172542efa032c932e583f64fc1bcee2e5c70abad5e8f565e167c0b6f4c | `anki-tan/asleep.png` (`anki_tan_asleep`) |
+| `anki-tan/anki_tan_neglected-three-blue-stars.webp` | d584c942c5707bcf4f46c4f780b78ccc7fcda437 | 4f66fc71f4cf373f911f95151a73bd00b4d84669543444b5bef9b285924a5bfc | `archive/anki-tan/retired/neglected-three-blue-stars.png` (`anki_tan_neglected`) |
+| `cow/bluma_sleeping.webp` | df9701e46629d9ea3cb0d6b58b3901e230ad0c92 | c12da35455cdeb36b1802f09fadf833807a5d30b81cabd969fa0d73461d8c7af | `cow/asleep.png` (`bluma_asleep`) |
+| `cow/bluma_celebrate.webp` | df9701e46629d9ea3cb0d6b58b3901e230ad0c92 | 44dde7c166fe83abea67f59f8ba76796e1de3634dbd1d66ca87e200248c9e485 | `cow/happy.png` (`bluma_happy`) |
+
+The files were added under `AnkiDroid/src/main/res/drawable-nodpi/` and
+moved to `docs/art-archive/` in
+99532b8affa4929e4f72d85a99812a1e2e86ba59; they stay in AnkiQuest-Android's
+history.
