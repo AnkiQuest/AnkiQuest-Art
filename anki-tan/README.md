@@ -23,6 +23,7 @@ icons. The masters:
 | hopeful | pack `sticker/ankitan_lets_study.png` | `chibi/asleep.png` |
 | frozen | generated | `chibi/asleep.png` |
 | neglected | generated | `chibi/asleep.png` |
+| abandoned | [generated](../docs/anki-tan-away-2026-11-26/README.md) | falls back |
 | welcome | `hopeful.png` | falls back |
 | review | falls back | falls back |
 | streak_legend | falls back | `chibi/asleep.png` |
