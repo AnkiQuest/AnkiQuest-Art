@@ -1,0 +1,14 @@
+[
+  {
+    "file": "anki-tan/streak_hot.png",
+    "alpha_bounds_before_and_after": "248,24 749x1212 -> 306,105 643x1043",
+    "generated_sha256": "68436ed449e474d955ce3391f5fd607e2d017bc5decffcd0a432c98d8b20cd6b",
+    "master_sha256": "5add9811a47f0c179e29b7dfbab144dd8babdf6c0baaab2f4ffdfc4c027a5092"
+  },
+  {
+    "file": "anki-tan/streak_blazing.png",
+    "alpha_bounds_before_and_after": "208,23 830x1213 -> 270,105 714x1043",
+    "generated_sha256": "b12eb3f5caea134f7e4a7273909401689eee17452ed0a186ad5b625b6107e06e",
+    "master_sha256": "03c2542ead0f9d2814c399d8d8a455650327dd016cb29f71a5df6cc07438e881"
+  }
+]

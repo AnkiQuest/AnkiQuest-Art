@@ -19,6 +19,8 @@ icons. The masters:
 | asleep | generated | `chibi/asleep.png` |
 | happy | generated | `chibi/happy.png`: pack `sprite/hello/anki-tan-hello_0006.png` (waving) |
 | streak | generated | `chibi/asleep.png` |
+| streak_hot | [generated](../docs/anki-tan-fire-2026-11-26/README.md) | falls back |
+| streak_blazing | [generated](../docs/anki-tan-fire-2026-11-26/README.md) | falls back |
 | sad | generated | `chibi/asleep.png` |
 | hopeful | pack `sticker/ankitan_lets_study.png` | `chibi/asleep.png` |
 | frozen | generated | `chibi/asleep.png` |
