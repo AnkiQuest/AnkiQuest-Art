@@ -373,6 +373,16 @@
     },
     {
       "companion": "anki_tan",
+      "pose": "abandoned",
+      "kind": "extension",
+      "framing": "full_body",
+      "file": "anki-tan/abandoned.png",
+      "licence": "CC-BY-SA-4.0",
+      "origin": "derivative",
+      "author": "AnkiQuest, after Shigeyuki"
+    },
+    {
+      "companion": "anki_tan",
       "pose": "asleep",
       "kind": "core",
       "framing": "full_body",
